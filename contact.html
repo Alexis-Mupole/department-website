@@ -1,90 +1,140 @@
 <!DOCTYPE html>
 <!-- contact.html - Contact Page -->
-<!-- This page contains a student registration form with various input types -->
+<!-- Bugema University - Student Registration Form -->
 
 <!DOCTYPE html>
 <html lang="en">
-<!-- Language attribute helps browsers and screen readers interpret content -->
 <head>
-    <!-- Character encoding for proper text display -->
     <meta charset="UTF-8">
-    <!-- Ensures the page scales properly on phones and tablets -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Browser tab title -->
-    <title>Contact - Student Registration</title>
-    <!-- Link to CSS file in css folder -->
+    <title>Contact & Registration | Bugema University Computing</title>
+    <meta name="description" content="Register for courses at Bugema University Department of Computing and Technology">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!-- ==================== NAVIGATION MENU ==================== -->
-    <!-- Top Navigation Bar - stays consistent across all pages -->
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+    <!-- ==================== NAVIGATION BAR ==================== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Bugema University Logo -->
+            <a href="index.html" class="nav-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Bugema_logo.png/240px-Bugema_logo.png" alt="Bugema University Logo">
+                <span>BU Computing</span>
+            </a>
+            
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+            
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-toggle">☰</div>
+        </div>
     </nav>
 
-    <!-- ==================== MAIN CONTENT CONTAINER ==================== -->
-    <!-- Container centers content on big screens -->
+    <!-- ==================== MAIN CONTENT ==================== -->
     <div class="container">
         
-        <!-- ==================== PAGE HEADING ==================== -->
-        <!-- Main heading for the registration form -->
-        <h1>Student Registration Form</h1>
+        <!-- ==================== PAGE HEADER ==================== -->
+        <section class="hero" style="padding: 40px;">
+            <h1 style="font-size: 32px;">Student Registration</h1>
+            <p>Register for the Department of Computing and Technology</p>
+        </section>
+
+        <!-- ==================== CONTACT INFO ==================== -->
+        <section class="cards-grid">
+            <div class="card">
+                <h3>Email Us</h3>
+                <p>registrar@bugemauniv.ac.ug</p>
+            </div>
+            
+            <div class="card">
+                <h3>Call Us</h3>
+                <p>+256 - 779 793 746<br>+256 - 312 351 400</p>
+            </div>
+            
+            <div class="card">
+                <h3>Visit Us</h3>
+                <p>Bugema University<br>Kalagala Sub-County<br>Luwero District, Uganda</p>
+            </div>
+        </section>
 
         <!-- ==================== REGISTRATION FORM ==================== -->
-        <!-- <form> creates an HTML form for user input -->
-        <!-- action="#" specifies where form data will be sent (none for demo) -->
-        <!-- method="post" is the HTTP method for sending data securely -->
-        <form action="#" method="post">
-            
-            <!-- ==================== NAME FIELD ==================== -->
-            <!-- <label> provides a text description for the input field -->
-            <!-- "for" attribute links label to input via id -->
-            <label for="name">Full Name:</label><br>
-            
-            <!-- <input> creates an input field -->
-            <!-- type="text" creates a single-line text input -->
-            <!-- id="name" uniquely identifies this element -->
-            <!-- name="name" is the key used when sending form data -->
-            <!-- required attribute ensures field cannot be left empty -->
-            <input type="text" id="name" name="name" required><br>
+        <h2>Registration Form</h2>
+        <div class="form-container">
+            <form action="#" method="post">
+                
+                <!-- Full Name -->
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+                </div>
 
-            <!-- ==================== EMAIL FIELD ==================== -->
-            <label for="email">Email Address:</label><br>
-            
-            <!-- type="email" validates that input contains a valid email format -->
-            <input type="email" id="email" name="email" required><br>
+                <!-- Email Address -->
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+                </div>
 
-            <!-- ==================== GENDER RADIO BUTTONS ==================== -->
-            <!-- Radio buttons allow ONE choice from multiple options -->
-            <label>Gender:</label><br>
-            
-            <!-- type="radio" creates circular selection buttons -->
-            <!-- All radio buttons with same "name" form a single group -->
-            <!-- value="male" is the data sent when this option is selected -->
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="male">Male</label><br>
-            
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label><br>
-            
-            <input type="radio" id="other" name="gender" value="other">
-            <label for="other">Other</label><br>
+                <!-- Phone Number -->
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" id="phone" name="phone" placeholder="Enter your phone number">
+                </div>
 
-            <!-- ==================== SUBMIT BUTTON ==================== -->
-            <!-- type="submit" creates a button that sends the form data -->
-            <button type="submit">Register</button>
-            
-        </form>
+                <!-- Gender -->
+                <div class="form-group">
+                    <label>Gender *</label>
+                    <div class="radio-group">
+                        <input type="radio" id="male" name="gender" value="male" required>
+                        <label for="male">Male</label>
+                        
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                        
+                        <input type="radio" id="other" name="gender" value="other">
+                        <label for="other">Other</label>
+                    </div>
+                </div>
+
+                <!-- Program Interest -->
+                <div class="form-group">
+                    <label for="program">Program of Interest</label>
+                    <select id="program" name="program">
+                        <option value="">Select a program</option>
+                        <option value="bsc-it">BSc. Information Technology</option>
+                        <option value="bsc-cs">BSc. Computer Science</option>
+                        <option value="bsc-sw">BSc. Software Engineering</option>
+                        <option value="dip-it">Diploma in IT</option>
+                        <option value="cert-web">Certificate in Web Development</option>
+                    </select>
+                </div>
+
+                <!-- Message -->
+                <div class="form-group">
+                    <label for="message">Additional Message</label>
+                    <textarea id="message" name="message" rows="4" placeholder="Any additional information..."></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit">Submit Registration</button>
+                
+            </form>
+        </div>
 
     </div>
-    <!-- End of container -->
 
     <!-- ==================== FOOTER ==================== -->
     <footer>
-        <p>&copy; 2026 Department of Computing and Technology</p>
+        <p>&copy; 2026 Bugema University - Department of Computing and Technology</p>
+        <p>Excellence in Service | Chartered Seventh-day Adventist Institution of Higher Learning</p>
+        <div class="footer-links">
+            <a href="https://bugemauniv.ac.ug" target="_blank">Official Website</a>
+            <a href="mailto:registrar@bugemauniv.ac.ug">Contact Registrar</a>
+            <a href="contact.html">Student Registration</a>
+        </div>
     </footer>
 
 </body>

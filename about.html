@@ -1,119 +1,142 @@
 <!DOCTYPE html>
 <!-- about.html - About Page -->
-<!-- This page introduces team members with profiles, lists, and descriptive text -->
+<!-- Bugema University - Department of Computing and Technology -->
 
 <!DOCTYPE html>
 <html lang="en">
-<!-- "lang" attribute specifies English language for accessibility tools -->
 <head>
-    <!-- Character encoding ensures proper display of all characters -->
     <meta charset="UTF-8">
-    <!-- Enables proper scaling on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Page title displayed in browser tab -->
-    <title>About Us - Department</title>
-    <!-- External CSS stylesheet for consistent design -->
+    <title>About Us | Bugema University Computing</title>
+    <meta name="description" content="Meet the team behind Bugema University Department of Computing and Technology">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <!-- ==================== NAVIGATION MENU ==================== -->
-    <!-- Top Navigation Bar - stays consistent across all pages -->
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
+    <!-- ==================== NAVIGATION BAR ==================== -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Bugema University Logo -->
+            <a href="index.html" class="nav-logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Bugema_logo.png/240px-Bugema_logo.png" alt="Bugema University Logo">
+                <span>BU Computing</span>
+            </a>
+            
+            <!-- Navigation Links -->
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html" class="active">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            
+            <!-- Mobile Menu Toggle -->
+            <div class="menu-toggle">☰</div>
+        </div>
     </nav>
 
-    <!-- ==================== MAIN CONTENT CONTAINER ==================== -->
-    <!-- Container centers content on big screens -->
+    <!-- ==================== MAIN CONTENT ==================== -->
     <div class="container">
         
-        <!-- ==================== TEAM MEMBERS SECTION ==================== -->
-        <!-- Section showcasing our team members -->
-        <h2>Meet Our Team Members</h2>
+        <!-- ==================== PAGE HEADER ==================== -->
+        <section class="hero" style="padding: 40px;">
+            <h1 style="font-size: 32px;">Meet Our Team</h1>
+            <p>The dedicated team behind the Department of Computing and Technology</p>
+        </section>
 
-        <!-- ==================== TEAM MEMBER 1: MUPOLE UWIZEYE ALEXIS ==================== -->
-        <!-- Profile card with image, name, and bio -->
-        <div class="profile-card">
-            <!-- <img> displays an image -->
-            <!-- src="path" specifies the image location (local images folder) -->
-            <!-- alt="text" provides alternative text for screen readers -->
-            <img src="images/profile.svg" alt="MUPOLE UWIZEYE ALEXIS Profile Picture" width="150">
+        <!-- ==================== TEAM MEMBERS ==================== -->
+        <h2>Our Team Members</h2>
+        <section class="profile-section">
             
-            <!-- <h3> is a sub-heading for the name -->
-            <h3>MUPOLE UWIZEYE ALEXIS</h3>
-            
-            <!-- <p> defines a paragraph of text - short bio -->
-            <p><strong>Role:</strong> Team Leader & Web Developer</p>
-            <p>Alex is a final year student majoring in Web Development. 
-               Passionate about creating accessible websites and leading 
-               the team to success. He specializes in HTML, CSS, and 
-               JavaScript programming.</p>
-        </div>
+            <!-- Team Member 1 -->
+            <div class="profile-card">
+                <img src="images/profile.svg" alt="MUPOLE UWIZEYE ALEXIS">
+                <h3>MUPOLE UWIZEYE ALEXIS</h3>
+                <p class="role">Team Leader & Web Developer</p>
+                <p>Final year student specializing in Web Development. Passionate about creating accessible websites and leading the team to success. Expertise in HTML, CSS, JavaScript, and responsive design.</p>
+            </div>
 
-        <!-- ==================== TEAM MEMBER 2: NYEKO RONALD ==================== -->
-        <!-- Second team member profile -->
-        <div class="profile-card">
-            <img src="images/profile.svg" alt="NYEKO RONALD Profile Picture" width="150">
+            <!-- Team Member 2 -->
+            <div class="profile-card">
+                <img src="images/profile.svg" alt="NYEKO RONALD">
+                <h3>NYEKO RONALD</h3>
+                <p class="role">Backend Developer & Database Specialist</p>
+                <p>Final year student specializing in database management and server-side programming. Expert in SQL, Python, and cloud technologies.</p>
+            </div>
             
-            <h3>NYEKO RONALD</h3>
-            
-            <p><strong>Role:</strong> Backend Developer & Database Specialist</p>
-            <p>Ronald is a final year student specializing in database 
-               management and server-side programming. He has expertise 
-               in SQL, Python, and cloud technologies.</p>
-        </div>
+        </section>
 
-        <!-- Horizontal rule for visual separation -->
         <hr>
 
-        <!-- ==================== LISTS SECTION ==================== -->
-        <!-- Two different list types demonstrating ordered and unordered lists -->
-        
-        <!-- <h2> heading for the list section -->
+        <!-- ==================== FAVORITE THINGS ==================== -->
         <h2>Top 5 Favorite Things</h2>
-        
-        <!-- <ol> creates an ORDERED list (numbered 1, 2, 3...) -->
-        <ol>
-            <!-- Each <li> is a list item -->
-            <li>Coding in JavaScript</li>
-            <li>Building responsive websites</li>
-            <li>Learning new frameworks</li>
-            <li>Debugging code</li>
-            <li>Contributing to open source</li>
-        </ol>
+        <section class="content-section">
+            <ol>
+                <li>Coding in JavaScript</li>
+                <li>Building responsive websites</li>
+                <li>Learning new frameworks</li>
+                <li>Debugging code</li>
+                <li>Contributing to open source</li>
+            </ol>
+        </section>
 
-        <!-- <h2> heading for hobbies section -->
+        <!-- ==================== HOBBIES ==================== -->
         <h2>Our Hobbies</h2>
-        
-        <!-- <ul> creates an UNORDERED list (bullet points) -->
-        <ul>
-            <li>Reading tech blogs</li>
-            <li>Gaming</li>
-            <li>Photography</li>
-            <li>Hiking</li>
-        </ul>
+        <section class="content-section">
+            <ul>
+                <li>Reading tech blogs</li>
+                <li>Gaming</li>
+                <li>Photography</li>
+                <li>Hiking</li>
+            </ul>
+        </section>
 
-        <!-- Horizontal rule to separate sections -->
         <hr>
 
-        <!-- ==================== DESCRIPTIVE PARAGRAPHS ==================== -->
-        <!-- Two paragraphs describing the department -->
-        <p>This department offers comprehensive courses in computing 
-           technologies, preparing students for careers in software 
-           development, IT management, and cybersecurity.</p>
-        
-        <p>Our program emphasizes practical skills alongside theoretical 
-           knowledge, ensuring graduates are job-ready in the competitive 
-           tech industry.</p>
+        <!-- ==================== ABOUT DEPARTMENT ==================== -->
+        <h2>About the Department</h2>
+        <section class="content-section">
+            <p>The <strong>Department of Computing and Technology</strong> at Bugema University offers comprehensive courses in computing technologies, preparing students for careers in:</p>
+            <ul style="margin-top: 15px;">
+                <li>Software Development</li>
+                <li>Web Development</li>
+                <li>Database Administration</li>
+                <li>Computer Networking</li>
+                <li>Cybersecurity</li>
+                <li>IT Management</li>
+            </ul>
+            <p style="margin-top: 15px;">Our program emphasizes practical skills alongside theoretical knowledge, ensuring graduates are job-ready in the competitive tech industry.</p>
+        </section>
+
+        <!-- ==================== CERTIFICATIONS ==================== -->
+        <h2>Professional Certifications</h2>
+        <section class="cards-grid">
+            <div class="card">
+                <h3>CISCO Certifications</h3>
+                <p>We offer CCNA and CCNP certification programs in computer networking.</p>
+            </div>
+            
+            <div class="card">
+                <h3>Microsoft Certifications</h3>
+                <p>Students can pursue MCSE and MCSA certifications for career advancement.</p>
+            </div>
+            
+            <div class="card">
+                <h3>Industry Partnerships</h3>
+                <p>Strong connections with leading tech companies for internships and placements.</p>
+            </div>
+        </section>
 
     </div>
-    <!-- End of container -->
 
     <!-- ==================== FOOTER ==================== -->
     <footer>
-        <p>&copy; 2026 Department of Computing and Technology</p>
+        <p>&copy; 2026 Bugema University - Department of Computing and Technology</p>
+        <p>Excellence in Service | Chartered Seventh-day Adventist Institution of Higher Learning</p>
+        <div class="footer-links">
+            <a href="https://bugemauniv.ac.ug" target="_blank">Official Website</a>
+            <a href="mailto:registrar@bugemauniv.ac.ug">Contact Registrar</a>
+            <a href="contact.html">Student Registration</a>
+        </div>
     </footer>
 
 </body>

@@ -1,334 +1,506 @@
-/* style.css - Main Stylesheet */
-/* Deep Tech Theme - Department Website */
-/* Color Scheme: Dark Blue (#003366), Light Grey (#f4f4f4), White */
+/* ============================================
+   style.css - Professional Website Stylesheet
+   Bugema University - Department of Computing and Technology
+   
+   Easy Customization Guide:
+   - Change colors in :root section below
+   - Update university info in HTML files
+   - Replace logo in navbar
+============================================ */
 
 /* ============================================
-   GLOBAL STYLES - Applied to entire website
+   CSS VARIABLES - Easy to Customize
    ============================================ */
+:root {
+    /* Primary Colors - Deep Blue Theme */
+    --primary-color: #003366;        /* Main heading/nav color */
+    --primary-dark: #002244;          /* Darker shade for hover */
+    --primary-light: #004080;         /* Lighter shade */
+    
+    /* Background Colors */
+    --bg-color: #f4f4f4;              /* Page background */
+    --bg-white: #ffffff;               /* Content cards background */
+    
+    /* Text Colors */
+    --text-dark: #333333;             /* Main text */
+    --text-light: #666666;            /* Secondary text */
+    --text-white: #ffffff;            /* White text */
+    
+    /* Accent Colors */
+    --accent-color: #ffd700;          /* Gold accent */
+    --border-color: #cccccc;          /* Borders */
+    
+    /* Layout */
+    --container-width: 1100px;
+    --nav-height: 70px;
+    --border-radius: 8px;
+    
+    /* Spacing */
+    --padding-standard: 20px;
+    --margin-standard: 20px;
+}
 
-/* Reset default margins and padding */
+/* ============================================
+   GLOBAL STYLES
+   ============================================ */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body styles - Deep Tech theme */
 body {
-    /* Sans-Serif fonts for digital screens */
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    /* Light Grey background */
-    background-color: #f4f4f4;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    line-height: 1.7;
+    background-color: var(--bg-color);
+    color: var(--text-dark);
 }
 
-/* ============================================
-   CONTAINER - Centers content on big screens
-   ============================================ */
-
-/* Container class for centering content */
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: white;
-    min-height: 100vh;
-}
-
-/* ============================================
-   NAVIGATION STYLES - Top Navigation Bar
-   ============================================ */
-
-/* Style the <nav> element - Top Navigation Bar */
-nav {
-    /* Deep Blue background for nav */
-    background-color: #003366;
-    color: white;
-    padding: 15px 20px;
-    margin-bottom: 0;
-    /* Flexbox for horizontal layout */
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-}
-
-/* Style all links inside <nav> */
-nav a {
+a {
     text-decoration: none;
-    color: white;
-    font-size: 18px;
-    font-weight: bold;
-    padding: 8px 15px;
-    /* Smooth transition for hover effects */
-    transition: background-color 0.3s;
+    color: var(--primary-color);
+    transition: all 0.3s ease;
 }
 
-/* Style links on hover */
-nav a:hover {
-    background-color: #004080;
+a:hover {
+    color: var(--primary-light);
+}
+
+/* ============================================
+   NAVIGATION BAR
+   ============================================ */
+.navbar {
+    background-color: var(--primary-color);
+    height: var(--nav-height);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.nav-container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+    padding: 0 var(--padding-standard);
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.nav-logo img {
+    height: 50px;
+    width: auto;
     border-radius: 5px;
 }
 
-/* ============================================
-   HEADING STYLES - Deep Blue theme
-   ============================================ */
+.nav-logo span {
+    color: var(--text-white);
+    font-size: 22px;
+    font-weight: bold;
+}
 
-/* Main heading <h1> styles */
-h1 {
-    /* Deep Blue for headings */
-    color: #003366;
-    margin-bottom: 20px;
-    margin-top: 20px;
+.nav-links {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--text-white);
+    font-weight: 500;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: var(--border-radius);
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: var(--primary-dark);
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* ============================================
+   MAIN CONTAINER
+   ============================================ */
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: var(--padding-standard);
+}
+
+/* ============================================
+   HERO SECTION
+   ============================================ */
+.hero {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-light) 100%);
+    color: var(--text-white);
+    padding: 60px var(--padding-standard);
     text-align: center;
+    border-radius: var(--border-radius);
+    margin-bottom: var(--margin-standard);
+}
+
+.hero h1 {
+    font-size: 36px;
+    margin-bottom: 15px;
+    color: var(--text-white);
+}
+
+.hero p {
+    font-size: 18px;
+    opacity: 0.9;
+}
+
+.hero-stats {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-number {
+    font-size: 32px;
+    font-weight: bold;
+    display: block;
+}
+
+.stat-label {
+    font-size: 14px;
+    opacity: 0.8;
+}
+
+/* ============================================
+   CARDS SECTION
+   ============================================ */
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: var(--margin-standard);
+    margin: var(--margin-standard) 0;
+}
+
+.card {
+    background: var(--bg-white);
+    padding: var(--padding-standard);
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    border-left: 4px solid var(--primary-color);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0,0,0,0.12);
+}
+
+.card h3 {
+    color: var(--primary-color);
+    margin-bottom: 12px;
+    font-size: 20px;
+}
+
+.card p {
+    color: var(--text-light);
+    font-size: 15px;
+}
+
+/* ============================================
+   HEADINGS
+   ============================================ */
+h1 {
+    color: var(--primary-color);
+    margin-bottom: var(--margin-standard);
     font-size: 32px;
 }
 
-/* Sub-heading <h2> styles */
 h2 {
-    /* Deep Blue for sub-headings */
-    color: #003366;
+    color: var(--primary-color);
     margin-bottom: 15px;
-    margin-top: 25px;
-    font-size: 24px;
-    /* Underline for emphasis */
-    border-bottom: 2px solid #003366;
+    margin-top: 30px;
+    font-size: 26px;
+    border-bottom: 2px solid var(--primary-color);
     padding-bottom: 10px;
+    display: inline-block;
 }
 
-/* Sub-heading <h3> styles */
 h3 {
-    color: #003366;
+    color: var(--primary-color);
     margin-bottom: 10px;
     font-size: 20px;
 }
 
 /* ============================================
-   TABLE STYLES - Professional Timetable
+   TIMETABLE TABLE
    ============================================ */
+.table-container {
+    overflow-x: auto;
+    margin: var(--margin-standard) 0;
+}
 
-/* Style the <table> element */
 table {
     width: 100%;
-    max-width: 800px;
     border-collapse: collapse;
-    /* White background for table */
-    background-color: white;
-    margin: 20px auto;
-    margin-bottom: 30px;
-    /* Border for professional look */
-    border: 2px solid #003366;
-    box-shadow: 0 2px 8px rgba(0,51,102,0.2);
+    background: var(--bg-white);
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
 }
 
-/* Style table header cells <th> */
 th {
-    /* Deep Blue background for header */
-    background-color: #003366;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--text-white);
     padding: 15px;
     text-align: center;
-    font-size: 16px;
-    /* Border for each header cell */
-    border: 1px solid #002244;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.5px;
 }
 
-/* Style table data cells <td> */
 td {
-    padding: 12px 15px;
+    padding: 14px 15px;
     text-align: center;
-    /* Border for professional look */
-    border: 1px solid #ccc;
+    border-bottom: 1px solid var(--border-color);
 }
 
-/* Style table rows on hover */
 tr:hover {
-    background-color: #e6f2ff;
+    background-color: #f0f4f8;
 }
 
 /* ============================================
-   LIST STYLES
+   PROFILE CARDS - Team Members
    ============================================ */
+.profile-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: var(--margin-standard);
+    margin: var(--margin-standard) 0;
+}
 
-/* Style unordered lists <ul> */
-ul {
-    padding-left: 40px;
+.profile-card {
+    background: var(--bg-white);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 2px 15px rgba(0,0,0,0.08);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.profile-card:hover {
+    transform: translateY(-5px);
+}
+
+.profile-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.profile-card h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.profile-card .role {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* ============================================
+   LISTS
+   ============================================ */
+.content-section {
+    background: var(--bg-white);
+    padding: var(--padding-standard);
+    border-radius: var(--border-radius);
+    margin: var(--margin-standard) 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+ol, ul {
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+
+li {
+    margin-bottom: 8px;
+    color: var(--text-dark);
+}
+
+/* ============================================
+   FORMS
+   ============================================ */
+.form-container {
+    max-width: 550px;
+    margin: 0 auto;
+    background: var(--bg-white);
+    padding: 40px;
+    border-radius: var(--border-radius);
+    box-shadow: 0 3px 20px rgba(0,0,0,0.1);
+}
+
+.form-group {
     margin-bottom: 20px;
 }
 
-/* Style list items <li> */
-li {
-    margin-bottom: 8px;
-    line-height: 1.8;
-}
-
-/* ============================================
-   LINK STYLES - External links section
-   ============================================ */
-
-/* Style links in the links section */
-ul li a {
-    color: #003366;
-    font-weight: bold;
-}
-
-/* Style links on hover */
-ul li a:hover {
-    text-decoration: underline;
-    color: #004080;
-}
-
-/* ============================================
-   PROFILE CARD STYLES - Team Members
-   ============================================ */
-
-/* Profile card container */
-.profile-card {
-    background-color: white;
-    border: 2px solid #003366;
-    border-radius: 10px;
-    padding: 20px;
-    margin: 20px 0;
-    box-shadow: 0 2px 8px rgba(0,51,102,0.2);
-}
-
-/* Style images in profile */
-.profile-card img {
-    border-radius: 10px;
-    border: 3px solid #003366;
-    margin-bottom: 15px;
-    display: block;
-}
-
-/* ============================================
-   FORM STYLES - Registration Form
-   ============================================ */
-
-/* Style form elements */
-form {
-    background-color: white;
-    padding: 30px;
-    max-width: 500px;
-    margin: 20px auto;
-    border: 2px solid #003366;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,51,102,0.2);
-}
-
-/* Style <label> elements */
 label {
-    font-weight: bold;
-    color: #003366;
-    margin-top: 15px;
-    margin-bottom: 5px;
     display: block;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 8px;
 }
 
-/* Style <input> fields */
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+select,
+textarea {
     width: 100%;
-    padding: 12px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    /* Border for professional look */
-    border: 2px solid #ccc;
-    border-radius: 5px;
-    font-size: 14px;
+    padding: 12px 15px;
+    border: 2px solid var(--border-color);
+    border-radius: var(--border-radius);
+    font-size: 15px;
+    transition: border-color 0.3s ease;
 }
 
-/* Style input on focus */
 input[type="text"]:focus,
-input[type="email"]:focus {
-    border-color: #003366;
+input[type="email"]:focus,
+select:focus,
+textarea:focus {
     outline: none;
+    border-color: var(--primary-color);
 }
 
-/* Style radio buttons */
 input[type="radio"] {
-    margin: 10px 8px 10px 0;
+    margin-right: 8px;
 }
 
-/* Style submit button */
-button[type="submit"] {
-    /* Deep Blue background */
-    background-color: #003366;
-    color: white;
+.radio-group label {
+    display: inline;
+    font-weight: normal;
+    margin-right: 20px;
+}
+
+button[type="submit"],
+.btn {
+    background-color: var(--primary-color);
+    color: var(--text-white);
+    padding: 14px 30px;
     border: none;
-    padding: 14px 25px;
-    margin-top: 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
+    border-radius: var(--border-radius);
     font-size: 16px;
-    font-weight: bold;
-    /* Smooth transition */
-    transition: background-color 0.3s;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
 }
 
-/* Style button on hover */
-button[type="submit"]:hover {
-    background-color: #004080;
-}
-
-/* ============================================
-   PARAGRAPH STYLES
-   ============================================ */
-
-p {
-    margin-bottom: 15px;
-    line-height: 1.8;
-    color: #333;
+button[type="submit"]:hover,
+.btn:hover {
+    background-color: var(--primary-dark);
 }
 
 /* ============================================
-   HORIZONTAL RULE STYLES
+   HORIZONTAL RULE
    ============================================ */
-
 hr {
     border: none;
     height: 2px;
-    /* Deep Blue color */
-    background-color: #003366;
-    margin: 25px 0;
+    background: var(--primary-color);
+    margin: 30px 0;
+    opacity: 0.3;
 }
 
 /* ============================================
-   FOOTER STYLES
+   FOOTER
    ============================================ */
-
-/* Style the <footer> element */
 footer {
+    background-color: var(--primary-color);
+    color: var(--text-white);
     text-align: center;
-    margin-top: 40px;
-    padding: 20px;
-    /* Deep Blue background */
-    background-color: #003366;
-    color: white;
+    padding: 30px var(--padding-standard);
+    margin-top: 50px;
+}
+
+footer p {
+    margin-bottom: 10px;
+}
+
+.footer-links {
+    margin-top: 15px;
+}
+
+.footer-links a {
+    color: var(--text-white);
+    margin: 0 15px;
+    opacity: 0.8;
+}
+
+.footer-links a:hover {
+    opacity: 1;
 }
 
 /* ============================================
-   RESPONSIVE STYLES - Mobile devices
+   UTILITY CLASSES
    ============================================ */
+.text-center { text-align: center; }
+.text-left { text-align: left; }
+.mt-20 { margin-top: 20px; }
+.mb-20 { margin-bottom: 20px; }
+.p-20 { padding: 20px; }
 
+/* ============================================
+   RESPONSIVE DESIGN
+   ============================================ */
 @media (max-width: 768px) {
-    /* Adjust container for mobile */
-    .container {
-        padding: 10px;
+    .nav-links {
+        display: none;
     }
     
-    /* Adjust navigation for mobile */
-    nav {
-        flex-direction: column;
-        gap: 10px;
+    .menu-toggle {
+        display: block;
     }
     
-    /* Adjust table for mobile */
-    table {
-        font-size: 14px;
+    .hero h1 {
+        font-size: 28px;
     }
     
-    /* Adjust form for mobile */
-    form {
-        padding: 15px;
+    .hero-stats {
+        gap: 25px;
+    }
+    
+    .stat-number {
+        font-size: 24px;
+    }
+    
+    h2 {
+        font-size: 22px;
+    }
+    
+    .form-container {
+        padding: 25px;
     }
 }
