@@ -435,6 +435,53 @@ hr {
 }
 
 /* ============================================
+   MOBILE NAVIGATION LOGIC
+   ============================================ */
+@media (max-width: 768px) {
+    /* Show the hamburger icon */
+    .menu-toggle {
+        display: block; 
+        font-size: 28px;
+        padding: 10px;
+    }
+
+    /* Transform the nav-links into a vertical dropdown */
+    .nav-links {
+        display: none; /* Hidden by default on mobile */
+        flex-direction: column;
+        position: absolute;
+        top: var(--nav-height); /* Starts right under the navbar */
+        left: 0;
+        width: 100%;
+        background-color: var(--primary-color);
+        padding: 20px 0;
+        text-align: center;
+        box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+    }
+
+    /* Make each link take up full width for easier tapping */
+    .nav-links li {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Show the menu when a 'mobile-active' class is added via JavaScript */
+    .nav-links.mobile-active {
+        display: flex;
+    }
+
+    /* Adjust the Hero text size so it doesn't overflow on small screens */
+    .hero h1 {
+        font-size: 24px;
+    }
+
+    /* Stack the table cells or ensure it scrolls horizontally */
+    .table-container {
+        border: 1px solid var(--border-color);
+    }
+}
+
+/* ============================================
    FOOTER
    ============================================ */
 footer {
