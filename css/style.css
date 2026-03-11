@@ -1,0 +1,303 @@
+/* style.css - Main Stylesheet */
+/* This file contains all CSS styles for the website */
+/* CSS (Cascading Style Sheets) controls the visual appearance */
+
+/* ============================================
+   GLOBAL STYLES - Applied to entire website
+   ============================================ */
+
+/* Reset default margins and padding */
+/* The * selector targets ALL elements */
+* {
+    /* margin and padding are spaces around/between elements */
+    margin: 0;
+    padding: 0;
+    /* box-sizing ensures padding doesn't increase element width */
+    box-sizing: border-box;
+}
+
+/* Body styles - applied to the entire page */
+body {
+    /* Font family specifies which font to use */
+    font-family: Arial, Helvetica, sans-serif;
+    /* Line height improves readability */
+    line-height: 1.6;
+    /* Light gray background color */
+    background-color: #f4f4f4;
+    /* Add some padding around all content */
+    padding: 20px;
+}
+
+/* ============================================
+   NAVIGATION STYLES
+   ============================================ */
+
+/* Style the <nav> element (navigation bar) */
+nav {
+    /* Background color for the nav bar */
+    background-color: #333;
+    /* Text color */
+    color: white;
+    /* Add padding inside the nav bar */
+    padding: 15px;
+    /* Add margin at the bottom */
+    margin-bottom: 20px;
+    /* Center-align the text */
+    text-align: center;
+}
+
+/* Style all links inside <nav> */
+nav a {
+    /* Remove underline from links */
+    text-decoration: none;
+    /* White text color */
+    color: white;
+    /* Add spacing between links */
+    margin: 0 10px;
+    /* Make text slightly larger */
+    font-size: 18px;
+}
+
+/* Style links when hovered over */
+nav a:hover {
+    /* Change color to gold on hover */
+    color: #ffd700;
+}
+
+/* ============================================
+   HEADING STYLES
+   ============================================ */
+
+/* Main heading <h1> styles */
+h1 {
+    /* Dark text color */
+    color: #333;
+    /* Add space below the heading */
+    margin-bottom: 15px;
+    /* Center-align the heading */
+    text-align: center;
+}
+
+/* Sub-heading <h2> styles */
+h2 {
+    /* Dark gray color */
+    color: #444;
+    /* Add space below */
+    margin-bottom: 10px;
+    /* Add space above */
+    margin-top: 20px;
+}
+
+/* Sub-heading <h3> styles */
+h3 {
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* ============================================
+   TABLE STYLES - For the timetable
+   ============================================ */
+
+/* Style the <table> element */
+table {
+    /* Width takes 100% of available space, max 800px */
+    width: 100%;
+    max-width: 800px;
+    /* Collapse borders into single lines */
+    border-collapse: collapse;
+    /* Add background color */
+    background-color: white;
+    /* Add margin at bottom */
+    margin-bottom: 20px;
+    /* Add shadow for depth */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Style table header cells <th> */
+th {
+    /* Background color for header */
+    background-color: #4CAF50;
+    /* White text */
+    color: white;
+    /* Add padding inside cells */
+    padding: 12px;
+    /* Center-align text */
+    text-align: center;
+}
+
+/* Style table data cells <td> */
+td {
+    /* Add padding inside cells */
+    padding: 10px;
+    /* Center-align text */
+    text-align: center;
+    /* Add light border */
+    border: 1px solid #ddd;
+}
+
+/* Style table rows on hover */
+tr:hover {
+    /* Light background on row hover */
+    background-color: #f5f5f5;
+}
+
+/* ============================================
+   LIST STYLES
+   ============================================ */
+
+/* Style unordered lists <ul> */
+ul {
+    /* Add left padding for indentation */
+    padding-left: 40px;
+    /* Add margin at bottom */
+    margin-bottom: 20px;
+}
+
+/* Style list items <li> */
+li {
+    /* Add spacing between items */
+    margin-bottom: 5px;
+}
+
+/* ============================================
+   LINK STYLES - External links section
+   ============================================ */
+
+/* Style links in the links section */
+ul li a {
+    /* Link color */
+    color: #0066cc;
+}
+
+/* Style links on hover */
+ul li a:hover {
+    /* Underline on hover */
+    text-decoration: underline;
+}
+
+/* ============================================
+   IMAGE STYLES - Profile picture
+   ============================================ */
+
+/* Style images */
+img {
+    /* Add rounded corners */
+    border-radius: 10px;
+    /* Add a border */
+    border: 3px solid #4CAF50;
+    /* Add margin at bottom */
+    margin-bottom: 10px;
+    /* Display as block element */
+    display: block;
+}
+
+/* ============================================
+   FORM STYLES - Registration form
+   ============================================ */
+
+/* Style form elements */
+form {
+    /* White background */
+    background-color: white;
+    /* Add padding inside */
+    padding: 20px;
+    /* Maximum width */
+    max-width: 500px;
+    /* Center the form */
+    margin: 0 auto;
+    /* Add shadow */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Style <label> elements */
+label {
+    /* Bold text */
+    font-weight: bold;
+    /* Add margin at top */
+    margin-top: 10px;
+    /* Display as block for proper spacing */
+    display: block;
+}
+
+/* Style <input> fields */
+input[type="text"],
+input[type="email"] {
+    /* Full width of container */
+    width: 100%;
+    /* Add padding inside */
+    padding: 10px;
+    /* Add margin at top */
+    margin-top: 5px;
+    /* Add border */
+    border: 1px solid #ccc;
+    /* Rounded corners */
+    border-radius: 4px;
+}
+
+/* Style radio buttons */
+input[type="radio"] {
+    /* Add margin for spacing */
+    margin: 10px 5px 10px 0;
+}
+
+/* Style submit button */
+button[type="submit"] {
+    /* Green background */
+    background-color: #4CAF50;
+    /* White text */
+    color: white;
+    /* No border */
+    border: none;
+    /* Add padding */
+    padding: 12px 20px;
+    /* Add margin at top */
+    margin-top: 15px;
+    /* Rounded corners */
+    border-radius: 4px;
+    /* Cursor changes to pointer on hover */
+    cursor: pointer;
+    /* Full width */
+    width: 100%;
+    /* Larger font */
+    font-size: 16px;
+}
+
+/* Style button on hover */
+button[type="submit"]:hover {
+    /* Darker green on hover */
+    background-color: #45a049;
+}
+
+/* ============================================
+   HORIZONTAL RULE STYLES
+   ============================================ */
+
+/* Style <hr> elements */
+hr {
+    /* No border */
+    border: none;
+    /* Height of the line */
+    height: 2px;
+    /* Light gray background */
+    background-color: #ddd;
+    /* Margin above and below */
+    margin: 20px 0;
+}
+
+/* ============================================
+   FOOTER STYLES
+   ============================================ */
+
+/* Style the <footer> element */
+footer {
+    /* Center-align text */
+    text-align: center;
+    /* Add margin at top */
+    margin-top: 30px;
+    /* Add padding */
+    padding: 15px;
+    /* Dark background */
+    background-color: #333;
+    /* White text */
+    color: white;
+}

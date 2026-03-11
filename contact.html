@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- contact.html - Contact Page -->
+<!-- This page contains a student registration form with various input types -->
+
+<!DOCTYPE html>
+<html lang="en">
+<!-- Language attribute helps browsers and screen readers interpret content -->
+<head>
+    <!-- Character encoding for proper text display -->
+    <meta charset="UTF-8">
+    <!-- Ensures the page scales properly on phones and tablets -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Browser tab title -->
+    <title>Contact - Student Registration</title>
+    <!-- Link to CSS file in css folder -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- ==================== NAVIGATION MENU ==================== -->
+    <!-- Navigation links to all pages -->
+    <nav>
+        <a href="index.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <!-- ==================== PAGE HEADING ==================== -->
+    <!-- Main heading for the registration form -->
+    <h1>Student Registration Form</h1>
+
+    <!-- ==================== REGISTRATION FORM ==================== -->
+    <!-- <form> creates an HTML form for user input -->
+    <!-- action="#" specifies where form data will be sent (none for demo) -->
+    <!-- method="post" is the HTTP method for sending data securely -->
+    <form action="#" method="post">
+        
+        <!-- ==================== NAME FIELD ==================== -->
+        <!-- <label> provides a text description for the input field -->
+        <!-- "for" attribute links label to input via id -->
+        <label for="name">Full Name:</label><br>
+        
+        <!-- <input> creates an input field -->
+        <!-- type="text" creates a single-line text input -->
+        <!-- id="name" uniquely identifies this element -->
+        <!-- name="name" is the key used when sending form data -->
+        <!-- required attribute ensures field cannot be left empty -->
+        <input type="text" id="name" name="name" required><br><br>
+
+        <!-- ==================== EMAIL FIELD ==================== -->
+        <label for="email">Email Address:</label><br>
+        
+        <!-- type="email" validates that input contains a valid email format -->
+        <input type="email" id="email" name="email" required><br><br>
+
+        <!-- ==================== GENDER RADIO BUTTONS ==================== -->
+        <!-- Radio buttons allow ONE choice from multiple options -->
+        <label>Gender:</label><br>
+        
+        <!-- type="radio" creates circular selection buttons -->
+        <!-- All radio buttons with same "name" form a single group -->
+        <!-- value="male" is the data sent when this option is selected -->
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label><br>
+        
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+        
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br><br>
+
+        <!-- ==================== SUBMIT BUTTON ==================== -->
+        <!-- type="submit" creates a button that sends the form data -->
+        <button type="submit">Register</button>
+        
+    </form>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer>
+        <p>&copy; 2024 Department of Computing and Technology</p>
+    </footer>
+
+</body>
+</html>
