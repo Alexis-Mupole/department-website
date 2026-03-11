@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- about.html - About Page -->
-<!-- This page introduces a team member with profile, lists, and descriptive text -->
+<!-- This page introduces team members with profiles, lists, and descriptive text -->
 
 <!DOCTYPE html>
 <html lang="en">
@@ -18,73 +18,98 @@
 
 <body>
     <!-- ==================== NAVIGATION MENU ==================== -->
-    <!-- Navigation bar with links to all three pages -->
+    <!-- Top Navigation Bar - stays consistent across all pages -->
     <nav>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
     </nav>
 
-    <!-- ==================== PERSONAL PROFILE SECTION ==================== -->
-    <!-- Section showcasing a team member's information -->
-    <h2>Meet Our Team Member</h2>
-    
-    <!-- <img> displays an image -->
-    <!-- src="path" specifies the image location (local images folder) -->
-    <!-- alt="text" provides alternative text for screen readers -->
-    <!-- width sets the display width in pixels -->
-    <img src="images/profile.svg" alt="Alex Johnson Profile Picture" width="150">
-    
-    <!-- <h3> is a sub-heading - less important than h2 -->
-    <h3>Alex Johnson</h3>
-    
-    <!-- <p> defines a paragraph of text -->
-    <p>Alex is a final year student majoring in Web Development. 
-       Passionate about creating accessible websites and teaching 
-       programming to beginners.</p>
+    <!-- ==================== MAIN CONTENT CONTAINER ==================== -->
+    <!-- Container centers content on big screens -->
+    <div class="container">
+        
+        <!-- ==================== TEAM MEMBERS SECTION ==================== -->
+        <!-- Section showcasing our team members -->
+        <h2>Meet Our Team Members</h2>
 
-    <!-- <hr> creates a horizontal rule (line) for visual separation -->
-    <hr>
+        <!-- ==================== TEAM MEMBER 1: MUPOLE UWIZEYE ALEXIS ==================== -->
+        <!-- Profile card with image, name, and bio -->
+        <div class="profile-card">
+            <!-- <img> displays an image -->
+            <!-- src="path" specifies the image location (local images folder) -->
+            <!-- alt="text" provides alternative text for screen readers -->
+            <img src="images/profile.svg" alt="MUPOLE UWIZEYE ALEXIS Profile Picture" width="150">
+            
+            <!-- <h3> is a sub-heading for the name -->
+            <h3>MUPOLE UWIZEYE ALEXIS</h3>
+            
+            <!-- <p> defines a paragraph of text - short bio -->
+            <p><strong>Role:</strong> Team Leader & Web Developer</p>
+            <p>Alex is a final year student majoring in Web Development. 
+               Passionate about creating accessible websites and leading 
+               the team to success. He specializes in HTML, CSS, and 
+               JavaScript programming.</p>
+        </div>
 
-    <!-- ==================== LISTS SECTION ==================== -->
-    <!-- Two different list types demonstrating ordered and unordered lists -->
-    
-    <!-- <h2> heading for the list section -->
-    <h2>Top 5 Favorite Things</h2>
-    
-    <!-- <ol> creates an ORDERED list (numbered 1, 2, 3...) -->
-    <ol>
-        <!-- Each <li> is a list item -->
-        <li>Coding in JavaScript</li>
-        <li>Building responsive websites</li>
-        <li>Learning new frameworks</li>
-        <li>Debugging code</li>
-        <li>Contributing to open source</li>
-    </ol>
+        <!-- ==================== TEAM MEMBER 2: NYEKO RONALD ==================== -->
+        <!-- Second team member profile -->
+        <div class="profile-card">
+            <img src="images/profile.svg" alt="NYEKO RONALD Profile Picture" width="150">
+            
+            <h3>NYEKO RONALD</h3>
+            
+            <p><strong>Role:</strong> Backend Developer & Database Specialist</p>
+            <p>Ronald is a final year student specializing in database 
+               management and server-side programming. He has expertise 
+               in SQL, Python, and cloud technologies.</p>
+        </div>
 
-    <!-- <h2> heading for hobbies section -->
-    <h2>My Hobbies</h2>
-    
-    <!-- <ul> creates an UNORDERED list (bullet points) -->
-    <ul>
-        <li>Reading tech blogs</li>
-        <li>Gaming</li>
-        <li>Photography</li>
-        <li>Hiking</li>
-    </ul>
+        <!-- Horizontal rule for visual separation -->
+        <hr>
 
-    <!-- Another horizontal rule to separate sections -->
-    <hr>
+        <!-- ==================== LISTS SECTION ==================== -->
+        <!-- Two different list types demonstrating ordered and unordered lists -->
+        
+        <!-- <h2> heading for the list section -->
+        <h2>Top 5 Favorite Things</h2>
+        
+        <!-- <ol> creates an ORDERED list (numbered 1, 2, 3...) -->
+        <ol>
+            <!-- Each <li> is a list item -->
+            <li>Coding in JavaScript</li>
+            <li>Building responsive websites</li>
+            <li>Learning new frameworks</li>
+            <li>Debugging code</li>
+            <li>Contributing to open source</li>
+        </ol>
 
-    <!-- ==================== DESCRIPTIVE PARAGRAPHS ==================== -->
-    <!-- Two paragraphs describing the department -->
-    <p>This department offers comprehensive courses in computing 
-       technologies, preparing students for careers in software 
-       development, IT management, and cybersecurity.</p>
-    
-    <p>Our program emphasizes practical skills alongside theoretical 
-       knowledge, ensuring graduates are job-ready in the competitive 
-       tech industry.</p>
+        <!-- <h2> heading for hobbies section -->
+        <h2>Our Hobbies</h2>
+        
+        <!-- <ul> creates an UNORDERED list (bullet points) -->
+        <ul>
+            <li>Reading tech blogs</li>
+            <li>Gaming</li>
+            <li>Photography</li>
+            <li>Hiking</li>
+        </ul>
+
+        <!-- Horizontal rule to separate sections -->
+        <hr>
+
+        <!-- ==================== DESCRIPTIVE PARAGRAPHS ==================== -->
+        <!-- Two paragraphs describing the department -->
+        <p>This department offers comprehensive courses in computing 
+           technologies, preparing students for careers in software 
+           development, IT management, and cybersecurity.</p>
+        
+        <p>Our program emphasizes practical skills alongside theoretical 
+           knowledge, ensuring graduates are job-ready in the competitive 
+           tech industry.</p>
+
+    </div>
+    <!-- End of container -->
 
     <!-- ==================== FOOTER ==================== -->
     <footer>

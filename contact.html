@@ -18,62 +18,69 @@
 
 <body>
     <!-- ==================== NAVIGATION MENU ==================== -->
-    <!-- Navigation links to all pages -->
+    <!-- Top Navigation Bar - stays consistent across all pages -->
     <nav>
-        <a href="index.html">Home</a> |
-        <a href="about.html">About</a> |
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
         <a href="contact.html">Contact</a>
     </nav>
 
-    <!-- ==================== PAGE HEADING ==================== -->
-    <!-- Main heading for the registration form -->
-    <h1>Student Registration Form</h1>
+    <!-- ==================== MAIN CONTENT CONTAINER ==================== -->
+    <!-- Container centers content on big screens -->
+    <div class="container">
+        
+        <!-- ==================== PAGE HEADING ==================== -->
+        <!-- Main heading for the registration form -->
+        <h1>Student Registration Form</h1>
 
-    <!-- ==================== REGISTRATION FORM ==================== -->
-    <!-- <form> creates an HTML form for user input -->
-    <!-- action="#" specifies where form data will be sent (none for demo) -->
-    <!-- method="post" is the HTTP method for sending data securely -->
-    <form action="#" method="post">
-        
-        <!-- ==================== NAME FIELD ==================== -->
-        <!-- <label> provides a text description for the input field -->
-        <!-- "for" attribute links label to input via id -->
-        <label for="name">Full Name:</label><br>
-        
-        <!-- <input> creates an input field -->
-        <!-- type="text" creates a single-line text input -->
-        <!-- id="name" uniquely identifies this element -->
-        <!-- name="name" is the key used when sending form data -->
-        <!-- required attribute ensures field cannot be left empty -->
-        <input type="text" id="name" name="name" required><br><br>
+        <!-- ==================== REGISTRATION FORM ==================== -->
+        <!-- <form> creates an HTML form for user input -->
+        <!-- action="#" specifies where form data will be sent (none for demo) -->
+        <!-- method="post" is the HTTP method for sending data securely -->
+        <form action="#" method="post">
+            
+            <!-- ==================== NAME FIELD ==================== -->
+            <!-- <label> provides a text description for the input field -->
+            <!-- "for" attribute links label to input via id -->
+            <label for="name">Full Name:</label><br>
+            
+            <!-- <input> creates an input field -->
+            <!-- type="text" creates a single-line text input -->
+            <!-- id="name" uniquely identifies this element -->
+            <!-- name="name" is the key used when sending form data -->
+            <!-- required attribute ensures field cannot be left empty -->
+            <input type="text" id="name" name="name" required><br>
 
-        <!-- ==================== EMAIL FIELD ==================== -->
-        <label for="email">Email Address:</label><br>
-        
-        <!-- type="email" validates that input contains a valid email format -->
-        <input type="email" id="email" name="email" required><br><br>
+            <!-- ==================== EMAIL FIELD ==================== -->
+            <label for="email">Email Address:</label><br>
+            
+            <!-- type="email" validates that input contains a valid email format -->
+            <input type="email" id="email" name="email" required><br>
 
-        <!-- ==================== GENDER RADIO BUTTONS ==================== -->
-        <!-- Radio buttons allow ONE choice from multiple options -->
-        <label>Gender:</label><br>
-        
-        <!-- type="radio" creates circular selection buttons -->
-        <!-- All radio buttons with same "name" form a single group -->
-        <!-- value="male" is the data sent when this option is selected -->
-        <input type="radio" id="male" name="gender" value="male">
-        <label for="male">Male</label><br>
-        
-        <input type="radio" id="female" name="gender" value="female">
-        <label for="female">Female</label><br>
-        
-        <input type="radio" id="other" name="gender" value="other">
-        <label for="other">Other</label><br><br>
+            <!-- ==================== GENDER RADIO BUTTONS ==================== -->
+            <!-- Radio buttons allow ONE choice from multiple options -->
+            <label>Gender:</label><br>
+            
+            <!-- type="radio" creates circular selection buttons -->
+            <!-- All radio buttons with same "name" form a single group -->
+            <!-- value="male" is the data sent when this option is selected -->
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br>
+            
+            <input type="radio" id="other" name="gender" value="other">
+            <label for="other">Other</label><br>
 
-        <!-- ==================== SUBMIT BUTTON ==================== -->
-        <!-- type="submit" creates a button that sends the form data -->
-        <button type="submit">Register</button>
-        
-    </form>
+            <!-- ==================== SUBMIT BUTTON ==================== -->
+            <!-- type="submit" creates a button that sends the form data -->
+            <button type="submit">Register</button>
+            
+        </form>
+
+    </div>
+    <!-- End of container -->
 
     <!-- ==================== FOOTER ==================== -->
     <footer>

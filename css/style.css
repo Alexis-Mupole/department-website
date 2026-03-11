@@ -1,144 +1,148 @@
 /* style.css - Main Stylesheet */
-/* This file contains all CSS styles for the website */
-/* CSS (Cascading Style Sheets) controls the visual appearance */
+/* Deep Tech Theme - Department Website */
+/* Color Scheme: Dark Blue (#003366), Light Grey (#f4f4f4), White */
 
 /* ============================================
    GLOBAL STYLES - Applied to entire website
    ============================================ */
 
 /* Reset default margins and padding */
-/* The * selector targets ALL elements */
 * {
-    /* margin and padding are spaces around/between elements */
     margin: 0;
     padding: 0;
-    /* box-sizing ensures padding doesn't increase element width */
     box-sizing: border-box;
 }
 
-/* Body styles - applied to the entire page */
+/* Body styles - Deep Tech theme */
 body {
-    /* Font family specifies which font to use */
+    /* Sans-Serif fonts for digital screens */
     font-family: Arial, Helvetica, sans-serif;
-    /* Line height improves readability */
     line-height: 1.6;
-    /* Light gray background color */
+    /* Light Grey background */
     background-color: #f4f4f4;
-    /* Add some padding around all content */
-    padding: 20px;
 }
 
 /* ============================================
-   NAVIGATION STYLES
+   CONTAINER - Centers content on big screens
    ============================================ */
 
-/* Style the <nav> element (navigation bar) */
+/* Container class for centering content */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    min-height: 100vh;
+}
+
+/* ============================================
+   NAVIGATION STYLES - Top Navigation Bar
+   ============================================ */
+
+/* Style the <nav> element - Top Navigation Bar */
 nav {
-    /* Background color for the nav bar */
-    background-color: #333;
-    /* Text color */
+    /* Deep Blue background for nav */
+    background-color: #003366;
     color: white;
-    /* Add padding inside the nav bar */
-    padding: 15px;
-    /* Add margin at the bottom */
-    margin-bottom: 20px;
-    /* Center-align the text */
-    text-align: center;
+    padding: 15px 20px;
+    margin-bottom: 0;
+    /* Flexbox for horizontal layout */
+    display: flex;
+    justify-content: center;
+    gap: 30px;
 }
 
 /* Style all links inside <nav> */
 nav a {
-    /* Remove underline from links */
     text-decoration: none;
-    /* White text color */
     color: white;
-    /* Add spacing between links */
-    margin: 0 10px;
-    /* Make text slightly larger */
     font-size: 18px;
+    font-weight: bold;
+    padding: 8px 15px;
+    /* Smooth transition for hover effects */
+    transition: background-color 0.3s;
 }
 
-/* Style links when hovered over */
+/* Style links on hover */
 nav a:hover {
-    /* Change color to gold on hover */
-    color: #ffd700;
+    background-color: #004080;
+    border-radius: 5px;
 }
 
 /* ============================================
-   HEADING STYLES
+   HEADING STYLES - Deep Blue theme
    ============================================ */
 
 /* Main heading <h1> styles */
 h1 {
-    /* Dark text color */
-    color: #333;
-    /* Add space below the heading */
-    margin-bottom: 15px;
-    /* Center-align the heading */
+    /* Deep Blue for headings */
+    color: #003366;
+    margin-bottom: 20px;
+    margin-top: 20px;
     text-align: center;
+    font-size: 32px;
 }
 
 /* Sub-heading <h2> styles */
 h2 {
-    /* Dark gray color */
-    color: #444;
-    /* Add space below */
-    margin-bottom: 10px;
-    /* Add space above */
-    margin-top: 20px;
+    /* Deep Blue for sub-headings */
+    color: #003366;
+    margin-bottom: 15px;
+    margin-top: 25px;
+    font-size: 24px;
+    /* Underline for emphasis */
+    border-bottom: 2px solid #003366;
+    padding-bottom: 10px;
 }
 
 /* Sub-heading <h3> styles */
 h3 {
-    color: #555;
+    color: #003366;
     margin-bottom: 10px;
+    font-size: 20px;
 }
 
 /* ============================================
-   TABLE STYLES - For the timetable
+   TABLE STYLES - Professional Timetable
    ============================================ */
 
 /* Style the <table> element */
 table {
-    /* Width takes 100% of available space, max 800px */
     width: 100%;
     max-width: 800px;
-    /* Collapse borders into single lines */
     border-collapse: collapse;
-    /* Add background color */
+    /* White background for table */
     background-color: white;
-    /* Add margin at bottom */
-    margin-bottom: 20px;
-    /* Add shadow for depth */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    margin-bottom: 30px;
+    /* Border for professional look */
+    border: 2px solid #003366;
+    box-shadow: 0 2px 8px rgba(0,51,102,0.2);
 }
 
 /* Style table header cells <th> */
 th {
-    /* Background color for header */
-    background-color: #4CAF50;
-    /* White text */
+    /* Deep Blue background for header */
+    background-color: #003366;
     color: white;
-    /* Add padding inside cells */
-    padding: 12px;
-    /* Center-align text */
+    padding: 15px;
     text-align: center;
+    font-size: 16px;
+    /* Border for each header cell */
+    border: 1px solid #002244;
 }
 
 /* Style table data cells <td> */
 td {
-    /* Add padding inside cells */
-    padding: 10px;
-    /* Center-align text */
+    padding: 12px 15px;
     text-align: center;
-    /* Add light border */
-    border: 1px solid #ddd;
+    /* Border for professional look */
+    border: 1px solid #ccc;
 }
 
 /* Style table rows on hover */
 tr:hover {
-    /* Light background on row hover */
-    background-color: #f5f5f5;
+    background-color: #e6f2ff;
 }
 
 /* ============================================
@@ -147,16 +151,14 @@ tr:hover {
 
 /* Style unordered lists <ul> */
 ul {
-    /* Add left padding for indentation */
     padding-left: 40px;
-    /* Add margin at bottom */
     margin-bottom: 20px;
 }
 
 /* Style list items <li> */
 li {
-    /* Add spacing between items */
-    margin-bottom: 5px;
+    margin-bottom: 8px;
+    line-height: 1.8;
 }
 
 /* ============================================
@@ -165,123 +167,129 @@ li {
 
 /* Style links in the links section */
 ul li a {
-    /* Link color */
-    color: #0066cc;
+    color: #003366;
+    font-weight: bold;
 }
 
 /* Style links on hover */
 ul li a:hover {
-    /* Underline on hover */
     text-decoration: underline;
+    color: #004080;
 }
 
 /* ============================================
-   IMAGE STYLES - Profile picture
+   PROFILE CARD STYLES - Team Members
    ============================================ */
 
-/* Style images */
-img {
-    /* Add rounded corners */
+/* Profile card container */
+.profile-card {
+    background-color: white;
+    border: 2px solid #003366;
     border-radius: 10px;
-    /* Add a border */
-    border: 3px solid #4CAF50;
-    /* Add margin at bottom */
-    margin-bottom: 10px;
-    /* Display as block element */
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 8px rgba(0,51,102,0.2);
+}
+
+/* Style images in profile */
+.profile-card img {
+    border-radius: 10px;
+    border: 3px solid #003366;
+    margin-bottom: 15px;
     display: block;
 }
 
 /* ============================================
-   FORM STYLES - Registration form
+   FORM STYLES - Registration Form
    ============================================ */
 
 /* Style form elements */
 form {
-    /* White background */
     background-color: white;
-    /* Add padding inside */
-    padding: 20px;
-    /* Maximum width */
+    padding: 30px;
     max-width: 500px;
-    /* Center the form */
-    margin: 0 auto;
-    /* Add shadow */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 20px auto;
+    border: 2px solid #003366;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,51,102,0.2);
 }
 
 /* Style <label> elements */
 label {
-    /* Bold text */
     font-weight: bold;
-    /* Add margin at top */
-    margin-top: 10px;
-    /* Display as block for proper spacing */
+    color: #003366;
+    margin-top: 15px;
+    margin-bottom: 5px;
     display: block;
 }
 
 /* Style <input> fields */
 input[type="text"],
 input[type="email"] {
-    /* Full width of container */
     width: 100%;
-    /* Add padding inside */
-    padding: 10px;
-    /* Add margin at top */
+    padding: 12px;
     margin-top: 5px;
-    /* Add border */
-    border: 1px solid #ccc;
-    /* Rounded corners */
-    border-radius: 4px;
+    margin-bottom: 10px;
+    /* Border for professional look */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Style input on focus */
+input[type="text"]:focus,
+input[type="email"]:focus {
+    border-color: #003366;
+    outline: none;
 }
 
 /* Style radio buttons */
 input[type="radio"] {
-    /* Add margin for spacing */
-    margin: 10px 5px 10px 0;
+    margin: 10px 8px 10px 0;
 }
 
 /* Style submit button */
 button[type="submit"] {
-    /* Green background */
-    background-color: #4CAF50;
-    /* White text */
+    /* Deep Blue background */
+    background-color: #003366;
     color: white;
-    /* No border */
     border: none;
-    /* Add padding */
-    padding: 12px 20px;
-    /* Add margin at top */
-    margin-top: 15px;
-    /* Rounded corners */
-    border-radius: 4px;
-    /* Cursor changes to pointer on hover */
+    padding: 14px 25px;
+    margin-top: 20px;
+    border-radius: 5px;
     cursor: pointer;
-    /* Full width */
     width: 100%;
-    /* Larger font */
     font-size: 16px;
+    font-weight: bold;
+    /* Smooth transition */
+    transition: background-color 0.3s;
 }
 
 /* Style button on hover */
 button[type="submit"]:hover {
-    /* Darker green on hover */
-    background-color: #45a049;
+    background-color: #004080;
+}
+
+/* ============================================
+   PARAGRAPH STYLES
+   ============================================ */
+
+p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+    color: #333;
 }
 
 /* ============================================
    HORIZONTAL RULE STYLES
    ============================================ */
 
-/* Style <hr> elements */
 hr {
-    /* No border */
     border: none;
-    /* Height of the line */
     height: 2px;
-    /* Light gray background */
-    background-color: #ddd;
-    /* Margin above and below */
-    margin: 20px 0;
+    /* Deep Blue color */
+    background-color: #003366;
+    margin: 25px 0;
 }
 
 /* ============================================
@@ -290,14 +298,37 @@ hr {
 
 /* Style the <footer> element */
 footer {
-    /* Center-align text */
     text-align: center;
-    /* Add margin at top */
-    margin-top: 30px;
-    /* Add padding */
-    padding: 15px;
-    /* Dark background */
-    background-color: #333;
-    /* White text */
+    margin-top: 40px;
+    padding: 20px;
+    /* Deep Blue background */
+    background-color: #003366;
     color: white;
+}
+
+/* ============================================
+   RESPONSIVE STYLES - Mobile devices
+   ============================================ */
+
+@media (max-width: 768px) {
+    /* Adjust container for mobile */
+    .container {
+        padding: 10px;
+    }
+    
+    /* Adjust navigation for mobile */
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    /* Adjust table for mobile */
+    table {
+        font-size: 14px;
+    }
+    
+    /* Adjust form for mobile */
+    form {
+        padding: 15px;
+    }
 }

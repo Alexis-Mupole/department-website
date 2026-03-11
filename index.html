@@ -19,92 +19,100 @@
 
 <body>
     <!-- ==================== NAVIGATION MENU ==================== -->
-    <!-- Navigation bar allows users to move between pages -->
+    <!-- Top Navigation Bar - stays consistent across all pages -->
     <!-- Using <nav> semantic tag for better accessibility -->
     <nav>
         <!-- Hyperlink to Home page (current page) -->
-        <a href="index.html">Home</a> |
+        <a href="index.html">Home</a>
         <!-- Hyperlink to About page -->
-        <a href="about.html">About</a> |
+        <a href="about.html">About</a>
         <!-- Hyperlink to Contact page -->
         <a href="contact.html">Contact</a>
     </nav>
 
-    <!-- ==================== MAIN HEADING ==================== -->
-    <!-- <h1> is the most important heading - used only once per page -->
-    <h1>Department of Computing and Technology</h1>
-    <p>Welcome to our department's official website</p>
+    <!-- ==================== MAIN CONTENT CONTAINER ==================== -->
+    <!-- Container centers content on big screens -->
+    <div class="container">
+        
+        <!-- ==================== MAIN HEADING ==================== -->
+        <!-- <h1> is the most important heading - used only once per page -->
+        <h1>Department of Computing and Technology</h1>
+        <p style="text-align: center; margin-bottom: 30px;">Welcome to our department's official website</p>
 
-    <!-- ==================== DEPARTMENT TIMETABLE ==================== -->
-    <!-- Using <table> for structured data presentation -->
-    <!-- border="1" creates visible borders for demonstration -->
-    <h2>Department Timetable</h2>
-    <table>
-        <!-- Table Row 1: Header Row -->
-        <!-- <tr> defines a row in the table -->
-        <tr>
-            <!-- <th> defines header cells - displayed in bold by default -->
-            <!-- "scope" attribute helps screen readers understand the column -->
-            <th scope="col">Day</th>
-            <th scope="col">Time</th>
-            <th scope="col">Subject</th>
-            <th scope="col">Room</th>
-        </tr>
-        
-        <!-- Table Row 2: Monday -->
-        <tr>
-            <!-- <td> defines standard data cells -->
-            <td>Monday</td>
-            <td>9:00 AM</td>
-            <td>Web Development</td>
-            <td>Lab 101</td>
-        </tr>
-        
-        <!-- Table Row 3: Tuesday -->
-        <tr>
-            <td>Tuesday</td>
-            <td>11:00 AM</td>
-            <td>Database Systems</td>
-            <td>Room 204</td>
-        </tr>
-        
-        <!-- Table Row 4: Wednesday -->
-        <tr>
-            <td>Wednesday</td>
-            <td>10:00 AM</td>
-            <td>Programming Fundamentals</td>
-            <td>Lab 103</td>
-        </tr>
-        
-        <!-- Table Row 5: Thursday -->
-        <tr>
-            <td>Thursday</td>
-            <td>2:00 PM</td>
-            <td>Computer Networks</td>
-            <td>Room 201</td>
-        </tr>
-        
-        <!-- Table Row 6: Friday -->
-        <tr>
-            <td>Friday</td>
-            <td>9:00 AM</td>
-            <td>Software Engineering</td>
-            <td>Lab 105</td>
-        </tr>
-    </table>
+        <!-- ==================== DEPARTMENT TIMETABLE ==================== -->
+        <!-- Using <table> for structured data presentation -->
+        <!-- Professional styling with borders and padding -->
+        <h2>Department Timetable</h2>
+        <table>
+            <!-- Table Row 1: Header Row -->
+            <!-- <tr> defines a row in the table -->
+            <tr>
+                <!-- <th> defines header cells - displayed in bold by default -->
+                <!-- "scope" attribute helps screen readers understand the column -->
+                <th scope="col">Day</th>
+                <th scope="col">Time</th>
+                <th scope="col">Subject</th>
+                <th scope="col">Room</th>
+            </tr>
+            
+            <!-- Table Row 2: Monday -->
+            <tr>
+                <!-- <td> defines standard data cells -->
+                <td>Monday</td>
+                <td>9:00 AM</td>
+                <td>Web Development</td>
+                <td>Lab 101</td>
+            </tr>
+            
+            <!-- Table Row 3: Tuesday -->
+            <tr>
+                <td>Tuesday</td>
+                <td>11:00 AM</td>
+                <td>Database Systems</td>
+                <td>Room 204</td>
+            </tr>
+            
+            <!-- Table Row 4: Wednesday -->
+            <tr>
+                <td>Wednesday</td>
+                <td>10:00 AM</td>
+                <td>Programming Fundamentals</td>
+                <td>Lab 103</td>
+            </tr>
+            
+            <!-- Table Row 5: Thursday -->
+            <tr>
+                <td>Thursday</td>
+                <td>2:00 PM</td>
+                <td>Computer Networks</td>
+                <td>Room 201</td>
+            </tr>
+            
+            <!-- Table Row 6: Friday -->
+            <tr>
+                <td>Friday</td>
+                <td>9:00 AM</td>
+                <td>Software Engineering</td>
+                <td>Lab 105</td>
+            </tr>
+        </table>
 
-    <!-- ==================== USEFUL LINKS SECTION ==================== -->
-    <!-- External resources for students -->
-    <h2>Useful Student Links</h2>
-    <ul>
-        <!-- <a> creates hyperlinks -->
-        <!-- href="url" specifies the destination URL -->
-        <!-- target="_blank" opens link in a NEW tab (user stays on our site) -->
-        <li><a href="https://www.w3schools.com" target="_blank">W3Schools - Web Tutorials</a></li>
-        <li><a href="https://stackoverflow.com" target="_blank">Stack Overflow - Q&A Forum</a></li>
-        <li><a href="https://github.com" target="_blank">GitHub - Code Repository</a></li>
-        <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a></li>
-    </ul>
+        <!-- ==================== USEFUL LINKS SECTION ==================== -->
+        <!-- External resources for students -->
+        <!-- target="_blank" opens link in new tab -->
+        <h2>Useful Student Links</h2>
+        <ul>
+            <!-- <a> creates hyperlinks -->
+            <!-- href="url" specifies the destination URL -->
+            <!-- target="_blank" opens link in a NEW tab (user stays on our site) -->
+            <li><a href="https://www.w3schools.com" target="_blank">W3Schools - Web Tutorials</a></li>
+            <li><a href="https://stackoverflow.com" target="_blank">Stack Overflow - Q&A Forum</a></li>
+            <li><a href="https://github.com" target="_blank">GitHub - Code Repository</a></li>
+            <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a></li>
+        </ul>
+
+    </div>
+    <!-- End of container -->
 
     <!-- ==================== FOOTER ==================== -->
     <!-- Simple footer for copyright information -->
