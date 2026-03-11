@@ -129,13 +129,18 @@
     <!-- ==================== FOOTER ==================== -->
     <footer>
         <p>&copy; 2026 Bugema University - Department of Computing and Technology</p>
-        <p>Excellence in Service | Chartered Seventh-day Adventist Institution of Higher Learning</p>
-        <div class="footer-links">
-            <a href="https://bugemauniv.ac.ug" target="_blank">Official Website</a>
-            <a href="mailto:registrar@bugemauniv.ac.ug">Contact Registrar</a>
-            <a href="contact.html">Student Registration</a>
+    
         </div>
     </footer>
+<script>
+    // Select the hamburger button and the links list
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
 
+    // When the user clicks the menu toggle, add/remove the 'mobile-active' class
+    menuToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('mobile-active');
+    });
+</script>
 </body>
 </html>
