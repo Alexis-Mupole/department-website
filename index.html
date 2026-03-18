@@ -29,38 +29,72 @@
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Department of Computing and Technology</h1>
-            <p class="hero-subtitle">Bugema University | Shaping the Future of Tech</p>
-            <p class="hero-description">Master the skills of tomorrow with our cutting-edge computing programs. From software development to artificial intelligence, we prepare you for a successful career in technology.</p>
-            <div class="hero-buttons">
-                <a href="programs.html" class="btn btn-primary">Explore Programs</a>
-                <a href="contact.html" class="btn btn-secondary">Apply Now</a>
+    <!-- Carousel Section -->
+    <div class="carousel">
+        <div class="carousel-slide active">
+            <div class="carousel-pattern"></div>
+            <div class="carousel-content">
+                <h2>Department of Computing and Technology</h2>
+                <p>Welcome to Bugema University's premier computing department. Shape your future in tech with us.</p>
+                <div class="hero-buttons">
+                    <a href="programs.html" class="btn btn-primary">View Programs</a>
+                    <a href="contact.html" class="btn btn-secondary">Apply Now</a>
+                </div>
             </div>
         </div>
-        <div class="hero-stats">
-            <div class="stat-item">
-                <span class="stat-number">500+</span>
-                <span class="stat-label">Students</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number">25+</span>
-                <span class="stat-label">Lecturers</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number">98%</span>
-                <span class="stat-label">Employment</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number">10+</span>
-                <span class="stat-label">Partners</span>
+        <div class="carousel-slide">
+            <div class="carousel-pattern"></div>
+            <div class="carousel-content">
+                <h2>Modern Computer Laboratories</h2>
+                <p>State-of-the-art labs with the latest software and hardware for hands-on learning.</p>
+                <div class="hero-buttons">
+                    <a href="about.html" class="btn btn-primary">Learn More</a>
+                </div>
             </div>
         </div>
-    </header>
+        <div class="carousel-slide">
+            <div class="carousel-pattern"></div>
+            <div class="carousel-content">
+                <h2>Expert Faculty & Industry Links</h2>
+                <p>Learn from experienced lecturers and gain practical skills through industry partnerships.</p>
+                <div class="hero-buttons">
+                    <a href="faculty.html" class="btn btn-primary">Meet Faculty</a>
+                </div>
+            </div>
+        </div>
+        
+        <button class="carousel-nav prev" onclick="changeSlide(-1)">&#10094;</button>
+        <button class="carousel-nav next" onclick="changeSlide(1)">&#10095;</button>
+        
+        <div class="carousel-dots">
+            <span class="carousel-dot active" onclick="goToSlide(0)"></span>
+            <span class="carousel-dot" onclick="goToSlide(1)"></span>
+            <span class="carousel-dot" onclick="goToSlide(2)"></span>
+        </div>
+    </div>
 
     <div class="container">
-        <section class="welcome-section">
+        <!-- Stats Section -->
+        <div class="hero-stats" style="margin-top: -30px; position: relative; z-index: 10; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,51,102,0.15);">
+            <div class="stat-item">
+                <span class="stat-number" style="color: var(--primary-color);">500+</span>
+                <span class="stat-label" style="color: var(--text-secondary);">Students</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" style="color: var(--primary-color);">25+</span>
+                <span class="stat-label" style="color: var(--text-secondary);">Lecturers</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" style="color: var(--primary-color);">98%</span>
+                <span class="stat-label" style="color: var(--text-secondary);">Employment</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" style="color: var(--primary-color);">10+</span>
+                <span class="stat-label" style="color: var(--text-secondary);">Partners</span>
+            </div>
+        </div>
+
+        <section class="welcome-section" style="margin-top: 40px;">
             <h2>Welcome to Computing & Technology</h2>
             <p class="lead">The Department of Computing and Technology at Bugema University is your gateway to a successful career in the tech industry. We combine theoretical knowledge with practical skills to produce world-class IT professionals.</p>
             
@@ -90,6 +124,7 @@
 
         <hr>
 
+        <!-- Campus Gallery -->
         <section class="campus-gallery">
             <h2>Our Campus</h2>
             <div class="grid-3">
@@ -119,28 +154,29 @@
 
         <hr>
 
+        <!-- Programs Section -->
         <section class="programs-section">
             <h2>Our Programs</h2>
             <div class="grid-2">
                 <div class="program-card">
                     <h3>BSc. Information Technology</h3>
                     <p>4-year program covering software development, networking, database management, and IT project management.</p>
-                    <span style="color: var(--accent-color); font-size: 14px; font-weight: 600;">4 Years</span>
+                    <span style="color: var(--primary-color); font-size: 14px; font-weight: 600;">4 Years</span>
                 </div>
                 <div class="program-card">
                     <h3>BSc. Computer Science</h3>
                     <p>Focus on algorithms, programming, artificial intelligence, machine learning, and computational theory.</p>
-                    <span style="color: var(--accent-color); font-size: 14px; font-weight: 600;">4 Years</span>
+                    <span style="color: var(--primary-color); font-size: 14px; font-weight: 600;">4 Years</span>
                 </div>
                 <div class="program-card">
                     <h3>BSc. Software Engineering</h3>
                     <p>Learn to design, develop, and maintain software systems using modern engineering methodologies.</p>
-                    <span style="color: var(--accent-color); font-size: 14px; font-weight: 600;">4 Years</span>
+                    <span style="color: var(--primary-color); font-size: 14px; font-weight: 600;">4 Years</span>
                 </div>
                 <div class="program-card">
                     <h3>Diploma in IT</h3>
                     <p>2-year diploma program providing foundational skills in computing and information technology.</p>
-                    <span style="color: var(--accent-color); font-size: 14px; font-weight: 600;">2 Years</span>
+                    <span style="color: var(--primary-color); font-size: 14px; font-weight: 600;">2 Years</span>
                 </div>
             </div>
             <div class="text-center mt-20">
@@ -150,6 +186,7 @@
 
         <hr>
 
+        <!-- Timetable Section -->
         <section class="timetable-section">
             <h2>Weekly Class Timetable</h2>
             <div class="table-container">
@@ -206,6 +243,7 @@
 
         <hr>
 
+        <!-- Resources Section -->
         <section class="resources-section">
             <h2>Student Resources</h2>
             <div class="grid-2">
@@ -232,22 +270,23 @@
 
         <hr>
 
+        <!-- News & Events Section -->
         <section class="news-events">
             <h2>News & Events</h2>
             <div class="grid-3">
                 <div class="news-card">
                     <h3>Tech Innovation Week</h3>
-                    <p style="color: var(--accent-color); font-size: 12px; margin-bottom: 10px;">March 2026</p>
+                    <p style="color: var(--primary-color); font-size: 12px; margin-bottom: 10px; font-weight: 600;">March 2026</p>
                     <p>Annual technology exhibition showcasing student projects in software development, AI, and mobile apps.</p>
                 </div>
                 <div class="news-card">
                     <h3>Industry Partnership Forum</h3>
-                    <p style="color: var(--accent-color); font-size: 12px; margin-bottom: 10px;">April 2026</p>
+                    <p style="color: var(--primary-color); font-size: 12px; margin-bottom: 10px; font-weight: 600;">April 2026</p>
                     <p>Networking with leading tech companies and potential employers from across Uganda.</p>
                 </div>
                 <div class="news-card">
                     <h3>Hackathon 2026</h3>
-                    <p style="color: var(--accent-color); font-size: 12px; margin-bottom: 10px;">May 2026</p>
+                    <p style="color: var(--primary-color); font-size: 12px; margin-bottom: 10px; font-weight: 600;">May 2026</p>
                     <p>48-hour coding competition with exciting prizes. Register your team now!</p>
                 </div>
             </div>
@@ -297,6 +336,36 @@
     </footer>
 
     <script>
+        // Carousel functionality
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const dots = document.querySelectorAll('.carousel-dot');
+        const totalSlides = slides.length;
+
+        function showSlide(n) {
+            currentSlide = (n + totalSlides) % totalSlides;
+            
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+        }
+
+        function changeSlide(n) {
+            showSlide(currentSlide + n);
+        }
+
+        function goToSlide(n) {
+            showSlide(n);
+        }
+
+        // Auto-advance carousel every 5 seconds
+        setInterval(() => {
+            changeSlide(1);
+        }, 5000);
+
+        // Mobile menu toggle
         const menuToggle = document.querySelector('.menu-toggle');
         const navLinks = document.querySelector('.nav-links');
 
