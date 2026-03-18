@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect fill="#0d1117" width="400" height="300"/>
+  <rect fill="#161b22" x="20" y="40" width="80" height="50" rx="3"/>
+  <rect fill="#161b22" x="110" y="40" width="80" height="50" rx="3"/>
+  <rect fill="#161b22" x="200" y="40" width="80" height="50" rx="3"/>
+  <rect fill="#161b22" x="290" y="40" width="80" height="50" rx="3"/>
+  <rect fill="#161b22" x="20" y="110" width="80" height="50" rx="3"/>
+  <rect fill="#161b22" x="110" y="110" width="80" height="50" rx="3"/>
+  <rect fill="#161b22" x="200" y="110" width="80" height="50" rx="3"/>
+  <rect fill="#161b22" x="290" y="110" width="80" height="50" rx="3"/>
+  <rect fill="#161b22" x="20" y="180" width="80" height="50" rx="3"/>
+  <rect fill="#161b22" x="110" y="180" width="80" height="50" rx="3"/>
+  <rect fill="#161b22" x="200" y="180" width="80" height="50" rx="3"/>
+  <rect fill="#161b22" x="290" y="180" width="80" height="50" rx="3"/>
+  <rect fill="#58a6ff" x="25" y="45" width="70" height="40" rx="2" opacity="0.3"/>
+  <rect fill="#58a6ff" x="115" y="45" width="70" height="40" rx="2" opacity="0.3"/>
+  <rect fill="#58a6ff" x="205" y="45" width="70" height="40" rx="2" opacity="0.3"/>
+  <rect fill="#58a6ff" x="295" y="45" width="70" height="40" rx="2" opacity="0.3"/>
+  <circle fill="#00ff88" cx="350" cy="260" r="25" opacity="0.6"/>
+  <text x="200" y="290" text-anchor="middle" fill="#8b949e" font-family="monospace" font-size="14">Computer Laboratory</text>
+</svg>

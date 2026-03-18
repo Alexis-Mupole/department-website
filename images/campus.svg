@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect fill="#1a1a2e" width="400" height="300"/>
+  <rect fill="#16213e" x="50" y="80" width="300" height="180" rx="5"/>
+  <rect fill="#0f3460" x="70" y="100" width="80" height="60" rx="3"/>
+  <rect fill="#0f3460" x="160" y="100" width="80" height="60" rx="3"/>
+  <rect fill="#0f3460" x="250" y="100" width="80" height="60" rx="3"/>
+  <rect fill="#e94560" x="70" y="170" width="260" height="80" rx="3"/>
+  <polygon fill="#ffffff" points="200,40 170,80 230,80"/>
+  <rect fill="#0f3460" x="180" y="50" width="40" height="30" rx="2"/>
+  <circle fill="#00d9ff" cx="100" cy="220" r="15" opacity="0.8"/>
+  <circle fill="#e94560" cx="300" cy="240" r="20" opacity="0.8"/>
+  <text x="200" y="290" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="14">Computing Building</text>
+</svg>

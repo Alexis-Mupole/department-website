@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="300" viewBox="0 0 400 300">
+  <rect fill="#1a365d" width="400" height="300"/>
+  <polygon fill="#2d4a77" points="200,20 100,80 300,80"/>
+  <rect fill="#2d4a77" x="120" y="80" width="160" height="180"/>
+  <rect fill="#1a365d" x="140" y="100" width="120" height="10"/>
+  <rect fill="#1a365d" x="140" y="120" width="120" height="10"/>
+  <rect fill="#1a365d" x="140" y="140" width="120" height="10"/>
+  <circle fill="#ffd700" cx="200" cy="70" r="15"/>
+  <polygon fill="#ffd700" points="200,55 195,70 205,70"/>
+  <rect fill="#c9a227" x="190" y="85" width="20" height="10"/>
+  <rect fill="#2d4a77" x="150" y="180" width="40" height="60" rx="3"/>
+  <rect fill="#2d4a77" x="210" y="180" width="40" height="60" rx="3"/>
+  <circle fill="#2d3748" cx="170" cy="200" r="20"/>
+  <circle fill="#2d3748" cx="230" cy="200" r="20"/>
+  <path fill="none" stroke="#ffd700" stroke-width="2" d="M155,195 Q170,185 185,195"/>
+  <path fill="none" stroke="#ffd700" stroke-width="2" d="M215,195 Q230,185 245,195"/>
+  <circle fill="#00d9ff" cx="50" cy="250" r="30" opacity="0.5"/>
+  <circle fill="#ffd700" cx="350" cy="250" r="30" opacity="0.5"/>
+  <text x="200" y="290" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="14">Graduation Ceremony</text>
+</svg>
