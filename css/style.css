@@ -196,7 +196,7 @@ img {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 51, 102, 0.65);
+    background: rgba(0, 51, 102, 0.4);
     z-index: 1;
 }
 
@@ -767,14 +767,63 @@ section {
    TIMETABLE
    ============================================ */
 .timetable-section {
-    background: var(--bg-light);
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4e8ec 100%);
+    padding: 80px 0;
+}
+
+.timetable-section .section-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.timetable-section .section-header h2 {
+    font-size: 36px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.timetable-section .section-header p {
+    color: var(--text-secondary);
+    font-size: 16px;
+}
+
+.timetable-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: white;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 51, 102, 0.15);
+}
+
+.timetable-header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #004080 100%);
+    padding: 30px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.timetable-header h3 {
+    color: white;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.timetable-header .semester {
+    background: rgba(255,255,255,0.2);
+    padding: 8px 20px;
+    border-radius: 30px;
+    color: white;
+    font-size: 14px;
 }
 
 .table-container {
-    background: var(--bg-white);
-    border-radius: var(--border-radius);
-    overflow: hidden;
-    box-shadow: var(--shadow-md);
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
 }
 
 table {
@@ -782,29 +831,106 @@ table {
     border-collapse: collapse;
 }
 
-th {
-    background: var(--primary-gradient);
-    color: white;
-    padding: 18px;
+.timetable-table thead th {
+    background: #f8f9fa;
+    color: var(--primary-color);
+    padding: 20px;
     text-align: left;
-    font-weight: 600;
+    font-weight: 700;
     font-size: 14px;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
+    border-bottom: 3px solid var(--primary-color);
 }
 
-td {
-    padding: 16px 18px;
-    border-bottom: 1px solid var(--border-color);
-    color: var(--text-secondary);
+.timetable-table tbody tr {
+    transition: all 0.3s ease;
 }
 
-tr:last-child td {
-    border-bottom: none;
+.timetable-table tbody tr:nth-child(even) {
+    background: #f8f9fa;
 }
 
-tr:hover td {
-    background: var(--bg-light);
+.timetable-table tbody tr:hover {
+    background: #e8f4fd;
+    transform: scale(1.01);
+}
+
+.timetable-table td {
+    padding: 20px;
+    color: #333;
+    font-size: 15px;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+}
+
+.timetable-table td:first-child {
+    font-weight: 700;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.timetable-table td:first-child::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background: var(--accent-color);
+    border-radius: 50%;
+}
+
+.timetable-table .time-cell {
+    font-weight: 600;
+    color: #666;
+    background: #fff;
+    border-radius: 8px;
+    padding: 8px 12px;
+    display: inline-block;
+}
+
+.timetable-table .subject-cell {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.timetable-table .room-cell {
+    color: #666;
+}
+
+.timetable-table .lecturer-cell {
+    color: #555;
+}
+
+.timetable-footer {
+    background: #f8f9fa;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #eee;
+}
+
+.timetable-footer p {
+    color: #666;
+    font-size: 14px;
+}
+
+.timetable-footer .download-btn {
+    background: var(--primary-color);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.timetable-footer .download-btn:hover {
+    background: var(--primary-dark);
+    transform: translateY(-2px);
 }
 
 /* ============================================
