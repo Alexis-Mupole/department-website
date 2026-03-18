@@ -737,6 +737,358 @@ section {
 }
 
 /* ============================================
+   PROGRAM DETAIL PAGES
+   ============================================ */
+.program-full-detail {
+    padding: 60px 0;
+    background: var(--bg-color);
+}
+
+.program-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.program-hero-content {
+    padding: 40px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: var(--shadow-md);
+}
+
+.program-hero-content h2 {
+    font-size: 36px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.program-hero-content p {
+    color: var(--text-secondary);
+    font-size: 16px;
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
+.program-hero .program-duration,
+.program-hero .program-accredited {
+    display: inline-block;
+    padding: 8px 18px;
+    border-radius: 25px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.program-hero .program-duration {
+    background: var(--primary-color);
+    color: white;
+}
+
+.program-hero .program-accredited {
+    background: #e8f5e9;
+    color: #2e7d32;
+}
+
+.program-hero-image {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    height: 350px;
+}
+
+.program-hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.program-info-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.info-card {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: var(--shadow-sm);
+    text-align: center;
+}
+
+.info-card h3 {
+    font-size: 14px;
+    color: var(--text-light);
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.info-card p {
+    font-size: 18px;
+    color: var(--primary-color);
+    font-weight: 700;
+}
+
+.program-section {
+    margin-bottom: 50px;
+}
+
+.program-section h3 {
+    font-size: 28px;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.program-section > p {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.why-choose-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.why-choose-card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+    transition: all 0.3s ease;
+}
+
+.why-choose-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.why-choose-card .icon {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.why-choose-card h4 {
+    font-size: 18px;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
+.why-choose-card p {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.career-paths {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.career-path {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: var(--shadow-sm);
+    border-left: 4px solid var(--primary-color);
+}
+
+.career-path h4 {
+    font-size: 18px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.career-path ul {
+    list-style: none;
+}
+
+.career-path ul li {
+    padding: 8px 0;
+    color: var(--text-secondary);
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 20px;
+}
+
+.career-path ul li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.career-path ul li:last-child {
+    border-bottom: none;
+}
+
+.subjects-table {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+}
+
+.subjects-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.subjects-table th {
+    background: var(--primary-color);
+    color: white;
+    padding: 18px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.subjects-table td {
+    padding: 16px;
+    border-bottom: 1px solid #eee;
+    color: var(--text-secondary);
+}
+
+.subjects-table tr:last-child td {
+    border-bottom: none;
+}
+
+.subjects-table tr:hover td {
+    background: #f8f9fa;
+}
+
+.admission-requirements {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.req-card {
+    background: white;
+    padding: 30px;
+    border-radius: 16px;
+    box-shadow: var(--shadow-sm);
+}
+
+.req-card h4 {
+    font-size: 20px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.req-card ul {
+    list-style: none;
+}
+
+.req-card ul li {
+    padding: 10px 0;
+    color: var(--text-secondary);
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 25px;
+}
+
+.req-card ul li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.fees-table {
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.fees-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.fees-table th {
+    background: var(--primary-color);
+    color: white;
+    padding: 18px;
+    text-align: left;
+}
+
+.fees-table td {
+    padding: 16px;
+    border-bottom: 1px solid #eee;
+    color: var(--text-secondary);
+}
+
+.fees-table tr:last-child td {
+    border-bottom: none;
+    background: #f8f9fa;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.cta-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #1565c0 100%);
+    padding: 60px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+}
+
+.cta-section h3 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.cta-section p {
+    font-size: 18px;
+    opacity: 0.9;
+    margin-bottom: 30px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cta-buttons .btn-primary {
+    background: white;
+    color: var(--primary-color);
+}
+
+.cta-buttons .btn-primary:hover {
+    background: #f0f0f0;
+}
+
+.cta-buttons .btn-secondary {
+    background: transparent;
+    border: 2px solid white;
+    color: white;
+}
+
+.cta-buttons .btn-secondary:hover {
+    background: rgba(255,255,255,0.1);
+}
+
+/* ============================================
    GALLERY SECTION
    ============================================ */
 .gallery-section {
@@ -1317,6 +1669,15 @@ footer {
     font-size: 24px;
 }
 
+.program-detail-header h3 a {
+    color: white;
+    text-decoration: none;
+}
+
+.program-detail-header h3 a:hover {
+    text-decoration: underline;
+}
+
 .program-badge {
     background: var(--accent-color);
     color: white;
@@ -1334,6 +1695,21 @@ footer {
     color: var(--text-secondary);
     margin-bottom: 20px;
     line-height: 1.8;
+}
+
+.btn-link {
+    display: inline-block;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-decoration: none;
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 2px;
+}
+
+.btn-link:hover {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 .program-detail-body h4 {
@@ -1741,6 +2117,14 @@ footer {
     .hero-buttons { flex-direction: column; gap: 10px; }
     .hero-buttons .btn { padding: 12px 20px; font-size: 14px; }
     .typing-text { animation: typing 2s steps(30) 0.2s forwards, cursorFade 0.3s 2.3s forwards; }
+    .program-hero { grid-template-columns: 1fr; }
+    .program-hero-image { height: 250px; }
+    .program-info-grid { grid-template-columns: repeat(2, 1fr); }
+    .why-choose-grid { grid-template-columns: repeat(2, 1fr); }
+    .career-paths { grid-template-columns: 1fr; }
+    .admission-requirements { grid-template-columns: 1fr; }
+    .cta-section { padding: 40px 20px; }
+    .cta-buttons { flex-direction: column; }
 }
 
 /* ============================================
