@@ -29,41 +29,74 @@
         </div>
     </nav>
 
-    <header class="hero">
-        <div class="hero-pattern"></div>
-        <div class="floating-shapes">
-            <div class="shape shape-1"></div>
-            <div class="shape shape-2"></div>
-            <div class="shape shape-3"></div>
-        </div>
-        <div class="hero-content">
-            <span class="hero-badge">School of Science & Technology</span>
-            <h1>Department of <span>Computing</span> & Informatics</h1>
-            <p class="hero-subtitle">Empowering the next generation of tech leaders through innovative education, practical skills, and ethical leadership rooted in Seventh-day Adventist values.</p>
-            <div class="hero-buttons">
-                <a href="programs.html" class="btn btn-primary">Explore Programs →</a>
-                <a href="contact.html" class="btn btn-secondary">Apply Now</a>
-            </div>
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <span class="stat-number">500+</span>
-                    <span class="stat-label">Active Students</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">25+</span>
-                    <span class="stat-label">Expert Lecturers</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">98%</span>
-                    <span class="stat-label">Graduate Employment</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">10+</span>
-                    <span class="stat-label">Industry Partners</span>
+    <!-- Carousel Section -->
+    <div class="carousel">
+        <div class="carousel-slide active">
+            <div class="carousel-pattern"></div>
+            <div class="carousel-content">
+                <span class="hero-badge">School of Science & Technology</span>
+                <h2>Department of <span>Computing</span> & Informatics</h2>
+                <p>Empowering the next generation of tech leaders through innovative education, practical skills, and ethical leadership rooted in Seventh-day Adventist values.</p>
+                <div class="hero-buttons">
+                    <a href="programs.html" class="btn btn-primary">Explore Programs →</a>
+                    <a href="contact.html" class="btn btn-secondary">Apply Now</a>
                 </div>
             </div>
         </div>
-    </header>
+        <div class="carousel-slide">
+            <div class="carousel-pattern"></div>
+            <div class="carousel-content">
+                <span class="hero-badge">Hands-On Learning</span>
+                <h2>Modern <span>Computer</span> Laboratories</h2>
+                <p>State-of-the-art labs with the latest software and hardware. Gain practical experience through real-world projects and industry partnerships.</p>
+                <div class="hero-buttons">
+                    <a href="about.html" class="btn btn-primary">Learn More →</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-slide">
+            <div class="carousel-pattern"></div>
+            <div class="carousel-content">
+                <span class="hero-badge">Expert Faculty</span>
+                <h2>Learn From the <span>Best</span></h2>
+                <p>Our experienced lecturers and industry experts guide you through your journey to becoming a skilled IT professional.</p>
+                <div class="hero-buttons">
+                    <a href="faculty.html" class="btn btn-primary">Meet Our Faculty →</a>
+                </div>
+            </div>
+        </div>
+        
+        <button class="carousel-nav prev" onclick="changeSlide(-1)">❮</button>
+        <button class="carousel-nav next" onclick="changeSlide(1)">❯</button>
+        
+        <div class="carousel-dots">
+            <span class="carousel-dot active" onclick="goToSlide(0)"></span>
+            <span class="carousel-dot" onclick="goToSlide(1)"></span>
+            <span class="carousel-dot" onclick="goToSlide(2)"></span>
+        </div>
+    </div>
+
+    <!-- Stats Bar -->
+    <div class="container">
+        <div class="hero-stats" style="margin-top: -60px; position: relative; z-index: 10; background: white; padding: 30px; border-radius: 16px; box-shadow: var(--shadow-lg); margin-bottom: 60px;">
+            <div class="stat-item">
+                <span class="stat-number" style="color: var(--primary-color);">500+</span>
+                <span class="stat-label" style="color: var(--text-secondary);">Active Students</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" style="color: var(--primary-color);">25+</span>
+                <span class="stat-label" style="color: var(--text-secondary);">Expert Lecturers</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" style="color: var(--primary-color);">98%</span>
+                <span class="stat-label" style="color: var(--text-secondary);">Graduate Employment</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number" style="color: var(--primary-color);">10+</span>
+                <span class="stat-label" style="color: var(--text-secondary);">Industry Partners</span>
+            </div>
+        </div>
+    </div>
 
     <section class="features-section">
         <div class="container">
@@ -107,8 +140,7 @@
                     <h3>Mr. Ssewankambo Erma</h3>
                     <p class="hod-title">Head of Department</p>
                     <p>Welcome to the Department of Computing & Informatics. I am proud to lead a department committed to providing high-quality education that prepares students for the fast-evolving world of computing and information technology.</p>
-                    <p>Our programs are designed to equip students with strong theoretical knowledge and practical skills in software development, data management, networking, cybersecurity, and information systems. We emphasize problem-solving, innovation, ethical practice, and teamwork.</p>
-                    <p>Join us to shape competent professionals who can drive technological innovation and contribute positively to society.</p>
+                    <p>Our programs are designed to equip students with strong theoretical knowledge and practical skills. We emphasize problem-solving, innovation, ethical practice, and teamwork.</p>
                 </div>
             </div>
         </div>
@@ -315,6 +347,35 @@
     </footer>
 
     <script>
+        // Carousel functionality
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-slide');
+        const dots = document.querySelectorAll('.carousel-dot');
+        const totalSlides = slides.length;
+
+        function showSlide(n) {
+            currentSlide = (n + totalSlides) % totalSlides;
+            
+            slides.forEach(slide => slide.classList.remove('active'));
+            dots.forEach(dot => dot.classList.remove('active'));
+            
+            slides[currentSlide].classList.add('active');
+            dots[currentSlide].classList.add('active');
+        }
+
+        function changeSlide(n) {
+            showSlide(currentSlide + n);
+        }
+
+        function goToSlide(n) {
+            showSlide(n);
+        }
+
+        // Auto-advance carousel every 5 seconds
+        setInterval(() => {
+            changeSlide(1);
+        }, 5000);
+
         // Navbar scroll effect
         window.addEventListener('scroll', function() {
             const navbar = document.querySelector('.navbar');
