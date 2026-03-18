@@ -129,6 +129,57 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     });
 });
 
+/* ===== CAROUSEL ===== */
+const carouselTrack = document.querySelector('.carousel-track');
+if (carouselTrack) {
+    const slides = carouselTrack.querySelectorAll('.carousel-slide');
+    const prevBtn = document.querySelector('.carousel-btn-prev');
+    const nextBtn = document.querySelector('.carousel-btn-next');
+    const indicatorsContainer = document.querySelector('.carousel-indicators');
+    let currentIndex = 0;
+    let autoPlayInterval;
+
+    function createIndicators() {
+        slides.forEach((_, i) => {
+            const indicator = document.createElement('div');
+            indicator.classList.add('indicator');
+            if (i === 0) indicator.classList.add('active');
+            indicator.addEventListener('click', () => goToSlide(i));
+            indicatorsContainer.appendChild(indicator);
+        });
+    }
+
+    function goToSlide(index) {
+        slides[currentIndex].classList.remove('active');
+        indicatorsContainer.children[currentIndex].classList.remove('active');
+        currentIndex = index;
+        if (currentIndex >= slides.length) currentIndex = 0;
+        if (currentIndex < 0) currentIndex = slides.length - 1;
+        slides[currentIndex].classList.add('active');
+        indicatorsContainer.children[currentIndex].classList.add('active');
+    }
+
+    function nextSlide() { goToSlide(currentIndex + 1); }
+    function prevSlide() { goToSlide(currentIndex - 1); }
+
+    function startAutoPlay() {
+        autoPlayInterval = setInterval(nextSlide, 5000);
+    }
+
+    function stopAutoPlay() {
+        clearInterval(autoPlayInterval);
+    }
+
+    createIndicators();
+    startAutoPlay();
+
+    if (prevBtn) prevBtn.addEventListener('click', () => { stopAutoPlay(); prevSlide(); startAutoPlay(); });
+    if (nextBtn) nextBtn.addEventListener('click', () => { stopAutoPlay(); nextSlide(); startAutoPlay(); });
+
+    carouselTrack.addEventListener('mouseenter', stopAutoPlay);
+    carouselTrack.addEventListener('mouseleave', startAutoPlay);
+}
+
 /* ===== FORM HANDLING ===== */
 const contactForm = document.querySelector('.contact-form form');
 if (contactForm) {
