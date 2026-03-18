@@ -5725,3 +5725,829 @@ video {
         font-size: 24px;
     }
 }
+
+/* ============================================
+   ABOUT PAGE STYLES
+   ============================================ */
+
+/* Page Header */
+.about-page-header {
+    position: relative;
+    padding: 160px 0 100px;
+    background: linear-gradient(135deg, #0d47a1 0%, #0a3575 50%, #061d4a 100%);
+    overflow: hidden;
+}
+
+.about-header-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.header-shape {
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+.header-shape-1 {
+    width: 400px;
+    height: 400px;
+    top: -150px;
+    right: -100px;
+}
+
+.header-shape-2 {
+    width: 300px;
+    height: 300px;
+    bottom: -100px;
+    left: -50px;
+}
+
+.header-shape-3 {
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 60%;
+}
+
+.about-header-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-header-badge {
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    padding: 8px 24px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 25px;
+    backdrop-filter: blur(10px);
+}
+
+.about-page-header h1 {
+    font-size: 52px;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 20px;
+    letter-spacing: -1px;
+}
+
+.about-header-subtitle {
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.85);
+    margin-bottom: 35px;
+}
+
+.about-header-actions {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* Overview Section */
+.about-overview {
+    padding: 100px 0;
+    background: var(--bg-color);
+}
+
+.about-overview-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.about-overview-content .section-label {
+    margin-bottom: 15px;
+}
+
+.about-overview-content h2 {
+    font-size: 38px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    line-height: 1.2;
+}
+
+.about-overview-content > p {
+    color: var(--text-secondary);
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+.about-highlights {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.highlight-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.highlight-icon {
+    font-size: 30px;
+}
+
+.highlight-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.highlight-text strong {
+    color: var(--primary-color);
+    font-size: 16px;
+}
+
+.highlight-text span {
+    color: var(--text-light);
+    font-size: 13px;
+}
+
+.about-overview-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.stat-box {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+}
+
+.stat-box-number {
+    font-size: 42px;
+    font-weight: 800;
+    line-height: 1;
+    margin-bottom: 8px;
+}
+
+.stat-box-label {
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+/* Mission & Vision */
+.mission-vision {
+    padding: 80px 0;
+    background: white;
+}
+
+.mv-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.mv-card {
+    padding: 50px;
+    border-radius: 24px;
+    position: relative;
+}
+
+.mv-mission {
+    background: linear-gradient(135deg, #0d47a1 0%, #1565c0 100%);
+    color: white;
+}
+
+.mv-vision {
+    background: linear-gradient(135deg, #1a1a2e 0%, #2d2d4a 100%);
+    color: white;
+}
+
+.mv-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.mv-card h3 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.mv-card p {
+    font-size: 16px;
+    line-height: 1.7;
+    opacity: 0.9;
+}
+
+/* Key Information Section */
+.key-info-section {
+    padding: 100px 0;
+    background: var(--bg-light);
+}
+
+.info-tabs {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 50px;
+    flex-wrap: wrap;
+}
+
+.info-tab {
+    padding: 14px 30px;
+    background: white;
+    border: 2px solid var(--border-color);
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.info-tab:hover {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.info-tab.active {
+    background: var(--primary-color);
+    border-color: var(--primary-color);
+    color: white;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.info-content-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.info-text h3 {
+    font-size: 28px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.info-text > p {
+    color: var(--text-secondary);
+    font-size: 16px;
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.info-list {
+    list-style: none;
+    margin-bottom: 25px;
+}
+
+.info-list li {
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-color);
+    color: var(--text-secondary);
+    font-size: 15px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.info-list li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--primary-color);
+    font-weight: bold;
+}
+
+.info-list li strong {
+    color: var(--primary-color);
+    display: block;
+    margin-bottom: 4px;
+}
+
+.programs-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.program-summary-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 25px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.ps-badge {
+    background: var(--primary-color);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.program-summary-item span:last-child {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+/* Admission Tab */
+.req-category {
+    margin-bottom: 25px;
+}
+
+.req-category h4 {
+    color: var(--primary-color);
+    font-size: 18px;
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid var(--accent-color);
+    display: inline-block;
+}
+
+.admission-contact {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.admission-contact h4 {
+    font-size: 20px;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.admission-contact .contact-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.admission-contact .contact-item:last-child {
+    border-bottom: none;
+}
+
+.admission-contact .contact-item span {
+    font-size: 24px;
+}
+
+.admission-contact .contact-item p {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+/* Facilities Tab */
+.facility-list {
+    list-style: none;
+}
+
+.facility-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.facility-list li:last-child {
+    border-bottom: none;
+}
+
+.facility-icon {
+    font-size: 36px;
+    flex-shrink: 0;
+}
+
+.facility-list strong {
+    display: block;
+    color: var(--primary-color);
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.facility-list p {
+    color: var(--text-secondary);
+    font-size: 14px;
+}
+
+.facility-gallery {
+    display: grid;
+    gap: 15px;
+}
+
+.facility-gallery img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+/* Careers Tab */
+.career-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.career-item {
+    background: white;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.career-icon {
+    font-size: 32px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.career-item h4 {
+    color: var(--primary-color);
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.career-item p {
+    color: var(--text-light);
+    font-size: 13px;
+}
+
+.career-stats {
+    display: flex;
+    gap: 30px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-color) 100%);
+    padding: 25px;
+    border-radius: 16px;
+}
+
+.career-stat {
+    text-align: center;
+    flex: 1;
+}
+
+.career-stat strong {
+    display: block;
+    color: white;
+    font-size: 28px;
+    font-weight: 800;
+    margin-bottom: 4px;
+}
+
+.career-stat span {
+    color: rgba(255, 255, 255, 0.85);
+    font-size: 12px;
+}
+
+.employers-list {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+}
+
+.employers-list h4 {
+    font-size: 18px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.employer-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.employer-tags span {
+    background: var(--bg-light);
+    color: var(--text-primary);
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* Values Grid */
+.values-grid-new {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.value-card-new {
+    background: white;
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.value-card-new:hover {
+    transform: translateY(-8px);
+    border-color: var(--primary-color);
+    box-shadow: 0 20px 50px rgba(13, 71, 161, 0.15);
+}
+
+.value-icon-new {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.value-card-new h3 {
+    font-size: 18px;
+    color: var(--primary-color);
+    margin-bottom: 12px;
+}
+
+.value-card-new p {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* HOD Section */
+.hod-section-new {
+    padding: 100px 0;
+    background: var(--bg-light);
+}
+
+/* Location Section */
+.location-section {
+    padding: 100px 0;
+    background: white;
+}
+
+.location-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.location-info {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.location-card {
+    background: var(--bg-light);
+    padding: 25px;
+    border-radius: 16px;
+}
+
+.location-icon {
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.location-card h4 {
+    color: var(--primary-color);
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.location-card p {
+    color: var(--text-secondary);
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.location-map {
+    background: var(--bg-light);
+    border-radius: 20px;
+    overflow: hidden;
+    min-height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.map-placeholder {
+    text-align: center;
+    padding: 40px;
+}
+
+.map-placeholder span {
+    font-size: 60px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.map-placeholder p {
+    color: var(--primary-color);
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.map-placeholder small {
+    color: var(--text-light);
+    font-size: 14px;
+}
+
+/* ============================================
+   RESPONSIVE - ABOUT PAGE
+   ============================================ */
+@media (max-width: 1024px) {
+    .about-page-header h1 {
+        font-size: 42px;
+    }
+    
+    .about-overview-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .about-overview-stats {
+        order: -1;
+    }
+    
+    .mv-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .info-content-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .values-grid-new {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .location-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-page-header {
+        padding: 120px 0 60px;
+    }
+    
+    .about-page-header h1 {
+        font-size: 32px;
+    }
+    
+    .about-header-subtitle {
+        font-size: 16px;
+    }
+    
+    .about-header-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .about-overview {
+        padding: 60px 0;
+    }
+    
+    .about-overview-content h2 {
+        font-size: 28px;
+    }
+    
+    .about-overview-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .stat-box {
+        padding: 20px;
+    }
+    
+    .stat-box-number {
+        font-size: 32px;
+    }
+    
+    .mission-vision {
+        padding: 60px 0;
+    }
+    
+    .mv-card {
+        padding: 35px 25px;
+    }
+    
+    .mv-card h3 {
+        font-size: 22px;
+    }
+    
+    .key-info-section {
+        padding: 60px 0;
+    }
+    
+    .info-tabs {
+        gap: 8px;
+    }
+    
+    .info-tab {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+    
+    .info-text h3 {
+        font-size: 22px;
+    }
+    
+    .career-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .career-stats {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .values-grid-new {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .value-card-new {
+        padding: 30px 20px;
+    }
+    
+    .hod-section-new {
+        padding: 60px 0;
+    }
+    
+    .location-section {
+        padding: 60px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-page-header h1 {
+        font-size: 26px;
+    }
+    
+    .about-overview-content h2 {
+        font-size: 24px;
+    }
+    
+    .about-highlights {
+        gap: 10px;
+    }
+    
+    .highlight-item {
+        padding: 12px 15px;
+    }
+    
+    .highlight-icon {
+        font-size: 24px;
+    }
+    
+    .mv-card h3 {
+        font-size: 20px;
+    }
+    
+    .info-tab {
+        padding: 8px 16px;
+        font-size: 13px;
+    }
+    
+    .career-item {
+        padding: 20px;
+    }
+    
+    .stat-box-label {
+        font-size: 11px;
+    }
+}
