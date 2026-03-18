@@ -78,7 +78,7 @@
 
     <!-- Stats Bar -->
     <div class="container">
-        <div class="hero-stats" style="margin-top: -60px; position: relative; z-index: 10; background: white; padding: 30px; border-radius: 16px; box-shadow: var(--shadow-lg); margin-bottom: 60px;">
+        <div class="hero-stats" style="margin-top: -80px; position: relative; z-index: 10; background: white; padding: 40px; border-radius: 16px; box-shadow: var(--shadow-lg); margin-bottom: 60px;">
             <div class="stat-item">
                 <span class="stat-number" style="color: var(--primary-color);">500+</span>
                 <span class="stat-label" style="color: var(--text-secondary);">Active Students</span>
@@ -98,44 +98,15 @@
         </div>
     </div>
 
-    <!-- Campus Images Section -->
-    <section class="features-section">
+    <!-- About Section -->
+    <section class="features-section" style="background: var(--bg-light);">
         <div class="container">
             <div class="section-header">
-                <h2>Our Campus</h2>
-                <p>State-of-the-art facilities for your learning journey</p>
+                <h2>Welcome to Computing & Informatics</h2>
+                <p>Part of the School of Science & Technology at Bugema University</p>
             </div>
-            <div class="grid-3">
-                <div class="image-card">
-                    <img src="images/campus.svg" alt="Computing Building">
-                    <div class="image-card-content">
-                        <h3>Computing Building</h3>
-                        <p>Dedicated building for computing students with modern facilities.</p>
-                    </div>
-                </div>
-                <div class="image-card">
-                    <img src="images/lab.svg" alt="Computer Lab">
-                    <div class="image-card-content">
-                        <h3>Computer Laboratories</h3>
-                        <p>Fully equipped labs with high-speed internet and latest software.</p>
-                    </div>
-                </div>
-                <div class="image-card">
-                    <img src="images/students.svg" alt="Student Coding">
-                    <div class="image-card-content">
-                        <h3>Hands-on Learning</h3>
-                        <p>Practical coding sessions and project-based learning.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="features-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>Why Choose Us?</h2>
-                <p>We prepare students for successful careers in technology</p>
+            <div class="about-intro" style="max-width: 900px; margin: 0 auto 50px; text-align: center;">
+                <p style="font-size: 18px; color: var(--text-secondary); line-height: 1.8;">The Department of Computing & Informatics is committed to providing high-quality education that prepares students for the fast-evolving world of computing and information technology. Our programs combine theoretical knowledge with practical skills.</p>
             </div>
             <div class="grid-4">
                 <div class="feature-card">
@@ -162,13 +133,14 @@
         </div>
     </section>
 
-    <section class="hod-section">
+    <!-- HOD Message -->
+    <section>
         <div class="container">
             <div class="section-header">
                 <h2>Message from Our Head</h2>
             </div>
             <div class="hod-card">
-                <div class="hod-image">👨‍🏫</div>
+                <div class="hod-image" style="background: var(--primary-gradient);">👨‍🏫</div>
                 <div class="hod-content">
                     <h3>Mr. Ssewankambo Erma</h3>
                     <p class="hod-title">Head of Department</p>
@@ -179,6 +151,7 @@
         </div>
     </section>
 
+    <!-- Programs Section -->
     <section class="programs-section">
         <div class="container">
             <div class="section-header">
@@ -223,6 +196,7 @@
         </div>
     </section>
 
+    <!-- Timetable -->
     <section class="timetable-section">
         <div class="container">
             <div class="section-header">
@@ -282,6 +256,7 @@
         </div>
     </section>
 
+    <!-- Resources -->
     <section class="resources-section">
         <div class="container">
             <div class="grid-2">
@@ -307,6 +282,7 @@
         </div>
     </section>
 
+    <!-- News -->
     <section class="news-section">
         <div class="container">
             <div class="section-header">
@@ -379,7 +355,7 @@
     </footer>
 
     <script>
-        // Carousel functionality
+        // Carousel
         let currentSlide = 0;
         const slides = document.querySelectorAll('.carousel-slide');
         const dots = document.querySelectorAll('.carousel-dot');
@@ -387,43 +363,27 @@
 
         function showSlide(n) {
             currentSlide = (n + totalSlides) % totalSlides;
-            
             slides.forEach(slide => slide.classList.remove('active'));
             dots.forEach(dot => dot.classList.remove('active'));
-            
             slides[currentSlide].classList.add('active');
             dots[currentSlide].classList.add('active');
         }
 
-        function changeSlide(n) {
-            showSlide(currentSlide + n);
-        }
+        function changeSlide(n) { showSlide(currentSlide + n); }
+        function goToSlide(n) { showSlide(n); }
 
-        function goToSlide(n) {
-            showSlide(n);
-        }
+        setInterval(() => { changeSlide(1); }, 5000);
 
-        // Auto-advance carousel every 5 seconds
-        setInterval(() => {
-            changeSlide(1);
-        }, 5000);
-
-        // Navbar scroll effect
+        // Navbar scroll
         window.addEventListener('scroll', function() {
             const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 50) {
-                navbar.classList.add('scrolled');
-            } else {
-                navbar.classList.remove('scrolled');
-            }
+            navbar.classList.toggle('scrolled', window.scrollY > 50);
         });
 
-        // Mobile menu toggle
+        // Mobile menu
         const menuToggle = document.querySelector('.menu-toggle');
         const navLinks = document.querySelector('.nav-links');
-        menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
-        });
+        menuToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
     </script>
 </body>
 </html>

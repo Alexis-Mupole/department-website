@@ -1,23 +1,26 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="650" viewBox="0 0 1920 650">
   <defs>
     <linearGradient id="bg1" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" style="stop-color:#003366"/>
       <stop offset="100%" style="stop-color:#0066cc"/>
     </linearGradient>
   </defs>
-  <rect fill="url(#bg1)" width="1920" height="1080"/>
-  <rect fill="#002244" x="0" y="600" width="1920" height="480" opacity="0.3"/>
-  <circle cx="200" cy="200" r="150" fill="#ff6b35" opacity="0.1"/>
-  <circle cx="1700" cy="300" r="200" fill="#ffffff" opacity="0.05"/>
-  <circle cx="1600" cy="800" r="180" fill="#ff6b35" opacity="0.1"/>
-  <rect x="100" y="650" width="600" height="300" rx="20" fill="#ffffff" opacity="0.1"/>
-  <rect x="1200" y="680" width="500" height="240" rx="15" fill="#ff6b35" opacity="0.2"/>
-  <text x="960" y="400" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="80" font-weight="bold">Computing &amp; Informatics</text>
-  <text x="960" y="500" text-anchor="middle" fill="#ff6b35" font-family="Arial" font-size="36">Bugema University</text>
-  <rect x="700" y="750" width="200" height="60" rx="30" fill="#ff6b35"/>
-  <text x="800" y="790" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="22" font-weight="bold">Learn More</text>
-  <rect x="950" y="750" width="200" height="60" rx="30" fill="#ffffff"/>
-  <text x="1050" y="790" text-anchor="middle" fill="#003366" font-family="Arial" font-size="22" font-weight="bold">Apply Now</text>
-  <circle cx="300" cy="850" r="40" fill="#ffffff" opacity="0.2"/>
-  <circle cx="1600" cy="200" r="30" fill="#ff6b35" opacity="0.3"/>
+  <rect fill="url(#bg1)" width="1920" height="650"/>
+  <rect fill="#002244" x="0" y="400" width="1920" height="250" opacity="0.5"/>
+  <circle cx="150" cy="150" r="200" fill="#dc2626" opacity="0.1"/>
+  <circle cx="1800" cy="200" r="250" fill="#ffffff" opacity="0.05"/>
+  <circle cx="1600" cy="500" r="180" fill="#dc2626" opacity="0.1"/>
+  <rect x="100" y="150" width="500" height="350" rx="20" fill="#ffffff" opacity="0.08"/>
+  <rect x="1300" y="120" width="520" height="380" rx="20" fill="#dc2626" opacity="0.15"/>
+  <rect x="1320" y="160" width="480" height="180" rx="15" fill="#ffffff" opacity="0.1"/>
+  <circle cx="1560" cy="250" r="40" fill="#ffffff" opacity="0.15"/>
+  <text x="200" y="250" fill="#ffffff" font-family="Arial" font-size="72" font-weight="bold">Computing</text>
+  <text x="200" y="320" fill="#dc2626" font-family="Arial" font-size="48" font-weight="bold">&amp; Informatics</text>
+  <text x="200" y="380" fill="#cccccc" font-family="Arial" font-size="22">Bugema University - School of Science &amp; Technology</text>
+  <rect x="200" y="420" width="180" height="50" rx="25" fill="#dc2626"/>
+  <text x="290" y="452" fill="#ffffff" font-family="Arial" font-size="18" font-weight="bold">Learn More</text>
+  <rect x="400" y="420" width="180" height="50" rx="25" fill="#ffffff"/>
+  <text x="490" y="452" fill="#003366" font-family="Arial" font-size="18" font-weight="bold">Apply Now</text>
+  <text x="1700" y="500" fill="#ffffff" font-family="Arial" font-size="20" font-weight="bold">500+ Students</text>
+  <text x="1700" y="540" fill="#dc2626" font-family="Arial" font-size="36" font-weight="bold">98% Employment</text>
 </svg>
