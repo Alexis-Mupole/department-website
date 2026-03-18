@@ -11,6 +11,8 @@ document.addEventListener('DOMContentLoaded', function() {
     if (menuToggle) {
         menuToggle.addEventListener('click', () => {
             navLinks.classList.toggle('active');
+            menuToggle.classList.toggle('active');
+            menuToggle.textContent = menuToggle.classList.contains('active') ? '✕' : '☰';
         });
     }
 

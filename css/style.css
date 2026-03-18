@@ -93,6 +93,7 @@ img {
     justify-content: space-between;
     height: 100%;
     padding: 0 30px;
+    position: relative;
 }
 
 .nav-logo {
@@ -162,9 +163,13 @@ img {
 
 .menu-toggle {
     display: none;
-    font-size: 24px;
+    font-size: 28px;
     color: var(--primary-color);
     cursor: pointer;
+    background: none;
+    border: none;
+    padding: 5px 10px;
+    z-index: 1000;
 }
 
 /* ============================================
@@ -2275,7 +2280,13 @@ footer {
     .nav-links {
         display: none;
     }
-    .menu-toggle { display: block; }
+    .menu-toggle { 
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
     .nav-links.active {
         display: flex;
         flex-direction: column;
@@ -2286,6 +2297,17 @@ footer {
         background: white;
         padding: 20px;
         box-shadow: var(--shadow-md);
+        z-index: 999;
+    }
+    
+    .nav-links.active li {
+        width: 100%;
+        text-align: center;
+    }
+    
+    .nav-links.active a {
+        display: block;
+        padding: 15px;
     }
     
     .hero h1 { font-size: 36px; }
