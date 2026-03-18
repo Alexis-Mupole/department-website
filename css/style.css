@@ -2372,6 +2372,12 @@ footer {
     .application-form .form-submit { flex-direction: column; }
     .application-form .form-submit .btn { width: 100%; }
     .contact-details { flex-direction: column; gap: 20px; }
+    .contact-grid { grid-template-columns: 1fr; }
+    .contact-form { padding: 25px 20px; }
+    .contact-form .form-row { grid-template-columns: 1fr; }
+    .key-contacts-grid { grid-template-columns: 1fr; }
+    .faq-grid { grid-template-columns: 1fr; }
+    .map-container { padding: 25px 20px; }
 }
 
 @media (max-width: 480px) {
