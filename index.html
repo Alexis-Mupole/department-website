@@ -34,7 +34,7 @@
             <div class="carousel-overlay"></div>
             <div class="carousel-content">
                 <span class="hero-badge">School of Science & Technology</span>
-                <h2>Department of <span>Computing</span> & Informatics</h2>
+                <h2 class="typing-text">Department of <span>Computing</span> & Informatics</h2>
                 <p>Empowering the next generation of tech leaders through innovative education and practical skills.</p>
                 <div class="hero-buttons">
                     <a href="programs.html" class="btn btn-primary">Explore Programs →</a>
@@ -47,7 +47,7 @@
             <div class="carousel-overlay"></div>
             <div class="carousel-content">
                 <span class="hero-badge">Modern Facilities</span>
-                <h2>State-of-the-art <span>Infrastructure</span></h2>
+                <h2 class="typing-text">State-of-the-art <span>Infrastructure</span></h2>
                 <p>Our new computing complex provides the perfect environment for learning and innovation.</p>
                 <div class="hero-buttons">
                     <a href="about.html" class="btn btn-primary">Learn More →</a>
@@ -59,7 +59,7 @@
             <div class="carousel-overlay"></div>
             <div class="carousel-content">
                 <span class="hero-badge">Hands-On Learning</span>
-                <h2>Practical <span>Computer</span> Labs</h2>
+                <h2 class="typing-text">Practical <span>Computer</span> Labs</h2>
                 <p>Modern laboratories with the latest software and hardware for practical experience.</p>
                 <div class="hero-buttons">
                     <a href="faculty.html" class="btn btn-primary">Meet Our Faculty →</a>
@@ -353,12 +353,23 @@
         const dots = document.querySelectorAll('.carousel-dot');
         const totalSlides = slides.length;
 
+        function animateTyping(element) {
+            element.style.animation = 'none';
+            element.offsetHeight;
+            element.style.animation = 'typing 2.5s steps(40) forwards, blink 0.75s step-end infinite';
+        }
+
         function showSlide(n) {
             currentSlide = (n + totalSlides) % totalSlides;
             slides.forEach(slide => slide.classList.remove('active'));
             dots.forEach(dot => dot.classList.remove('active'));
             slides[currentSlide].classList.add('active');
             dots[currentSlide].classList.add('active');
+            
+            const typingEl = slides[currentSlide].querySelector('.typing-text');
+            if (typingEl) {
+                animateTyping(typingEl);
+            }
         }
 
         function changeSlide(n) { showSlide(currentSlide + n); }
