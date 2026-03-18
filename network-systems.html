@@ -10,120 +10,36 @@
 </head>
 
 <body>
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="preloader-logo">
-            <img src="images/Bugema_logo.png" alt="Bugema University">
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="loader-inner">
+            <img src="images/Bugema_logo.png" alt="Bugema University Logo" class="loader-logo">
+            <div class="loader-bar"><div class="loader-fill"></div></div>
+            <p class="loader-text">Loading...</p>
         </div>
-        <div class="preloader-spinner"></div>
-        <p class="preloader-text">Loading...</p>
     </div>
-    <nav class="navbar">
+
+    <!-- Navigation -->
+    <nav id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <img src="./images/Bugema_logo.png" alt="Bugema University">
-                <div class="nav-logo-text">
-                    <span class="nav-logo-title">Computing & Informatics</span>
-                    <span class="nav-logo-subtitle">Bugema University</span>
-                </div>
+            <a href="index.html" class="nav-brand">
+                <img src="images/Bugema_logo.png" alt="Bugema University">
+                <span>Computing & Informatics</span>
             </a>
-            <div class="nav-overlay"></div>
-            <ul class="nav-links">
-                <div class="nav-mobile-header">
-                    <img src="./images/Bugema_logo.png" alt="Bugema University">
-                    <div class="nav-mobile-header-text">
-                        <h4>Computing & Informatics</h4>
-                        <span>Bugema University</span>
-                    </div>
-                </div>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li class="nav-dropdown">
-                    <a href="programs.html" class="active">Programs</a>
-                    <div class="nav-dropdown-content">
-                        <a href="bachelor-it.html"><span class="dropdown-icon">💻</span> BSc. Information Technology</a>
-                        <a href="business-computing.html"><span class="dropdown-icon">📊</span> BSc. Business Computing</a>
-                        <a href="network-systems.html"><span class="dropdown-icon">🌐</span> BSc. Network Systems</a>
-                        <a href="data-science-ai.html"><span class="dropdown-icon">🤖</span> BSc. Data Science & AI</a>
-                        <a href="library-science.html"><span class="dropdown-icon">📚</span> Library & Information Science</a>
-                        <a href="diploma-computer-engineering.html"><span class="dropdown-icon">⚡</span> Diploma in Computer Eng.</a>
-                        <a href="certificate-it.html"><span class="dropdown-icon">🎯</span> Certificate in IT (UBTEB)</a>
-                    </div>
-                </li>
+                <li><a href="programs.html">Programs</a></li>
                 <li><a href="faculty.html">Faculty</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="application.html" class="btn-nav-apply">Apply Now</a></li>
+                <li><a href="application.html" class="btn-apply">Apply Now</a></li>
             </ul>
-            <button class="menu-toggle" aria-label="Toggle menu">
-                <span class="hamburger"></span>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
             </button>
         </div>
     </nav>
-
-    <div class="page-header" style="background: linear-gradient(135deg, #0d47a1 0%, #1565c0 100%);">
-        <h1>BSc Network Systems Administration</h1>
-        <p class="breadcrumb"><a href="index.html">Home</a> / <a href="programs.html">Programs</a> / Network Systems</p>
-    </div>
-
-    <section class="program-full-detail">
-        <div class="container">
-            <div class="program-hero">
-                <div class="program-hero-content">
-                    <span class="program-duration">4 Years</span>
-                    <span class="program-accredited">NCHE Accredited</span>
-                    <h2>Master Enterprise Networks</h2>
-                    <p>Prepares students to design, implement, and manage enterprise network infrastructure. Hands-on experience with routers, switches, firewalls, and cloud platforms.</p>
-                    <a href="application.html" class="btn btn-primary">Apply Now →</a>
-                </div>
-                <div class="program-hero-image">
-                    <img src="images/lab.jpeg" alt="Network Lab">
-                </div>
-            </div>
-
-            <div class="program-info-grid">
-                <div class="info-card">
-                    <h3>🎓 Qualification Awarded</h3>
-                    <p>BSc. Network Systems Administration</p>
-                </div>
-                <div class="info-card">
-                    <h3>📚 Study Duration</h3>
-                    <p>4 Years (8 Semesters)</p>
-                </div>
-                <div class="info-card">
-                    <h3>📍 Campus</h3>
-                    <p>Bugema University, Luwero</p>
-                </div>
-                <div class="info-card">
-                    <h3>💰 Tuition Per Year</h3>
-                    <p>UGX 3,500,000</p>
-                </div>
-            </div>
-
-            <div class="program-section">
-                <h3>Why Choose This Program?</h3>
-                <div class="why-choose-grid">
-                    <div class="why-choose-card">
-                        <div class="icon">🔧</div>
-                        <h4>Hands-On Labs</h4>
-                        <p>Practical experience with enterprise-grade networking equipment.</p>
-                    </div>
-                    <div class="why-choose-card">
-                        <div class="icon">☁️</div>
-                        <h4>Cloud Skills</h4>
-                        <p>Learn AWS, Azure, and Google Cloud administration.</p>
-                    </div>
-                    <div class="why-choose-card">
-                        <div class="icon">🔒</div>
-                        <h4>Security Focus</h4>
-                        <p>Network security is integrated throughout the curriculum.</p>
-                    </div>
-                    <div class="why-choose-card">
-                        <div class="icon">📜</div>
-                        <h4>Certifications</h4>
-                        <p>Preparation for Cisco, CompTIA, and other certifications.</p>
-                    </div>
-                </div>
-            </div>
+    
 
             <div class="program-section">
                 <h3>Career Opportunities</h3>

@@ -7,407 +7,251 @@
     <meta name="description" content="Discover the Department of Computing & Informatics at Bugema University. Explore our IT programs, expert faculty, and modern facilities.">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/Bugema_logo.png">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="preloader-logo">
-            <img src="images/Bugema_logo.png" alt="Bugema University">
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="loader-inner">
+            <img src="images/Bugema_logo.png" alt="Bugema University Logo" class="loader-logo">
+            <div class="loader-bar"><div class="loader-fill"></div></div>
+            <p class="loader-text">Loading...</p>
         </div>
-        <p class="preloader-text">Loading...</p>
     </div>
 
-    <nav class="navbar">
+    <!-- Navigation -->
+    <nav id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <img src="./images/Bugema_logo.png" alt="Bugema University">
-                <div class="nav-logo-text">
-                    <span class="nav-logo-title">Computing & Informatics</span>
-                    <span class="nav-logo-subtitle">Bugema University</span>
-                </div>
+            <a href="index.html" class="nav-brand">
+                <img src="images/Bugema_logo.png" alt="Bugema University">
+                <span>Computing & Informatics</span>
             </a>
-            <div class="nav-overlay"></div>
-            <ul class="nav-links">
-                <div class="nav-mobile-header">
-                    <img src="./images/Bugema_logo.png" alt="Bugema University">
-                    <div class="nav-mobile-header-text">
-                        <h4>Computing & Informatics</h4>
-                        <span>Bugema University</span>
-                    </div>
-                </div>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li class="nav-dropdown">
-                    <a href="programs.html">Programs</a>
-                    <div class="nav-dropdown-content">
-                        <a href="bachelor-it.html"><span class="dropdown-icon">💻</span> BSc. Information Technology</a>
-                        <a href="business-computing.html"><span class="dropdown-icon">📊</span> BSc. Business Computing</a>
-                        <a href="network-systems.html"><span class="dropdown-icon">🌐</span> BSc. Network Systems</a>
-                        <a href="data-science-ai.html"><span class="dropdown-icon">🤖</span> BSc. Data Science & AI</a>
-                        <a href="library-science.html"><span class="dropdown-icon">📚</span> Library & Information Science</a>
-                        <a href="diploma-computer-engineering.html"><span class="dropdown-icon">⚡</span> Diploma in Computer Eng.</a>
-                        <a href="certificate-it.html"><span class="dropdown-icon">🎯</span> Certificate in IT (UBTEB)</a>
-                    </div>
-                </li>
+                <li><a href="programs.html">Programs</a></li>
                 <li><a href="faculty.html">Faculty</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="application.html" class="btn-nav-apply">Apply Now</a></li>
+                <li><a href="application.html" class="btn-apply">Apply Now</a></li>
             </ul>
-            <button class="menu-toggle" aria-label="Toggle menu">
-                <span class="hamburger"></span>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
             </button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="hero-bg">
-            <div class="hero-bg-overlay"></div>
-            <div class="hero-shapes">
-                <div class="shape shape-1"></div>
-                <div class="shape shape-2"></div>
-                <div class="shape shape-3"></div>
-                <div class="shape shape-4"></div>
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-content">
+            <div class="hero-badge">Bugema University — Est. 1993</div>
+            <h1 class="hero-title">
+                Department of<br>
+                <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+            </h1>
+            <p class="hero-subtitle">
+                Shaping the next generation of technology leaders through innovation, research, and excellence in computing education.
+            </p>
+            <div class="hero-actions">
+                <a href="programs.html" class="btn btn-primary">
+                    <span class="btn-icon">🎓</span> Explore Programs
+                </a>
+                <a href="about.html" class="btn btn-ghost">
+                    <span class="btn-icon">ℹ️</span> Learn More
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="500">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Students</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="25">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Faculty</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="30">0</span><span class="stat-plus">+</span>
+                    <span class="stat-label">Years</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="98">0</span><span class="stat-plus">%</span>
+                    <span class="stat-label">Employment</span>
+                </div>
             </div>
         </div>
-        <div class="container">
-            <div class="hero-content">
-                <div class="hero-badge">
-                    <span>🎓</span> School of Science & Technology
-                </div>
-                <h1>Department of <span class="highlight">Computing</span> & Informatics</h1>
-                <p class="hero-subtitle">Empowering the next generation of tech leaders through innovative education, practical skills, and ethical values rooted in Christian principles.</p>
-                <div class="hero-actions">
-                    <a href="programs.html" class="btn-hero btn-hero-primary">
-                        <span>Explore Programs</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                    </a>
-                    <a href="application.html" class="btn-hero btn-hero-secondary">
-                        <span>Apply Now</span>
-                    </a>
-                </div>
-                <div class="hero-trust">
-                    <span class="trust-label">Accredited by</span>
-                    <div class="trust-badges">
-                        <span class="badge">NCHE</span>
-                        <span class="badge">UBTEB</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="scroll-indicator">
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
-            <span>Scroll Down</span>
-        </div>
-    </section>
-
-    <!-- Quick Stats -->
-    <section class="stats-section">
-        <div class="container">
-            <div class="stats-grid">
-                <div class="stat-card" data-count="500">
-                    <div class="stat-icon">👨‍🎓</div>
-                    <div class="stat-number">500+</div>
-                    <div class="stat-label">Active Students</div>
-                </div>
-                <div class="stat-card" data-count="25">
-                    <div class="stat-icon">👨‍🏫</div>
-                    <div class="stat-number">25+</div>
-                    <div class="stat-label">Expert Lecturers</div>
-                </div>
-                <div class="stat-card" data-count="98">
-                    <div class="stat-icon">💼</div>
-                    <div class="stat-number">98%</div>
-                    <div class="stat-label">Graduate Employment</div>
-                </div>
-                <div class="stat-card" data-count="10">
-                    <div class="stat-icon">🤝</div>
-                    <div class="stat-number">10+</div>
-                    <div class="stat-label">Industry Partners</div>
-                </div>
-            </div>
+        <div class="hero-scroll">
+            <span>Scroll</span>
+            <span class="scroll-icon">↓</span>
         </div>
     </section>
 
-    <!-- About Preview -->
-    <section class="about-preview">
-        <div class="container">
-            <div class="about-preview-grid">
-                <div class="about-preview-content">
-                    <div class="section-label">About Us</div>
-                    <h2>Shaping Future Tech Leaders Since 1993</h2>
-                    <p>The Department of Computing & Informatics at Bugema University is committed to providing high-quality education that prepares students for the fast-evolving world of computing and information technology.</p>
-                    <p>Our programs blend cutting-edge technical skills with ethical leadership, producing graduates who are ready to drive technological innovation across Africa and beyond.</p>
-                    <div class="about-features">
-                        <div class="about-feature">
-                            <span class="feature-check">✓</span>
-                            <span>NCHE Accredited Programs</span>
-                        </div>
-                        <div class="about-feature">
-                            <span class="feature-check">✓</span>
-                            <span>Modern Computer Laboratories</span>
-                        </div>
-                        <div class="about-feature">
-                            <span class="feature-check">✓</span>
-                            <span>Industry Internship Opportunities</span>
-                        </div>
-                        <div class="about-feature">
-                            <span class="feature-check">✓</span>
-                            <span>Experienced Academic Staff</span>
-                        </div>
-                    </div>
-                    <a href="about.html" class="btn-link-arrow">
-                        Learn More About Us
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                    </a>
-                </div>
-                <div class="about-preview-visual">
-                    <div class="visual-card visual-card-1">
-                        <img src="images/campus1.jpeg" alt="Bugema University Campus">
-                    </div>
-                    <div class="visual-card visual-card-2">
-                        <img src="images/lab.jpeg" alt="Computer Lab">
-                    </div>
-                    <div class="visual-card visual-card-3">
-                        <div class="hod-mini">
-                            <div class="hod-mini-avatar">👨‍🏫</div>
-                            <div class="hod-mini-info">
-                                <strong>Mr. Ssewankambo Erma</strong>
-                                <span>Head of Department</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Programs Section -->
-    <section class="programs-highlight">
+    <!-- Quick About -->
+    <section class="section">
         <div class="container">
             <div class="section-header">
-                <div class="section-label">Our Programs</div>
-                <h2>Choose Your Path to Success</h2>
-                <p>Comprehensive computing programs designed for the digital age, accredited by NCHE and recognized internationally.</p>
+                <span class="section-tag">Who We Are</span>
+                <h2 class="section-title">About the Department</h2>
+                <p class="section-desc">A centre of excellence in computing education, research, and community service in East Africa.</p>
             </div>
-            <div class="programs-grid">
-                <a href="bachelor-it.html" class="program-card-new">
-                    <div class="program-card-icon">💻</div>
-                    <div class="program-card-content">
-                        <h3>Bachelor of Information Technology</h3>
-                        <p>Software engineering, cybersecurity, networking, and data analytics.</p>
-                        <div class="program-meta">
-                            <span class="duration">4 Years</span>
-                            <span class="level">Bachelor's Degree</span>
-                        </div>
-                    </div>
-                    <div class="program-card-arrow">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                    </div>
-                </a>
-                <a href="business-computing.html" class="program-card-new">
-                    <div class="program-card-icon">📊</div>
-                    <div class="program-card-content">
-                        <h3>Bachelor of Business Computing</h3>
-                        <p>Computing skills with business knowledge for the digital economy.</p>
-                        <div class="program-meta">
-                            <span class="duration">4 Years</span>
-                            <span class="level">Bachelor's Degree</span>
-                        </div>
-                    </div>
-                    <div class="program-card-arrow">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                    </div>
-                </a>
-                <a href="network-systems.html" class="program-card-new">
-                    <div class="program-card-icon">🌐</div>
-                    <div class="program-card-content">
-                        <h3>BSc. Network Systems Administration</h3>
-                        <p>Design, implement, and manage enterprise network infrastructure.</p>
-                        <div class="program-meta">
-                            <span class="duration">4 Years</span>
-                            <span class="level">Bachelor's Degree</span>
-                        </div>
-                    </div>
-                    <div class="program-card-arrow">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                    </div>
-                </a>
-                <a href="data-science-ai.html" class="program-card-new">
-                    <div class="program-card-icon">🤖</div>
-                    <div class="program-card-content">
-                        <h3>BSc. Data Science & AI</h3>
-                        <p>Data science, machine learning, and artificial intelligence.</p>
-                        <div class="program-meta">
-                            <span class="duration">4 Years</span>
-                            <span class="level">Bachelor's Degree</span>
-                        </div>
-                    </div>
-                    <div class="program-card-arrow">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                    </div>
-                </a>
-                <a href="library-science.html" class="program-card-new">
-                    <div class="program-card-icon">📚</div>
-                    <div class="program-card-content">
-                        <h3>Bachelor of Library & Information Science</h3>
-                        <p>Manage information resources, libraries, and digital archives.</p>
-                        <div class="program-meta">
-                            <span class="duration">4 Years</span>
-                            <span class="level">Bachelor's Degree</span>
-                        </div>
-                    </div>
-                    <div class="program-card-arrow">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                    </div>
-                </a>
-                <a href="diploma-computer-engineering.html" class="program-card-new">
-                    <div class="program-card-icon">⚡</div>
-                    <div class="program-card-content">
-                        <h3>Diploma in Computer Engineering</h3>
-                        <p>Practical skills in hardware, software, and system maintenance.</p>
-                        <div class="program-meta">
-                            <span class="duration">2 Years</span>
-                            <span class="level">Diploma</span>
-                        </div>
-                    </div>
-                    <div class="program-card-arrow">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                    </div>
-                </a>
-                <a href="certificate-it.html" class="program-card-new program-card-cert">
-                    <div class="program-card-icon">🎯</div>
-                    <div class="program-card-content">
-                        <h3>Certificate in IT (UBTEB)</h3>
-                        <p>Entry-level certificate recognized by Uganda Business and Technical Examinations Board.</p>
-                        <div class="program-meta">
-                            <span class="duration">1 Year</span>
-                            <span class="level">Certificate</span>
-                        </div>
-                    </div>
-                    <div class="program-card-arrow">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                    </div>
-                </a>
+            <div class="bento-grid about-grid">
+                <div class="bento-card bento-large glass-card reveal">
+                    <div class="card-icon-wrap blue">🎯</div>
+                    <h3>Our Mission</h3>
+                    <p>To provide world-class computing education that equips students with technical excellence, critical thinking, and ethical values to drive technological innovation in Uganda and beyond.</p>
+                    <a href="about.html" class="card-link">Read more →</a>
+                </div>
+                <div class="bento-card glass-card reveal">
+                    <div class="card-icon-wrap red">👁️</div>
+                    <h3>Our Vision</h3>
+                    <p>To be a centre of excellence in computing education, producing graduates who are competitive in the global job market.</p>
+                </div>
+                <div class="bento-card glass-card reveal">
+                    <div class="card-icon-wrap blue">🛡️</div>
+                    <h3>Our Values</h3>
+                    <ul class="values-list">
+                        <li><span class="check">✓</span> Excellence in Education</li>
+                        <li><span class="check">✓</span> Innovation & Creativity</li>
+                        <li><span class="check">✓</span> Integrity & Ethics</li>
+                        <li><span class="check">✓</span> Collaboration</li>
+                        <li><span class="check">✓</span> Service to Community</li>
+                    </ul>
+                </div>
+                <div class="bento-card bento-wide neu-card reveal">
+                    <div class="card-icon-wrap red">🏆</div>
+                    <h3>Accreditation & Recognition</h3>
+                    <p>Our programs are accredited by the National Council for Higher Education (NCHE) Uganda and aligned with international computing standards. We maintain strong industry partnerships with leading tech companies across East Africa.</p>
+                    <a href="about.html" class="card-link">Learn more →</a>
+                </div>
+                <div class="bento-card glass-card reveal">
+                    <div class="card-icon-wrap blue">🌍</div>
+                    <h3>Community Impact</h3>
+                    <p>We actively engage with local communities through outreach programs, digital literacy campaigns, and technology workshops.</p>
+                </div>
             </div>
-            <div class="text-center mt-30">
-                <a href="programs.html" class="btn-hero btn-hero-primary">
-                    View All Programs
-                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                </a>
+        </div>
+    </section>
+
+    <!-- Programs Preview -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Academics</span>
+                <h2 class="section-title">Our Programs</h2>
+                <p class="section-desc">Carefully designed programs built to meet industry demands.</p>
+            </div>
+            <div class="programs-preview-grid">
+                <div class="prog-preview-card reveal">
+                    <div class="prog-icon-wrap">💼</div>
+                    <h3>Bachelor of Business Computing</h3>
+                    <p>Bridges business management and IT — covering e-commerce, business analytics, and systems design.</p>
+                    <div class="prog-meta">
+                        <span class="prog-meta-item">⏱️ 4 Years</span>
+                        <span class="prog-meta-item">📅 Jan & Aug</span>
+                    </div>
+                    <a href="business-computing.html" class="btn btn-outline btn-sm">View Program</a>
+                </div>
+                <div class="prog-preview-card featured reveal">
+                    <div class="prog-icon-wrap">🌐</div>
+                    <h3>Bachelor of Information Technology</h3>
+                    <p>Networking, cybersecurity, database systems, and enterprise IT management.</p>
+                    <div class="prog-meta">
+                        <span class="prog-meta-item">⏱️ 4 Years</span>
+                        <span class="prog-meta-item">📅 Jan & Aug</span>
+                    </div>
+                    <a href="bachelor-it.html" class="btn btn-primary btn-sm">View Program</a>
+                </div>
+                <div class="prog-preview-card reveal">
+                    <div class="prog-icon-wrap">💻</div>
+                    <h3>BSc Software Engineering</h3>
+                    <p>Algorithms, software architecture, AI/ML, and modern development practices.</p>
+                    <div class="prog-meta">
+                        <span class="prog-meta-item">⏱️ 4 Years</span>
+                        <span class="prog-meta-item">📅 Jan & Aug</span>
+                    </div>
+                    <a href="programs.html" class="btn btn-outline btn-sm">View Program</a>
+                </div>
+            </div>
+            <div class="prog-more-row">
+                <span class="prog-more-label">Also offered:</span>
+                <a href="library-science.html" class="prog-more-chip">📚 B. Library & Info Science</a>
+                <a href="network-systems.html" class="prog-more-chip">🖥️ BSc Network Systems</a>
+                <a href="data-science-ai.html" class="prog-more-chip">🤖 BSc Data Science & AI</a>
+                <a href="diploma-computer-engineering.html" class="prog-more-chip">⚡ Diploma of IT</a>
+                <a href="certificate-it.html" class="prog-more-chip">🎯 Certificate of IT</a>
+            </div>
+            <div class="section-cta">
+                <a href="programs.html" class="btn btn-primary">📖 View All Programs</a>
             </div>
         </div>
     </section>
 
     <!-- Why Choose Us -->
-    <section class="why-choose">
+    <section class="section">
         <div class="container">
             <div class="section-header">
-                <div class="section-label">Why Choose Us</div>
-                <h2>What Sets Us Apart</h2>
-                <p>Discover why students choose Bugema University for their computing education.</p>
+                <span class="section-tag">Why Choose Us</span>
+                <h2 class="section-title">What Sets Us Apart</h2>
             </div>
             <div class="why-grid">
-                <div class="why-card">
+                <div class="why-card reveal">
                     <div class="why-icon">🏆</div>
                     <h3>Quality Education</h3>
                     <p>NCHE accredited programs with rigorous academic standards that prepare you for the real world.</p>
                 </div>
-                <div class="why-card">
+                <div class="why-card reveal">
                     <div class="why-icon">💻</div>
                     <h3>Modern Facilities</h3>
-                    <p>State-of-the-art computer laboratories with the latest software and hardware for hands-on learning.</p>
+                    <p>State-of-the-art computer laboratories with the latest software and hardware.</p>
                 </div>
-                <div class="why-card">
+                <div class="why-card reveal">
                     <div class="why-icon">👨‍🏫</div>
                     <h3>Expert Faculty</h3>
                     <p>Learn from experienced lecturers with industry backgrounds and practical expertise.</p>
                 </div>
-                <div class="why-card">
+                <div class="why-card reveal">
                     <div class="why-icon">🤝</div>
                     <h3>Industry Connections</h3>
                     <p>Internship opportunities with leading tech companies for real-world experience.</p>
                 </div>
-                <div class="why-card">
+                <div class="why-card reveal">
                     <div class="why-icon">🌍</div>
                     <h3>Global Recognition</h3>
                     <p>Degrees recognized internationally, opening doors to career opportunities worldwide.</p>
                 </div>
-                <div class="why-card">
+                <div class="why-card reveal">
                     <div class="why-icon">✝️</div>
                     <h3>Christian Values</h3>
-                    <p>Education rooted in ethical principles, producing responsible and values-driven professionals.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Campus Gallery -->
-    <section class="campus-gallery">
-        <div class="container">
-            <div class="section-header">
-                <div class="section-label">Our Campus</div>
-                <h2>Experience Bugema University</h2>
-                <p>State-of-the-art facilities for your learning journey</p>
-            </div>
-            <div class="gallery-masonry">
-                <div class="gallery-item gallery-item-1">
-                    <img src="images/campus1.jpeg" alt="Bugema University Campus">
-                    <div class="gallery-overlay">
-                        <h4>Main Campus</h4>
-                        <p>Beautiful learning environment</p>
-                    </div>
-                </div>
-                <div class="gallery-item gallery-item-2">
-                    <img src="images/New complex.jpeg" alt="Computing Complex">
-                    <div class="gallery-overlay">
-                        <h4>Computing Complex</h4>
-                        <p>Modern technology hub</p>
-                    </div>
-                </div>
-                <div class="gallery-item gallery-item-3">
-                    <img src="images/lab.jpeg" alt="Computer Lab">
-                    <div class="gallery-overlay">
-                        <h4>Computer Labs</h4>
-                        <p>Latest technology</p>
-                    </div>
-                </div>
-                <div class="gallery-item gallery-item-4">
-                    <img src="images/lab 2.jpeg" alt="Lab Session">
-                    <div class="gallery-overlay">
-                        <h4>Hands-On Training</h4>
-                        <p>Practical experience</p>
-                    </div>
+                    <p>Education rooted in ethical principles, producing responsible professionals.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- HOD Message -->
-    <section class="hod-message">
+    <section class="section section-alt">
         <div class="container">
-            <div class="hod-card-new">
-                <div class="hod-avatar">
-                    <div class="avatar-ring">
-                        <span>👨‍🏫</span>
-                    </div>
+            <div class="section-header">
+                <span class="section-tag">Leadership</span>
+                <h2 class="section-title">Message from Our Head</h2>
+            </div>
+            <div class="hod-message-card reveal">
+                <div class="hod-avatar-new">
+                    <span>👨‍🏫</span>
                 </div>
-                <div class="hod-content">
-                    <div class="quote-icon">"</div>
-                    <p>Welcome to the Department of Computing & Informatics. I am proud to lead a department committed to providing high-quality education that prepares students for the fast-evolving world of computing and information technology.</p>
-                    <p>Our programs emphasize problem-solving, innovation, ethical practice, and teamwork to ensure our graduates are ready for the modern digital economy.</p>
+                <div class="hod-message-content">
+                    <p>"Welcome to the Department of Computing & Informatics. I am proud to lead a department committed to providing high-quality education that prepares students for the fast-evolving world of computing and information technology."</p>
+                    <p>"Our programs are designed to equip students with strong theoretical knowledge and practical skills. We emphasize problem-solving, innovation, ethical practice, and teamwork."</p>
                     <div class="hod-signature">
                         <h4>Mr. Ssewankambo Erma</h4>
                         <span>Head of Department</span>
                     </div>
-                    <a href="faculty.html" class="btn-link-arrow">
-                        Meet Our Team
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                    </a>
+                    <a href="faculty.html" class="btn btn-outline btn-sm">Meet Our Team →</a>
                 </div>
             </div>
         </div>
@@ -418,74 +262,50 @@
         <div class="container">
             <div class="cta-content">
                 <h2>Ready to Start Your Journey?</h2>
-                <p>Take the first step towards a rewarding career in technology. Apply now and join our community of future tech leaders.</p>
+                <p>Join hundreds of students who have launched successful careers in technology through our programs.</p>
                 <div class="cta-buttons">
-                    <a href="application.html" class="btn-hero btn-hero-primary">
-                        Apply Now
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-                    </a>
-                    <a href="contact.html" class="btn-hero btn-hero-secondary">
-                        Contact Us
-                    </a>
+                    <a href="application.html" class="btn btn-primary">Apply Now →</a>
+                    <a href="contact.html" class="btn btn-ghost-white">Contact Us</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
+    <footer class="footer">
         <div class="container">
             <div class="footer-grid">
-                <div class="footer-about">
-                    <div class="footer-logo">
-                        <img src="images/Bugema_logo.png" alt="Bugema University">
-                        <h3>Bugema University</h3>
-                    </div>
-                    <p>Department of Computing & Informatics - School of Science & Technology.</p>
-                    <p class="footer-address">📍 Bugema, Luwero District, Uganda</p>
-                    <div class="footer-social">
-                        <a href="#" aria-label="Facebook">📘</a>
-                        <a href="#" aria-label="Twitter">🐦</a>
-                        <a href="#" aria-label="Instagram">📸</a>
-                        <a href="#" aria-label="YouTube">▶️</a>
-                    </div>
+                <div class="footer-brand">
+                    <img src="images/Bugema_logo.png" alt="Bugema University Logo">
+                    <h3>Computing & Informatics</h3>
+                    <p>Bugema University — Shaping technology leaders for Africa and the world.</p>
                 </div>
-                <div class="footer-column">
+                <div class="footer-links">
                     <h4>Quick Links</h4>
                     <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="programs.html">Programs</a></li>
-                        <li><a href="faculty.html">Faculty</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">→ About</a></li>
+                        <li><a href="programs.html">→ Programs</a></li>
+                        <li><a href="faculty.html">→ Faculty</a></li>
+                        <li><a href="contact.html">→ Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
+                <div class="footer-links">
                     <h4>Programs</h4>
                     <ul>
-                        <li><a href="bachelor-it.html">BSc. Information Technology</a></li>
-                        <li><a href="business-computing.html">BSc. Business Computing</a></li>
-                        <li><a href="network-systems.html">BSc. Network Systems</a></li>
-                        <li><a href="data-science-ai.html">BSc. Data Science & AI</a></li>
-                        <li><a href="diploma-computer-engineering.html">Diploma in Computer Engineering</a></li>
+                        <li><a href="bachelor-it.html">→ BSc. Information Technology</a></li>
+                        <li><a href="business-computing.html">→ BSc. Business Computing</a></li>
+                        <li><a href="network-systems.html">→ BSc. Network Systems</a></li>
+                        <li><a href="data-science-ai.html">→ BSc. Data Science & AI</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="https://eportal.bugemauniv.ac.ug/">Student Portal</a></li>
-                        <li><a href="https://lib.bugemauniv.ac.ug/">Library</a></li>
-                        <li><a href="application.html">Apply Online</a></li>
-                        <li><a href="contact.html">Contact Admissions</a></li>
-                    </ul>
-                    <div class="footer-contact">
-                        <h4>Contact</h4>
-                        <p>📞 +256-312-351-400</p>
-                        <p>✉️ info@bugemauniv.ac.ug</p>
-                    </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p>📧 computing@bugemauniv.ac.ug</p>
+                    <p>📞 +256-312-351-400</p>
+                    <p>📍 Bugema, Luwero, Uganda</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2026 Bugema University - Department of Computing & Informatics. All Rights Reserved.</p>
+                <p>© 2026 Bugema University — Department of Computing and Informatics. All rights reserved.</p>
             </div>
         </div>
     </footer>

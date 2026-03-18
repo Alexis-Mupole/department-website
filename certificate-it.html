@@ -10,120 +10,36 @@
 </head>
 
 <body>
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="preloader-logo">
-            <img src="images/Bugema_logo.png" alt="Bugema University">
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="loader-inner">
+            <img src="images/Bugema_logo.png" alt="Bugema University Logo" class="loader-logo">
+            <div class="loader-bar"><div class="loader-fill"></div></div>
+            <p class="loader-text">Loading...</p>
         </div>
-        <div class="preloader-spinner"></div>
-        <p class="preloader-text">Loading...</p>
     </div>
-    <nav class="navbar">
+
+    <!-- Navigation -->
+    <nav id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <img src="./images/Bugema_logo.png" alt="Bugema University">
-                <div class="nav-logo-text">
-                    <span class="nav-logo-title">Computing & Informatics</span>
-                    <span class="nav-logo-subtitle">Bugema University</span>
-                </div>
+            <a href="index.html" class="nav-brand">
+                <img src="images/Bugema_logo.png" alt="Bugema University">
+                <span>Computing & Informatics</span>
             </a>
-            <div class="nav-overlay"></div>
-            <ul class="nav-links">
-                <div class="nav-mobile-header">
-                    <img src="./images/Bugema_logo.png" alt="Bugema University">
-                    <div class="nav-mobile-header-text">
-                        <h4>Computing & Informatics</h4>
-                        <span>Bugema University</span>
-                    </div>
-                </div>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li class="nav-dropdown">
-                    <a href="programs.html" class="active">Programs</a>
-                    <div class="nav-dropdown-content">
-                        <a href="bachelor-it.html"><span class="dropdown-icon">💻</span> BSc. Information Technology</a>
-                        <a href="business-computing.html"><span class="dropdown-icon">📊</span> BSc. Business Computing</a>
-                        <a href="network-systems.html"><span class="dropdown-icon">🌐</span> BSc. Network Systems</a>
-                        <a href="data-science-ai.html"><span class="dropdown-icon">🤖</span> BSc. Data Science & AI</a>
-                        <a href="library-science.html"><span class="dropdown-icon">📚</span> Library & Information Science</a>
-                        <a href="diploma-computer-engineering.html"><span class="dropdown-icon">⚡</span> Diploma in Computer Eng.</a>
-                        <a href="certificate-it.html"><span class="dropdown-icon">🎯</span> Certificate in IT (UBTEB)</a>
-                    </div>
-                </li>
+                <li><a href="programs.html">Programs</a></li>
                 <li><a href="faculty.html">Faculty</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="application.html" class="btn-nav-apply">Apply Now</a></li>
+                <li><a href="application.html" class="btn-apply">Apply Now</a></li>
             </ul>
-            <button class="menu-toggle" aria-label="Toggle menu">
-                <span class="hamburger"></span>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
             </button>
         </div>
     </nav>
-
-    <div class="page-header" style="background: linear-gradient(135deg, #0d47a1 0%, #1565c0 100%);">
-        <h1>Certificate in Information Technology</h1>
-        <p class="breadcrumb"><a href="index.html">Home</a> / <a href="programs.html">Programs</a> / Certificate</p>
-    </div>
-
-    <section class="program-full-detail">
-        <div class="container">
-            <div class="program-hero">
-                <div class="program-hero-content">
-                    <span class="program-duration">1 Year</span>
-                    <span class="program-accredited">UBTEB Recognized</span>
-                    <h2>Start Your IT Journey</h2>
-                    <p>Certificate recognized by Uganda Business and Technical Examinations Board (UBTEB). Ideal for beginners starting their IT journey or seeking foundational skills.</p>
-                    <a href="application.html" class="btn btn-primary">Apply Now →</a>
-                </div>
-                <div class="program-hero-image">
-                    <img src="images/campus1.jpeg" alt="Certificate IT">
-                </div>
-            </div>
-
-            <div class="program-info-grid">
-                <div class="info-card">
-                    <h3>🎓 Qualification Awarded</h3>
-                    <p>Certificate in Information Technology (CIT)</p>
-                </div>
-                <div class="info-card">
-                    <h3>📚 Study Duration</h3>
-                    <p>1 Year (2 Semesters)</p>
-                </div>
-                <div class="info-card">
-                    <h3>📍 Campus</h3>
-                    <p>Bugema University, Luwero</p>
-                </div>
-                <div class="info-card">
-                    <h3>💰 Tuition Per Year</h3>
-                    <p>UGX 1,800,000</p>
-                </div>
-            </div>
-
-            <div class="program-section">
-                <h3>Why Choose This Program?</h3>
-                <div class="why-choose-grid">
-                    <div class="why-choose-card">
-                        <div class="icon">🎯</div>
-                        <h4>Beginner Friendly</h4>
-                        <p>No prior IT experience required. Perfect starting point.</p>
-                    </div>
-                    <div class="why-choose-card">
-                        <div class="icon">📜</div>
-                        <h4>UBTEB Certified</h4>
-                        <p>Nationally recognized qualification by Uganda's examination body.</p>
-                    </div>
-                    <div class="why-choose-card">
-                        <div class="icon">⏱️</div>
-                        <h4>Quick Completion</h4>
-                        <p>Complete in just 1 year and enter the job market.</p>
-                    </div>
-                    <div class="why-choose-card">
-                        <div class="icon">📚</div>
-                        <h4>Upgrade Path</h4>
-                        <p>Proceed to Diploma or Bachelor degree.</p>
-                    </div>
-                </div>
-            </div>
+    
 
             <div class="program-section">
                 <h3>Career Opportunities</h3>

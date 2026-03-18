@@ -10,96 +10,36 @@
 </head>
 
 <body>
-    <!-- Preloader -->
-    <div class="preloader">
-        <div class="preloader-logo">
-            <img src="images/Bugema_logo.png" alt="Bugema University">
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="loader-inner">
+            <img src="images/Bugema_logo.png" alt="Bugema University Logo" class="loader-logo">
+            <div class="loader-bar"><div class="loader-fill"></div></div>
+            <p class="loader-text">Loading...</p>
         </div>
-        <div class="preloader-spinner"></div>
-        <p class="preloader-text">Loading...</p>
     </div>
-    <nav class="navbar">
+
+    <!-- Navigation -->
+    <nav id="navbar">
         <div class="nav-container">
-            <a href="index.html" class="nav-logo">
-                <img src="./images/Bugema_logo.png" alt="Bugema University">
-                <div class="nav-logo-text">
-                    <span class="nav-logo-title">Computing & Informatics</span>
-                    <span class="nav-logo-subtitle">Bugema University</span>
-                </div>
+            <a href="index.html" class="nav-brand">
+                <img src="images/Bugema_logo.png" alt="Bugema University">
+                <span>Computing & Informatics</span>
             </a>
-            <div class="nav-overlay"></div>
-            <ul class="nav-links">
-                <div class="nav-mobile-header">
-                    <img src="./images/Bugema_logo.png" alt="Bugema University">
-                    <div class="nav-mobile-header-text">
-                        <h4>Computing & Informatics</h4>
-                        <span>Bugema University</span>
-                    </div>
-                </div>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li class="nav-dropdown">
-                    <a href="programs.html" class="active">Programs</a>
-                    <div class="nav-dropdown-content">
-                        <a href="bachelor-it.html"><span class="dropdown-icon">💻</span> BSc. Information Technology</a>
-                        <a href="business-computing.html"><span class="dropdown-icon">📊</span> BSc. Business Computing</a>
-                        <a href="network-systems.html"><span class="dropdown-icon">🌐</span> BSc. Network Systems</a>
-                        <a href="data-science-ai.html"><span class="dropdown-icon">🤖</span> BSc. Data Science & AI</a>
-                        <a href="library-science.html"><span class="dropdown-icon">📚</span> Library & Information Science</a>
-                        <a href="diploma-computer-engineering.html"><span class="dropdown-icon">⚡</span> Diploma in Computer Eng.</a>
-                        <a href="certificate-it.html"><span class="dropdown-icon">🎯</span> Certificate in IT (UBTEB)</a>
-                    </div>
-                </li>
+                <li><a href="programs.html">Programs</a></li>
                 <li><a href="faculty.html">Faculty</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="application.html" class="btn-nav-apply">Apply Now</a></li>
+                <li><a href="application.html" class="btn-apply">Apply Now</a></li>
             </ul>
-            <button class="menu-toggle" aria-label="Toggle menu">
-                <span class="hamburger"></span>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span><span></span><span></span>
             </button>
         </div>
     </nav>
-
-    <div class="page-header">
-        <h1>Academic Programs</h1>
-        <p class="breadcrumb"><a href="index.html">Home</a> / Programs</p>
-    </div>
-
-    <section>
-        <div class="container">
-            <div class="section-header">
-                <h2>Programs Offered</h2>
-                <p>The Department of Computing & Informatics offers comprehensive programs under the School of Science & Technology.</p>
-            </div>
-
-            <div class="program-detail-card">
-                <div class="program-detail-header">
-                    <h3><a href="bachelor-it.html">Bachelor of Information Technology</a></h3>
-                    <span class="program-badge">Most Popular</span>
-                </div>
-                <div class="program-detail-body">
-                    <p>Our BSc. IT program empowers students to navigate and shape the dynamic digital landscape. Rooted in Seventh-day Adventist values, this program blends cutting-edge skills in software engineering, cybersecurity, networking, and data analytics with ethical leadership tailored to Africa's digital needs.</p>
-                    <a href="bachelor-it.html" class="btn-link">View Details →</a>
-                    <h4>Career Opportunities</h4>
-                    <ul class="career-list">
-                        <li>Software Developer</li>
-                        <li>Network Administrator</li>
-                        <li>Database Administrator</li>
-                        <li>IT Project Manager</li>
-                        <li>Systems Analyst</li>
-                        <li>Cybersecurity Analyst</li>
-                    </ul>
-                    <h4>Core Subjects</h4>
-                    <div class="subject-tags">
-                        <span>Software Engineering</span>
-                        <span>Cybersecurity</span>
-                        <span>Data Analytics</span>
-                        <span>Networking</span>
-                        <span>Web Development</span>
-                        <span>Database Management</span>
-                    </div>
-                </div>
-            </div>
+    
 
             <div class="program-detail-card">
                 <div class="program-detail-header">
