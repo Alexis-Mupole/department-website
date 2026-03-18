@@ -180,6 +180,7 @@ img {
     height: 650px;
     overflow: hidden;
     margin-top: var(--nav-height);
+    touch-action: pan-y;
 }
 
 .carousel-slide {
@@ -2334,7 +2335,20 @@ footer {
         margin-bottom: 20px;
         text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
     }
-    .carousel-nav { width: 35px; height: 35px; font-size: 18px; }
+    .carousel-nav { 
+        width: 45px; 
+        height: 45px; 
+        font-size: 20px;
+        opacity: 0.9;
+    }
+    .carousel-nav.prev { left: 10px; }
+    .carousel-nav.next { right: 10px; }
+    .carousel-dots { bottom: 20px; gap: 15px; }
+    .carousel-dot { 
+        width: 16px; 
+        height: 16px; 
+        padding: 0;
+    }
     .hero-buttons { flex-direction: column; gap: 10px; }
     .hero-buttons .btn { padding: 12px 20px; font-size: 14px; }
     .typing-text { animation: typing 2s steps(30) 0.2s forwards, cursorFade 0.3s 2.3s forwards; }
@@ -2351,6 +2365,21 @@ footer {
     .application-form .form-submit { flex-direction: column; }
     .application-form .form-submit .btn { width: 100%; }
     .contact-details { flex-direction: column; gap: 20px; }
+}
+
+@media (max-width: 480px) {
+    .carousel { height: 320px; }
+    .carousel-content h2 { font-size: 18px; }
+    .carousel-content p { font-size: 12px; }
+    .carousel-nav { 
+        width: 38px; 
+        height: 38px; 
+        font-size: 16px;
+    }
+    .carousel-nav.prev { left: 5px; }
+    .carousel-nav.next { right: 5px; }
+    .carousel-dots { bottom: 15px; gap: 12px; }
+    .carousel-dot { width: 12px; height: 12px; }
 }
 
 /* ============================================
