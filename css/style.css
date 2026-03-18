@@ -231,8 +231,8 @@ img {
     display: inline-block;
     overflow: hidden;
     white-space: nowrap;
-    border-right: 3px solid var(--accent-color);
-    animation: typing 2.5s steps(40) 0.5s forwards, blink 0.75s step-end infinite;
+    border-right: 3px solid rgba(255,255,255,0.8);
+    animation: typing 2.5s steps(40) 0.5s forwards, cursorFade 0.5s 3s forwards;
     width: 0;
 }
 
@@ -241,8 +241,8 @@ img {
     to { width: 100%; }
 }
 
-@keyframes blink {
-    50% { border-color: transparent; }
+@keyframes cursorFade {
+    to { border-color: transparent; }
 }
 
 .carousel-content p {
