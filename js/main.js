@@ -63,11 +63,29 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Close mobile menu on nav link click
+    // Close mobile menu on nav link click (except dropdown toggle)
     document.querySelectorAll('.nav-links a').forEach(link => {
-        link.addEventListener('click', () => {
+        link.addEventListener('click', function(e) {
+            // Check if this is a dropdown toggle link
+            if (this.parentElement.classList.contains('nav-dropdown') && !this.href.includes('.html')) {
+                e.preventDefault();
+                this.parentElement.classList.toggle('active');
+                return;
+            }
+            
             if (window.innerWidth <= 900) {
                 closeMobileMenu();
+            }
+        });
+    });
+    
+    // Dropdown click handler for mobile
+    document.querySelectorAll('.nav-dropdown > a').forEach(dropdownLink => {
+        dropdownLink.addEventListener('click', function(e) {
+            if (window.innerWidth <= 900) {
+                e.preventDefault();
+                const dropdown = this.parentElement;
+                dropdown.classList.toggle('active');
             }
         });
     });
