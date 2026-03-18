@@ -1089,6 +1089,190 @@ section {
 }
 
 /* ============================================
+   APPLICATION FORM
+   ============================================ */
+.application-section {
+    padding: 80px 0;
+    background: var(--bg-color);
+}
+
+.application-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto 50px;
+}
+
+.application-intro h2 {
+    font-size: 36px;
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.application-intro p {
+    color: var(--text-secondary);
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.application-form-container {
+    background: white;
+    border-radius: 20px;
+    padding: 50px;
+    box-shadow: var(--shadow-md);
+    max-width: 900px;
+    margin: 0 auto 50px;
+}
+
+.application-form .form-section {
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.application-form .form-section:last-of-type {
+    border-bottom: none;
+}
+
+.application-form .form-section h3 {
+    font-size: 22px;
+    color: var(--primary-color);
+    margin-bottom: 25px;
+}
+
+.application-form .form-row {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.application-form .form-group {
+    margin-bottom: 20px;
+}
+
+.application-form .form-group label {
+    display: block;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.application-form .form-group label .required {
+    color: #dc2626;
+}
+
+.application-form .form-group input,
+.application-form .form-group select,
+.application-form .form-group textarea {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid var(--border-color);
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: inherit;
+    transition: all 0.3s ease;
+    background: #f8f9fa;
+}
+
+.application-form .form-group input:focus,
+.application-form .form-group select:focus,
+.application-form .form-group textarea:focus {
+    outline: none;
+    border-color: var(--primary-color);
+    background: white;
+    box-shadow: 0 0 0 3px rgba(13, 71, 161, 0.1);
+}
+
+.application-form .form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.application-form .form-check {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+.application-form .form-check input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+    margin-top: 3px;
+    accent-color: var(--primary-color);
+}
+
+.application-form .form-check label {
+    font-size: 14px;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.application-form .form-check label a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.application-form .form-submit {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.application-form .form-submit .btn {
+    padding: 16px 40px;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.contact-info-box {
+    background: white;
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: var(--shadow-sm);
+}
+
+.contact-info-box h3 {
+    font-size: 24px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.contact-info-box > p {
+    color: var(--text-secondary);
+    margin-bottom: 25px;
+}
+
+.contact-details {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-item span {
+    font-size: 24px;
+}
+
+.contact-item p {
+    color: var(--text-primary);
+    font-weight: 600;
+    margin: 0;
+}
+
+/* ============================================
    GALLERY SECTION
    ============================================ */
 .gallery-section {
@@ -2125,6 +2309,11 @@ footer {
     .admission-requirements { grid-template-columns: 1fr; }
     .cta-section { padding: 40px 20px; }
     .cta-buttons { flex-direction: column; }
+    .application-form-container { padding: 30px 20px; }
+    .application-form .form-row { grid-template-columns: 1fr; }
+    .application-form .form-submit { flex-direction: column; }
+    .application-form .form-submit .btn { width: 100%; }
+    .contact-details { flex-direction: column; gap: 20px; }
 }
 
 /* ============================================
