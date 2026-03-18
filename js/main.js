@@ -15,50 +15,85 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
-// Mobile Menu Toggle
-const menuToggle = document.querySelector('.menu-toggle');
-const navLinks = document.querySelector('.nav-links');
+    // Mobile Menu Toggle
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    const navOverlay = document.querySelector('.nav-overlay');
 
-if (menuToggle) {
-    menuToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
-        menuToggle.classList.toggle('active');
-        menuToggle.textContent = menuToggle.classList.contains('active') ? '✕' : '☰';
-        
-        // Prevent body scroll when menu is open
-        document.body.style.overflow = navLinks.classList.contains('active') ? 'hidden' : '';
-    });
-    
+    function closeMobileMenu() {
+        if (navLinks) navLinks.classList.remove('active');
+        if (menuToggle) menuToggle.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+
+    function openMobileMenu() {
+        if (navLinks) navLinks.classList.add('active');
+        if (menuToggle) menuToggle.classList.add('active');
+        document.body.style.overflow = 'hidden';
+    }
+
+    if (menuToggle && navLinks) {
+        menuToggle.addEventListener('click', () => {
+            if (navLinks.classList.contains('active')) {
+                closeMobileMenu();
+            } else {
+                openMobileMenu();
+            }
+        });
+    }
+
+    // Close menu when clicking overlay
+    if (navOverlay) {
+        navOverlay.addEventListener('click', closeMobileMenu);
+    }
+
     // Close menu when clicking outside
     document.addEventListener('click', (e) => {
         if (navLinks && navLinks.classList.contains('active')) {
-            if (!navLinks.contains(e.target) && !menuToggle.contains(e.target)) {
-                navLinks.classList.remove('active');
-                menuToggle.classList.remove('active');
-                menuToggle.textContent = '☰';
-                document.body.style.overflow = '';
+            if (!navLinks.contains(e.target) && !menuToggle.contains(e.target) && !navOverlay.contains(e.target)) {
+                closeMobileMenu();
             }
         }
     });
-    
+
     // Close menu on escape key
     document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape' && navLinks.classList.contains('active')) {
-            navLinks.classList.remove('active');
-            menuToggle.classList.remove('active');
-            menuToggle.textContent = '☰';
-            document.body.style.overflow = '';
+        if (e.key === 'Escape') {
+            closeMobileMenu();
         }
     });
-}
+
+    // Close mobile menu on nav link click
+    document.querySelectorAll('.nav-links a').forEach(link => {
+        link.addEventListener('click', () => {
+            if (window.innerWidth <= 900) {
+                closeMobileMenu();
+            }
+        });
+    });
 
     // Navbar Scroll Effect
     const navbar = document.querySelector('.navbar');
     if (navbar) {
         window.addEventListener('scroll', function() {
-            navbar.classList.toggle('scrolled', window.scrollY > 50);
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
         });
     }
+
+    // Dropdown toggle on mobile
+    const dropdowns = document.querySelectorAll('.nav-dropdown');
+    dropdowns.forEach(dropdown => {
+        dropdown.addEventListener('click', function(e) {
+            if (window.innerWidth <= 900) {
+                e.preventDefault();
+                this.classList.toggle('active');
+            }
+        });
+    });
 
     // Carousel Functionality
     initCarousel();
@@ -197,17 +232,6 @@ function preloadImages() {
 }
 
 // ============================================
-// Mobile Navigation Close on Link Click
-// ============================================
-document.querySelectorAll('.nav-links a').forEach(link => {
-    link.addEventListener('click', () => {
-        if (window.innerWidth <= 768) {
-            document.querySelector('.nav-links').classList.remove('active');
-        }
-    });
-});
-
-// ============================================
 // Download Timetable
 // ============================================
 function downloadTimetable() {
@@ -215,43 +239,43 @@ function downloadTimetable() {
 Department of Computing & Informatics
 Class Timetable - Semester 1, 2026
 
-================================================================
+============================================================
 MONDAY
-================================================================
+============================================================
 08:00 AM - 10:00 AM    Database Systems         Lab 3    Dr. Robert Tumusiime
 10:00 AM - 12:00 PM    Computer Networks        Lab 2    Mr. David Ogwal
 02:00 PM - 04:00 PM    Web Development          Lab 4    Mr. Alexis Mupole
 
-================================================================
+============================================================
 TUESDAY
-================================================================
+============================================================
 08:00 AM - 10:00 AM    Software Engineering     Lab 1    Mr. Ssewankambo Erma
 10:00 AM - 12:00 PM    AI & Machine Learning    Lab 3    Dr. Albert Okwera
 02:00 PM - 04:00 PM    IT Project Management    Lab 2    Mr. David Ogwal
 
-================================================================
+============================================================
 WEDNESDAY
-================================================================
+============================================================
 08:00 AM - 10:00 AM    Operating Systems        Lab 1    Mr. Ronald Nyeko
 10:00 AM - 12:00 PM    Data Science             Lab 4    Dr. Albert Okwera
 02:00 PM - 04:00 PM    Research Methods         Lab 3    Dr. Robert Tumusiime
 
-================================================================
+============================================================
 THURSDAY
-================================================================
+============================================================
 08:00 AM - 10:00 AM    Network Security         Lab 2    Mr. Ronald Nyeko
-10:00 AM - 12:00 PM    Mobile App Development  Lab 4    Mr. Ssewankambo Erma
+10:00 AM - 12:00 PM    Mobile App Development   Lab 4    Mr. Ssewankambo Erma
 02:00 PM - 04:00 PM    Cloud Computing          Lab 1    Mr. David Ogwal
 
-================================================================
+============================================================
 FRIDAY
-================================================================
+============================================================
 09:00 AM - 11:00 AM    System Analysis          Lab 5    Dr. Robert Tumusiime
 11:00 AM - 01:00 PM    IT Ethics & Profession   Lab 3    Mr. Ssewankambo Erma
 
 Location: School of Science & Technology Building
 Contact: hod-computing@bugemauniv.ac.ug
-================================================================
+============================================================
 Generated: ${new Date().toLocaleDateString()}
 `;
 

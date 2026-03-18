@@ -22,17 +22,34 @@
         <div class="nav-container">
             <a href="index.html" class="nav-logo">
                 <img src="./images/Bugema_logo.png" alt="Bugema University">
-                <span>Computing & Informatics</span>
+                <div class="nav-logo-text">
+                    <span class="nav-logo-title">Computing & Informatics</span>
+                    <span class="nav-logo-subtitle">Bugema University</span>
+                </div>
             </a>
+            <div class="nav-overlay"></div>
             <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
-                <li><a href="programs.html">Programs</a></li>
+                <li class="nav-dropdown">
+                    <a href="programs.html">Programs</a>
+                    <div class="nav-dropdown-content">
+                        <a href="bachelor-it.html"><span class="dropdown-icon">💻</span> BSc. Information Technology</a>
+                        <a href="business-computing.html"><span class="dropdown-icon">📊</span> BSc. Business Computing</a>
+                        <a href="network-systems.html"><span class="dropdown-icon">🌐</span> BSc. Network Systems</a>
+                        <a href="data-science-ai.html"><span class="dropdown-icon">🤖</span> BSc. Data Science & AI</a>
+                        <a href="library-science.html"><span class="dropdown-icon">📚</span> Library & Information Science</a>
+                        <a href="diploma-computer-engineering.html"><span class="dropdown-icon">⚡</span> Diploma in Computer Eng.</a>
+                        <a href="certificate-it.html"><span class="dropdown-icon">🎯</span> Certificate in IT (UBTEB)</a>
+                    </div>
+                </li>
                 <li><a href="faculty.html">Faculty</a></li>
                 <li><a href="contact.html">Contact</a></li>
                 <li><a href="application.html" class="active btn-nav-apply">Apply Now</a></li>
             </ul>
-            <div class="menu-toggle">☰</div>
+            <button class="menu-toggle" aria-label="Toggle menu">
+                <span class="hamburger"></span>
+            </button>
         </div>
     </nav>
 
