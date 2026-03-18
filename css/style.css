@@ -2358,6 +2358,13 @@ footer {
     .why-choose-grid { grid-template-columns: repeat(2, 1fr); }
     .career-paths { grid-template-columns: 1fr; }
     .admission-requirements { grid-template-columns: 1fr; }
+    .faculty-grid { grid-template-columns: 1fr; }
+    .staff-grid { grid-template-columns: 1fr; }
+    .committee-grid { grid-template-columns: 1fr; }
+    .faculty-card { flex-direction: column; text-align: center; }
+    .faculty-card img { margin: 0 auto; }
+    .staff-card { flex-direction: column; text-align: center; }
+    .staff-card img { margin: 0 auto; }
     .cta-section { padding: 40px 20px; }
     .cta-buttons { flex-direction: column; }
     .application-form-container { padding: 30px 20px; }
