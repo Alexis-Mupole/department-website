@@ -345,46 +345,6 @@
         </div>
     </footer>
 
-    <script>
-        // Carousel
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.carousel-slide');
-        const dots = document.querySelectorAll('.carousel-dot');
-        const totalSlides = slides.length;
-
-        function animateTyping(element) {
-            element.style.animation = 'none';
-            element.offsetHeight;
-            element.style.animation = 'typing 2.5s steps(40) forwards, blink 0.75s step-end infinite';
-        }
-
-        function showSlide(n) {
-            currentSlide = (n + totalSlides) % totalSlides;
-            slides.forEach(slide => slide.classList.remove('active'));
-            dots.forEach(dot => dot.classList.remove('active'));
-            slides[currentSlide].classList.add('active');
-            dots[currentSlide].classList.add('active');
-            
-            const typingEl = slides[currentSlide].querySelector('.typing-text');
-            if (typingEl) {
-                animateTyping(typingEl);
-            }
-        }
-
-        function changeSlide(n) { showSlide(currentSlide + n); }
-        function goToSlide(n) { showSlide(n); }
-
-        setInterval(() => { changeSlide(1); }, 5000);
-
-        // Navbar scroll
-        window.addEventListener('scroll', function() {
-            document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
-        });
-
-        // Mobile menu
-        document.querySelector('.menu-toggle').addEventListener('click', () => {
-            document.querySelector('.nav-links').classList.toggle('active');
-        });
-    </script>
+    <script src="js/main.js"></script>
 </body>
 </html>
