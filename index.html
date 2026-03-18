@@ -1,195 +1,296 @@
 <!DOCTYPE html>
-<!-- index.html - Home Page -->
-<!-- Bugema University - Department of Computing and Technology -->
-<!-- A professional educational website -->
-
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Department of Computing and Technology | Bugema University</title>
-    <meta name="description" content="Department of Computing and Technology at Bugema University - Excellence in Service">
+    <title>Department of Computing & Technology | Bugema University</title>
+    <meta name="description" content="The Department of Computing and Technology at Bugema University offers cutting-edge programs in IT, Computer Science, and Software Engineering.">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/Bugema_logo.png">
 </head>
 
 <body>
-    <!-- ==================== NAVIGATION BAR ==================== -->
     <nav class="navbar">
         <div class="nav-container">
-            <!-- Bugema University Logo -->
             <a href="index.html" class="nav-logo">
-                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Bugema_logo.png/240px-Bugema_logo.png" alt="Bugema University Logo">
+                <img src="./images/Bugema_logo.png" alt="Bugema University Logo">
                 <span>BU Computing</span>
             </a>
-            
-            <!-- Navigation Links -->
+
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
+                <li><a href="programs.html">Programs</a></li>
+                <li><a href="faculty.html">Faculty</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-            
-            <!-- Mobile Menu Toggle -->
+
             <div class="menu-toggle">☰</div>
         </div>
     </nav>
 
-    <!-- ==================== MAIN CONTENT ==================== -->
-    <div class="container">
-        
-        <!-- ==================== HERO SECTION ==================== -->
-        <section class="hero">
+    <header class="hero">
+        <div class="hero-content">
             <h1>Department of Computing and Technology</h1>
-            <p>Bugema University - Excellence in Service</p>
-            <p style="margin-top: 10px; font-size: 16px;">Chartered Seventh-day Adventist Institution of Higher Learning</p>
-            
-            <!-- University Stats -->
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <span class="stat-number">73+</span>
-                    <span class="stat-label">Accredited Courses</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">4500+</span>
-                    <span class="stat-label">Students</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">100+</span>
-                    <span class="stat-label">Lecturers</span>
-                </div>
-                <div class="stat-item">
-                    <span class="stat-number">5</span>
-                    <span class="stat-label">Campuses</span>
-                </div>
+            <p class="hero-subtitle">Bugema University | Excellence in Technology Education</p>
+            <p class="hero-description">Preparing the next generation of tech leaders through innovative education and practical skills development.</p>
+            <div class="hero-buttons">
+                <a href="programs.html" class="btn btn-primary">Explore Programs</a>
+                <a href="contact.html" class="btn btn-secondary">Apply Now</a>
             </div>
-        </section>
-
-        <!-- ==================== ABOUT SECTION ==================== -->
-        <section class="cards-grid">
-            <div class="card">
-                <h3>Our Mission</h3>
-                <p>Offering an excellent and distinctive holistic Christian education designed to prepare our students through training for productive lives of useful service to God and humanity.</p>
-            </div>
-            
-            <div class="card">
-                <h3>Our Philosophy</h3>
-                <p>The belief that true education fosters the restoration of the lost image of God in human beings through the harmonious development of the dimensions of life.</p>
-            </div>
-            
-            <div class="card">
-                <h3>Quality Assurance</h3>
-                <p>We have developed comprehensive self-regulating and self-maintaining procedures to ensure the highest standards of excellence in academic delivery and performance.</p>
-            </div>
-        </section>
-
-        <!-- ==================== WHY CHOOSE US ==================== -->
-        <h2>Why Choose Bugema University?</h2>
-        <section class="content-section">
-            <p>At Bugema University, we understand the importance of quality education. We offer:</p>
-            <ul>
-                <li><strong>Professional Courses</strong> - Certifications from CISCO (CCNA, CCNP) and Microsoft (MCSE, MCSA)</li>
-                <li><strong>Experienced Faculty</strong> - Qualified lecturers with industry experience</li>
-                <li><strong>Modern Facilities</strong> - Well-equipped computer laboratories</li>
-                <li><strong>Career Opportunities</strong> - Strong industry connections and placement support</li>
-                <li><strong>Holistic Development</strong> - Christian values integrated with academic excellence</li>
-            </ul>
-        </section>
-
-        <!-- ==================== DEPARTMENT TIMETABLE ==================== -->
-        <h2>Department Timetable</h2>
-        <div class="table-container">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Day</th>
-                        <th>Time</th>
-                        <th>Subject</th>
-                        <th>Room</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Monday</td>
-                        <td>9:00 AM</td>
-                        <td>Web Development</td>
-                        <td>Lab 101</td>
-                    </tr>
-                    <tr>
-                        <td>Tuesday</td>
-                        <td>11:00 AM</td>
-                        <td>Database Systems</td>
-                        <td>Room 204</td>
-                    </tr>
-                    <tr>
-                        <td>Wednesday</td>
-                        <td>10:00 AM</td>
-                        <td>Programming Fundamentals</td>
-                        <td>Lab 103</td>
-                    </tr>
-                    <tr>
-                        <td>Thursday</td>
-                        <td>2:00 PM</td>
-                        <td>Computer Networks</td>
-                        <td>Room 201</td>
-                    </tr>
-                    <tr>
-                        <td>Friday</td>
-                        <td>9:00 AM</td>
-                        <td>Software Engineering</td>
-                        <td>Lab 105</td>
-                    </tr>
-                </tbody>
-            </table>
         </div>
+        <div class="hero-stats">
+            <div class="stat-item">
+                <span class="stat-number">500+</span>
+                <span class="stat-label">Students Enrolled</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">25+</span>
+                <span class="stat-label">Expert Lecturers</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">98%</span>
+                <span class="stat-label">Graduate Employment</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Industry Partners</span>
+            </div>
+        </div>
+    </header>
 
-        <!-- ==================== USEFUL LINKS ==================== -->
-        <h2>Useful Student Resources</h2>
-        <section class="cards-grid">
-            <div class="card">
-                <h3>Academic Programs</h3>
-                <p>Explore our wide range of undergraduate and postgraduate programs in computing and technology.</p>
-            </div>
+    <div class="container">
+        <section class="welcome-section">
+            <h2>Welcome to Bugema University</h2>
+            <p class="lead">Bugema University is a premier private Christian university located in the heart of Uganda, committed to providing quality education that transforms lives.</p>
             
-            <div class="card">
-                <h3>Admissions</h3>
-                <p>Learn about entry requirements, application process, and fees structure.</p>
-            </div>
-            
-            <div class="card">
-                <h3>Student Portal</h3>
-                <p>Access your courses, grades, and academic resources online.</p>
-            </div>
-            
-            <div class="card">
-                <h3>E-Learning Platform</h3>
-                <p>Access online learning materials and resources through our digital platform.</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">🎓</div>
+                    <h3>Quality Education</h3>
+                    <p>Accredited programs with rigorous academic standards and practical training.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">💻</div>
+                    <h3>Modern Labs</h3>
+                    <p>State-of-the-art computer laboratories with latest software and hardware.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🌍</div>
+                    <h3>Global Recognition</h3>
+                    <p>Degrees recognized internationally across Africa and beyond.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🤝</div>
+                    <h3>Industry Links</h3>
+                    <p>Strong partnerships with leading tech companies for internships and jobs.</p>
+                </div>
             </div>
         </section>
 
-        <!-- ==================== EXTERNAL LINKS ==================== -->
-        <h2>External Learning Resources</h2>
-        <section class="content-section">
-            <ul>
-                <li><a href="https://www.w3schools.com" target="_blank">W3Schools - Web Tutorials</a> - Learn web development basics</li>
-                <li><a href="https://stackoverflow.com" target="_blank">Stack Overflow - Q&A Forum</a> - Get answers to programming questions</li>
-                <li><a href="https://github.com" target="_blank">GitHub - Code Repository</a> - Collaborate on projects</li>
-                <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a> - Comprehensive web documentation</li>
-            </ul>
+        <hr>
+
+        <section class="department-info">
+            <h2>About Our Department</h2>
+            <div class="info-cards">
+                <div class="info-card">
+                    <h3>Our Mission</h3>
+                    <p>To produce highly skilled computing professionals who can contribute meaningfully to national and global technological development through innovation, research, and ethical practice.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Our Vision</h3>
+                    <p>To be a center of excellence in computing education and research, producing graduates who are competitive in the global job market and committed to using technology for positive societal impact.</p>
+                </div>
+            </div>
         </section>
 
+        <hr>
+
+        <section class="programs-preview">
+            <h2>Our Programs</h2>
+            <div class="programs-grid">
+                <div class="program-card">
+                    <h3>BSc. Information Technology</h3>
+                    <p>4-year program covering software development, networking, database management, and IT project management.</p>
+                    <span class="program-duration">4 Years</span>
+                </div>
+                <div class="program-card">
+                    <h3>BSc. Computer Science</h3>
+                    <p>Focus on algorithms, programming, artificial intelligence, machine learning, and computational theory.</p>
+                    <span class="program-duration">4 Years</span>
+                </div>
+                <div class="program-card">
+                    <h3>BSc. Software Engineering</h3>
+                    <p>Learn to design, develop, and maintain software systems using modern engineering methodologies.</p>
+                    <span class="program-duration">4 Years</span>
+                </div>
+                <div class="program-card">
+                    <h3>Diploma in IT</h3>
+                    <p>2-year diploma program providing foundational skills in computing and information technology.</p>
+                    <span class="program-duration">2 Years</span>
+                </div>
+            </div>
+            <div class="text-center mt-20">
+                <a href="programs.html" class="btn btn-primary">View All Programs</a>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="timetable-section">
+            <h2>Weekly Class Timetable</h2>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Day</th>
+                            <th>Time</th>
+                            <th>Subject</th>
+                            <th>Room</th>
+                            <th>Lecturer</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Monday</td>
+                            <td>09:00 AM - 11:00 AM</td>
+                            <td>Web Development</td>
+                            <td>Lab 1</td>
+                            <td>Mr. Alexis Mupole</td>
+                        </tr>
+                        <tr>
+                            <td>Tuesday</td>
+                            <td>11:00 AM - 01:00 PM</td>
+                            <td>Database Systems</td>
+                            <td>Room 205</td>
+                            <td>Mr. Ronald Nyeko</td>
+                        </tr>
+                        <tr>
+                            <td>Wednesday</td>
+                            <td>10:00 AM - 12:00 PM</td>
+                            <td>Programming I</td>
+                            <td>Lab 3</td>
+                            <td>Dr. Albert Okwera</td>
+                        </tr>
+                        <tr>
+                            <td>Thursday</td>
+                            <td>02:00 PM - 04:00 PM</td>
+                            <td>Computer Networks</td>
+                            <td>Room 1</td>
+                            <td>Dr. Robert Tumusiime</td>
+                        </tr>
+                        <tr>
+                            <td>Friday</td>
+                            <td>09:00 AM - 11:00 AM</td>
+                            <td>System Analysis</td>
+                            <td>Lab 5</td>
+                            <td>Mr. David K. Ogwal</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="resources-section">
+            <h2>Student Resources</h2>
+            <div class="resources-grid">
+                <div class="resource-card">
+                    <h3>Learning Resources</h3>
+                    <ul>
+                        <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a> - Web Development Tutorials</li>
+                        <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a> - Comprehensive Web Documentation</li>
+                        <li><a href="https://stackoverflow.com" target="_blank">Stack Overflow</a> - Developer Q&A Community</li>
+                        <li><a href="https://github.com" target="_blank">GitHub</a> - Code Collaboration Platform</li>
+                    </ul>
+                </div>
+                <div class="resource-card">
+                    <h3>University Links</h3>
+                    <ul>
+                        <li><a href="https://bugemauniv.ac.ug" target="_blank">Bugema University Official Website</a></li>
+                        <li><a href="#">Student Portal</a></li>
+                        <li><a href="#">Library Services</a></li>
+                        <li><a href="#">Online Course Materials</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <hr>
+
+        <section class="news-events">
+            <h2>News & Events</h2>
+            <div class="news-grid">
+                <div class="news-card">
+                    <span class="news-date">March 2026</span>
+                    <h3>Tech Innovation Week</h3>
+                    <p>Annual technology exhibition showcasing student projects in software development, AI, and mobile apps.</p>
+                </div>
+                <div class="news-card">
+                    <span class="news-date">April 2026</span>
+                    <h3>Industry Partnership Forum</h3>
+                    <p>Join us for networking with leading tech companies and potential employers from across Uganda.</p>
+                </div>
+                <div class="news-card">
+                    <span class="news-date">May 2026</span>
+                    <h3>Hackathon 2026</h3>
+                    <p>48-hour coding competition with exciting prizes. Register your team now!</p>
+                </div>
+            </div>
+        </section>
     </div>
 
-    <!-- ==================== FOOTER ==================== -->
     <footer>
-        <p>&copy; 2026 Bugema University - Department of Computing and Technology</p>
-        <p>Excellence in Service | Chartered Seventh-day Adventist Institution of Higher Learning</p>
-        <div class="footer-links">
-            <a href="https://bugemauniv.ac.ug" target="_blank">Official Website</a>
-            <a href="mailto:registrar@bugemauniv.ac.ug">Contact Registrar</a>
-            <a href="contact.html">Student Registration</a>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Bugema University</h4>
+                <p>Kalagala Sub-County, Luwero District</p>
+                <p>P.O. Box 6529, Kampala, Uganda</p>
+                <p>Phone: +256-312-351-400</p>
+                <p>Email: info@bugemauniv.ac.ug</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="programs.html">Programs</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Department Links</h4>
+                <ul>
+                    <li><a href="faculty.html">Faculty Members</a></li>
+                    <li><a href="#">Student Portal</a></li>
+                    <li><a href="#">Online Library</a></li>
+                    <li><a href="#">Career Services</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">YouTube</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Bugema University - Department of Computing and Technology. All Rights Reserved.</p>
+            <p>Designed with ❤️ by Department of Computing Students</p>
         </div>
     </footer>
 
+    <script>
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navLinks = document.querySelector('.nav-links');
+
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('mobile-active');
+        });
+    </script>
 </body>
 </html>
