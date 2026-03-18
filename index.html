@@ -7,8 +7,6 @@
     <meta name="description" content="Discover the Department of Computing & Informatics at Bugema University. Explore our IT programs, expert faculty, and modern facilities.">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/Bugema_logo.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 <body>
@@ -29,14 +27,15 @@
         </div>
     </nav>
 
-    <!-- Carousel Section -->
+    <!-- Carousel with Real Images -->
     <div class="carousel">
         <div class="carousel-slide active">
-            <img src="images/carousel1.svg" alt="Computing Department" class="carousel-bg-image">
+            <img src="images/Building it.jpeg" alt="Computing Building" class="carousel-bg-image">
+            <div class="carousel-overlay"></div>
             <div class="carousel-content">
                 <span class="hero-badge">School of Science & Technology</span>
                 <h2>Department of <span>Computing</span> & Informatics</h2>
-                <p>Empowering the next generation of tech leaders through innovative education, practical skills, and ethical leadership.</p>
+                <p>Empowering the next generation of tech leaders through innovative education and practical skills.</p>
                 <div class="hero-buttons">
                     <a href="programs.html" class="btn btn-primary">Explore Programs →</a>
                     <a href="contact.html" class="btn btn-secondary">Apply Now</a>
@@ -44,22 +43,24 @@
             </div>
         </div>
         <div class="carousel-slide">
-            <img src="images/carousel2.svg" alt="Computer Labs" class="carousel-bg-image">
+            <img src="images/lab.jpeg" alt="Computer Lab" class="carousel-bg-image">
+            <div class="carousel-overlay"></div>
             <div class="carousel-content">
                 <span class="hero-badge">Hands-On Learning</span>
                 <h2>Modern <span>Computer</span> Laboratories</h2>
-                <p>State-of-the-art labs with the latest software and hardware. Gain practical experience through real-world projects.</p>
+                <p>State-of-the-art labs with the latest software and hardware for practical experience.</p>
                 <div class="hero-buttons">
                     <a href="about.html" class="btn btn-primary">Learn More →</a>
                 </div>
             </div>
         </div>
         <div class="carousel-slide">
-            <img src="images/carousel3.svg" alt="Expert Faculty" class="carousel-bg-image">
+            <img src="images/Lecturers.jpeg" alt="Lecturers" class="carousel-bg-image">
+            <div class="carousel-overlay"></div>
             <div class="carousel-content">
                 <span class="hero-badge">Expert Faculty</span>
                 <h2>Learn From the <span>Best</span></h2>
-                <p>Our experienced lecturers and industry experts guide you to becoming a skilled IT professional.</p>
+                <p>Our experienced lecturers guide you to becoming a skilled IT professional.</p>
                 <div class="hero-buttons">
                     <a href="faculty.html" class="btn btn-primary">Meet Our Faculty →</a>
                 </div>
@@ -98,6 +99,42 @@
         </div>
     </div>
 
+    <!-- Campus Gallery -->
+    <section class="gallery-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Campus</h2>
+                <p>State-of-the-art facilities for your learning journey</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-card">
+                    <img src="images/New complex.jpeg" alt="New Complex">
+                    <div class="gallery-overlay">
+                        <h4>Modern Campus</h4>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <img src="images/lab.jpeg" alt="Computer Lab">
+                    <div class="gallery-overlay">
+                        <h4>Computer Labs</h4>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <img src="images/lab 2.jpeg" alt="Lab Session">
+                    <div class="gallery-overlay">
+                        <h4>Hands-On Training</h4>
+                    </div>
+                </div>
+                <div class="gallery-card">
+                    <img src="images/campus1.jpeg" alt="Campus View">
+                    <div class="gallery-overlay">
+                        <h4>Beautiful Campus</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- About Section -->
     <section class="features-section" style="background: var(--bg-light);">
         <div class="container">
@@ -106,7 +143,7 @@
                 <p>Part of the School of Science & Technology at Bugema University</p>
             </div>
             <div class="about-intro" style="max-width: 900px; margin: 0 auto 50px; text-align: center;">
-                <p style="font-size: 18px; color: var(--text-secondary); line-height: 1.8;">The Department of Computing & Informatics is committed to providing high-quality education that prepares students for the fast-evolving world of computing and information technology. Our programs combine theoretical knowledge with practical skills.</p>
+                <p style="font-size: 18px; color: var(--text-secondary); line-height: 1.8;">The Department of Computing & Informatics is committed to providing high-quality education that prepares students for the fast-evolving world of computing and information technology.</p>
             </div>
             <div class="grid-4">
                 <div class="feature-card">
@@ -145,7 +182,7 @@
                     <h3>Mr. Ssewankambo Erma</h3>
                     <p class="hod-title">Head of Department</p>
                     <p>Welcome to the Department of Computing & Informatics. I am proud to lead a department committed to providing high-quality education that prepares students for the fast-evolving world of computing and information technology.</p>
-                    <p>Our programs emphasize problem-solving, innovation, ethical practice, and teamwork to ensure our graduates are ready for the modern digital economy.</p>
+                    <p>Our programs emphasize problem-solving, innovation, ethical practice, and teamwork.</p>
                 </div>
             </div>
         </div>
@@ -201,7 +238,6 @@
         <div class="container">
             <div class="section-header">
                 <h2>Weekly Class Timetable</h2>
-                <p>Regular class schedule for our computing students</p>
             </div>
             <div class="table-container">
                 <table>
@@ -256,59 +292,6 @@
         </div>
     </section>
 
-    <!-- Resources -->
-    <section class="resources-section">
-        <div class="container">
-            <div class="grid-2">
-                <div class="resource-card">
-                    <h3>Student Resources</h3>
-                    <ul>
-                        <li><a href="https://www.w3schools.com" target="_blank">W3Schools - Web Development Tutorials</a></li>
-                        <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs - Web Documentation</a></li>
-                        <li><a href="https://stackoverflow.com" target="_blank">Stack Overflow - Developer Q&A</a></li>
-                        <li><a href="https://github.com" target="_blank">GitHub - Code Collaboration</a></li>
-                    </ul>
-                </div>
-                <div class="resource-card">
-                    <h3>University Links</h3>
-                    <ul>
-                        <li><a href="https://bugemauniv.ac.ug" target="_blank">Bugema University Official</a></li>
-                        <li><a href="https://eportal.bugemauniv.ac.ug/" target="_blank">Student E-Portal</a></li>
-                        <li><a href="https://lib.bugemauniv.ac.ug/" target="_blank">University Library</a></li>
-                        <li><a href="https://elearning.bugemauniv.ac.ug/" target="_blank">E-Learning Platform</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- News -->
-    <section class="news-section">
-        <div class="container">
-            <div class="section-header">
-                <h2>News & Events</h2>
-                <p>Stay updated with the latest happenings</p>
-            </div>
-            <div class="grid-3">
-                <div class="news-card">
-                    <span class="news-date">March 2026</span>
-                    <h3>Tech Innovation Week</h3>
-                    <p>Annual technology exhibition showcasing student projects.</p>
-                </div>
-                <div class="news-card">
-                    <span class="news-date">April 2026</span>
-                    <h3>Industry Partnership Forum</h3>
-                    <p>Networking with leading tech companies and employers.</p>
-                </div>
-                <div class="news-card">
-                    <span class="news-date">May 2026</span>
-                    <h3>Hackathon 2026</h3>
-                    <p>48-hour coding competition with exciting prizes.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <footer>
         <div class="container">
             <div class="footer-grid">
@@ -319,7 +302,6 @@
                         <a href="#">📘</a>
                         <a href="#">🐦</a>
                         <a href="#">📸</a>
-                        <a href="#">📺</a>
                     </div>
                 </div>
                 <div class="footer-column">
@@ -336,13 +318,12 @@
                     <ul>
                         <li><a href="https://eportal.bugemauniv.ac.ug/">Student Portal</a></li>
                         <li><a href="https://lib.bugemauniv.ac.ug/">Library</a></li>
-                        <li><a href="https://elearning.bugemauniv.ac.ug/">E-Learning</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
                     <h4>Contact</h4>
                     <ul>
-                        <li>📍 Bugema, Luwero, Uganda</li>
+                        <li>📍 Bugema, Luwero</li>
                         <li>📞 +256-312-351-400</li>
                         <li>✉️ info@bugemauniv.ac.ug</li>
                     </ul>
@@ -376,14 +357,13 @@
 
         // Navbar scroll
         window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            navbar.classList.toggle('scrolled', window.scrollY > 50);
+            document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
         });
 
         // Mobile menu
-        const menuToggle = document.querySelector('.menu-toggle');
-        const navLinks = document.querySelector('.nav-links');
-        menuToggle.addEventListener('click', () => navLinks.classList.toggle('active'));
+        document.querySelector('.menu-toggle').addEventListener('click', () => {
+            document.querySelector('.nav-links').classList.toggle('active');
+        });
     </script>
 </body>
 </html>
