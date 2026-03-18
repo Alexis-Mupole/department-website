@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff6b35"/>
+      <stop offset="100%" style="stop-color:#cc5500"/>
+    </linearGradient>
+  </defs>
+  <rect fill="url(#bg3)" width="1920" height="1080"/>
+  <rect fill="#aa4400" x="0" y="600" width="1920" height="480" opacity="0.3"/>
+  <circle cx="200" cy="150" r="100" fill="#ffffff" opacity="0.1"/>
+  <circle cx="1700" cy="200" r="150" fill="#003366" opacity="0.2"/>
+  <circle cx="1600" cy="850" r="120" fill="#ffffff" opacity="0.1"/>
+  <rect x="150" y="250" width="350" height="350" rx="20" fill="#ffffff" opacity="0.15"/>
+  <circle cx="325" cy="400" r="100" fill="#003366"/>
+  <text x="325" y="420" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="60">👨‍🏫</text>
+  <text x="325" y="530" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="18">Expert Faculty</text>
+  <rect x="600" y="280" width="350" height="300" rx="20" fill="#ffffff" opacity="0.15"/>
+  <circle cx="775" cy="420" r="80" fill="#003366"/>
+  <text x="775" y="445" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="45">🎓</text>
+  <text x="775" y="530" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="18">Quality Education</text>
+  <rect x="1050" y="250" width="350" height="350" rx="20" fill="#ffffff" opacity="0.15"/>
+  <circle cx="1225" cy="400" r="100" fill="#003366"/>
+  <text x="1225" y="430" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="60">🤝</text>
+  <text x="1225" y="530" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="18">Industry Links</text>
+  <rect x="1500" y="280" width="280" height="250" rx="20" fill="#ffffff" opacity="0.15"/>
+  <circle cx="1640" cy="380" r="70" fill="#003366"/>
+  <text x="1640" y="405" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="40">💼</text>
+  <text x="1640" y="480" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="16">Career Opportunities</text>
+  <text x="960" y="800" text-anchor="middle" fill="#ffffff" font-family="Arial" font-size="52" font-weight="bold">Learn From The Best</text>
+  <text x="960" y="860" text-anchor="middle" fill="#003366" font-family="Arial" font-size="24">Experienced lecturers committed to your success</text>
+  <rect x="780" y="900" width="360" height="60" rx="30" fill="#ffffff"/>
+  <text x="960" y="938" text-anchor="middle" fill="#ff6b35" font-family="Arial" font-size="22" font-weight="bold">Meet Our Faculty</text>
+</svg>
