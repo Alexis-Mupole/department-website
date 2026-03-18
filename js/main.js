@@ -4,6 +4,17 @@
 // ============================================
 
 document.addEventListener('DOMContentLoaded', function() {
+    // Preloader
+    const preloader = document.querySelector('.preloader');
+    if (preloader) {
+        window.addEventListener('load', function() {
+            preloader.classList.add('fade-out');
+            setTimeout(function() {
+                preloader.style.display = 'none';
+            }, 500);
+        });
+    }
+
     // Mobile Menu Toggle
     const menuToggle = document.querySelector('.menu-toggle');
     const navLinks = document.querySelector('.nav-links');
@@ -170,3 +181,62 @@ document.querySelectorAll('.nav-links a').forEach(link => {
         }
     });
 });
+
+// ============================================
+// Download Timetable
+// ============================================
+function downloadTimetable() {
+    const timetableContent = `BUGEMA UNIVERSITY
+Department of Computing & Informatics
+Class Timetable - Semester 1, 2026
+
+================================================================
+MONDAY
+================================================================
+08:00 AM - 10:00 AM    Database Systems         Lab 3    Dr. Robert Tumusiime
+10:00 AM - 12:00 PM    Computer Networks        Lab 2    Mr. David Ogwal
+02:00 PM - 04:00 PM    Web Development          Lab 4    Mr. Alexis Mupole
+
+================================================================
+TUESDAY
+================================================================
+08:00 AM - 10:00 AM    Software Engineering     Lab 1    Mr. Ssewankambo Erma
+10:00 AM - 12:00 PM    AI & Machine Learning    Lab 3    Dr. Albert Okwera
+02:00 PM - 04:00 PM    IT Project Management    Lab 2    Mr. David Ogwal
+
+================================================================
+WEDNESDAY
+================================================================
+08:00 AM - 10:00 AM    Operating Systems        Lab 1    Mr. Ronald Nyeko
+10:00 AM - 12:00 PM    Data Science             Lab 4    Dr. Albert Okwera
+02:00 PM - 04:00 PM    Research Methods         Lab 3    Dr. Robert Tumusiime
+
+================================================================
+THURSDAY
+================================================================
+08:00 AM - 10:00 AM    Network Security         Lab 2    Mr. Ronald Nyeko
+10:00 AM - 12:00 PM    Mobile App Development  Lab 4    Mr. Ssewankambo Erma
+02:00 PM - 04:00 PM    Cloud Computing          Lab 1    Mr. David Ogwal
+
+================================================================
+FRIDAY
+================================================================
+09:00 AM - 11:00 AM    System Analysis          Lab 5    Dr. Robert Tumusiime
+11:00 AM - 01:00 PM    IT Ethics & Profession   Lab 3    Mr. Ssewankambo Erma
+
+Location: School of Science & Technology Building
+Contact: hod-computing@bugemauniv.ac.ug
+================================================================
+Generated: ${new Date().toLocaleDateString()}
+`;
+
+    const blob = new Blob([timetableContent], { type: 'text/plain' });
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement('a');
+    a.href = url;
+    a.download = 'Bugema_Computing_Timetable.txt';
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    window.URL.revokeObjectURL(url);
+}

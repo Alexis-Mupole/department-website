@@ -1,4 +1,66 @@
 /* ============================================
+   PRELOADER
+   ============================================ */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+.preloader.fade-out {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.preloader-logo {
+    width: 120px;
+    height: 120px;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+.preloader-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.preloader-text {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.preloader-spinner {
+    width: 50px;
+    height: 50px;
+    border: 4px solid var(--bg-light);
+    border-top: 4px solid var(--primary-color);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin-top: 20px;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* ============================================
    style.css - Bugema University
    Department of Computing & Informatics
    Professional Creative Theme
@@ -2312,7 +2374,15 @@ footer {
     }
     
     .hero h1 { font-size: 36px; }
-    .hero-stats { flex-wrap: wrap; gap: 30px; }
+    .hero-stats { 
+        flex-wrap: wrap; 
+        gap: 30px; 
+        justify-content: center;
+    }
+    .hero-stats .stat-item {
+        min-width: 120px;
+        flex: 1 1 40%;
+    }
     .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
     .hod-card { grid-template-columns: 1fr; text-align: center; }
     .hod-image { margin: 0 auto; }
@@ -2323,6 +2393,9 @@ footer {
     .footer-grid { grid-template-columns: 1fr; }
     .page-header h1 { font-size: 32px; }
     .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+    .timetable-wrapper { overflow-x: auto; }
+    .timetable-table { min-width: 600px; }
+    .timetable-footer { flex-direction: column; text-align: center; gap: 15px; }
     .carousel { height: 400px; }
     .carousel-content { padding: 15px; }
     .carousel-content h2 { 

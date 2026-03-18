@@ -10,6 +10,15 @@
 </head>
 
 <body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-logo">
+            <img src="images/Bugema_logo.png" alt="Bugema University">
+        </div>
+        <div class="preloader-spinner"></div>
+        <p class="preloader-text">Loading...</p>
+    </div>
+
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">
@@ -77,22 +86,22 @@
 
     <!-- Stats Bar -->
     <div class="container">
-        <div class="hero-stats" style="margin-top: -80px; position: relative; z-index: 10; background: white; padding: 40px; border-radius: 16px; box-shadow: var(--shadow-lg); margin-bottom: 60px;">
+        <div class="hero-stats">
             <div class="stat-item">
-                <span class="stat-number" style="color: var(--primary-color);">500+</span>
-                <span class="stat-label" style="color: var(--text-secondary);">Active Students</span>
+                <span class="stat-number">500+</span>
+                <span class="stat-label">Active Students</span>
             </div>
             <div class="stat-item">
-                <span class="stat-number" style="color: var(--primary-color);">25+</span>
-                <span class="stat-label" style="color: var(--text-secondary);">Expert Lecturers</span>
+                <span class="stat-number">25+</span>
+                <span class="stat-label">Expert Lecturers</span>
             </div>
             <div class="stat-item">
-                <span class="stat-number" style="color: var(--primary-color);">98%</span>
-                <span class="stat-label" style="color: var(--text-secondary);">Graduate Employment</span>
+                <span class="stat-number">98%</span>
+                <span class="stat-label">Graduate Employment</span>
             </div>
             <div class="stat-item">
-                <span class="stat-number" style="color: var(--primary-color);">10+</span>
-                <span class="stat-label" style="color: var(--text-secondary);">Industry Partners</span>
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Industry Partners</span>
             </div>
         </div>
     </div>
@@ -295,7 +304,7 @@
                 </div>
                 <div class="timetable-footer">
                     <p>📍 Location: School of Science & Technology Building</p>
-                    <a href="#" class="download-btn">⬇ Download Timetable</a>
+                    <a href="javascript:void(0)" class="download-btn" onclick="downloadTimetable()">⬇ Download Timetable</a>
                 </div>
             </div>
         </div>
