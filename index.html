@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Department of Computing & Informatics | Bugema University</title>
-    <meta name="description" content="The Department of Computing & Informatics at Bugema University offers programs in Information Technology, Business Computing, Network Systems Administration, and more.">
+    <meta name="description" content="Discover the Department of Computing & Informatics at Bugema University. Explore our IT programs, expert faculty, and modern facilities.">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/Bugema_logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 </head>
 
 <body>
     <nav class="navbar">
         <div class="nav-container">
             <a href="index.html" class="nav-logo">
-                <img src="./images/Bugema_logo.png" alt="Bugema University Logo">
+                <img src="./images/Bugema_logo.png" alt="Bugema University">
                 <span>Computing & Informatics</span>
             </a>
-
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -24,180 +25,145 @@
                 <li><a href="faculty.html">Faculty</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
-
             <div class="menu-toggle">☰</div>
         </div>
     </nav>
 
-    <!-- Carousel Section -->
-    <div class="carousel">
-        <div class="carousel-slide active">
-            <div class="carousel-pattern"></div>
-            <div class="carousel-content">
-                <h2>Department of Computing & Informatics</h2>
-                <p>Welcome to Bugema University's Department of Computing & Informatics. Shape your future in tech with us.</p>
-                <div class="hero-buttons">
-                    <a href="programs.html" class="btn btn-primary">View Programs</a>
-                    <a href="contact.html" class="btn btn-secondary">Apply Now</a>
+    <header class="hero">
+        <div class="hero-pattern"></div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="hero-content">
+            <span class="hero-badge">School of Science & Technology</span>
+            <h1>Department of <span>Computing</span> & Informatics</h1>
+            <p class="hero-subtitle">Empowering the next generation of tech leaders through innovative education, practical skills, and ethical leadership rooted in Seventh-day Adventist values.</p>
+            <div class="hero-buttons">
+                <a href="programs.html" class="btn btn-primary">Explore Programs →</a>
+                <a href="contact.html" class="btn btn-secondary">Apply Now</a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">500+</span>
+                    <span class="stat-label">Active Students</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">25+</span>
+                    <span class="stat-label">Expert Lecturers</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">98%</span>
+                    <span class="stat-label">Graduate Employment</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">10+</span>
+                    <span class="stat-label">Industry Partners</span>
                 </div>
             </div>
         </div>
-        <div class="carousel-slide">
-            <div class="carousel-pattern"></div>
-            <div class="carousel-content">
-                <h2>Embrace the Digital Revolution</h2>
-                <p>Our IT programs empower students to navigate and shape the dynamic digital landscape with cutting-edge skills.</p>
-                <div class="hero-buttons">
-                    <a href="about.html" class="btn btn-primary">Learn More</a>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-slide">
-            <div class="carousel-pattern"></div>
-            <div class="carousel-content">
-                <h2>Hands-On Learning Experience</h2>
-                <p>Learn from experienced faculty with industry backgrounds and gain practical skills through projects.</p>
-                <div class="hero-buttons">
-                    <a href="faculty.html" class="btn btn-primary">Meet Faculty</a>
-                </div>
-            </div>
-        </div>
-        
-        <button class="carousel-nav prev" onclick="changeSlide(-1)">&#10094;</button>
-        <button class="carousel-nav next" onclick="changeSlide(1)">&#10095;</button>
-        
-        <div class="carousel-dots">
-            <span class="carousel-dot active" onclick="goToSlide(0)"></span>
-            <span class="carousel-dot" onclick="goToSlide(1)"></span>
-            <span class="carousel-dot" onclick="goToSlide(2)"></span>
-        </div>
-    </div>
+    </header>
 
-    <div class="container">
-        <!-- Stats Section -->
-        <div class="hero-stats" style="margin-top: -30px; position: relative; z-index: 10; background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,51,102,0.15);">
-            <div class="stat-item">
-                <span class="stat-number" style="color: var(--primary-color);">500+</span>
-                <span class="stat-label" style="color: var(--text-secondary);">Students</span>
+    <section class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Why Choose Us?</h2>
+                <p>We prepare students for successful careers in the dynamic world of technology</p>
             </div>
-            <div class="stat-item">
-                <span class="stat-number" style="color: var(--primary-color);">25+</span>
-                <span class="stat-label" style="color: var(--text-secondary);">Lecturers</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number" style="color: var(--primary-color);">98%</span>
-                <span class="stat-label" style="color: var(--text-secondary);">Employment</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-number" style="color: var(--primary-color);">10+</span>
-                <span class="stat-label" style="color: var(--text-secondary);">Partners</span>
-            </div>
-        </div>
-
-        <!-- HOD Message Section -->
-        <section class="welcome-section" style="margin-top: 40px;">
-            <h2>Message from the Head of Department</h2>
-            <div class="hod-message-card" style="background: var(--bg-card); border: 1px solid var(--border-color); border-radius: 12px; padding: 30px; margin-bottom: 30px;">
-                <p class="lead">Welcome to the Department of Computing & Informatics. As the Head of Department, I am proud to lead a department committed to providing high-quality education that prepares students for the fast-evolving world of computing and information technology.</p>
-                <p class="lead">Our programs are designed to equip students with strong theoretical knowledge and practical skills in areas such as software development, data management, networking, cybersecurity, and information systems. We emphasize problem solving, innovation, ethical practice, and teamwork to ensure our graduates are ready to meet the demands of the modern digital economy.</p>
-                <p class="lead">Our experienced faculty support students throughout their academic journey, encouraging research, creativity, and community engagement. We invite you to explore our programs and join us in shaping competent professionals who can drive technological innovation and contribute positively to society.</p>
-                <p style="margin-top: 20px; font-weight: 600; color: var(--primary-color);">Mr. Ssewankambo Erma</p>
-                <p style="color: var(--text-muted);">Head of Department</p>
-            </div>
-            
-            <h2>Why Choose Us?</h2>
             <div class="grid-4">
                 <div class="feature-card">
-                    <span class="feature-icon">💻</span>
+                    <div class="feature-icon">💻</div>
                     <h3>Modern Labs</h3>
-                    <p>State-of-the-art computer laboratories with latest software and hardware.</p>
+                    <p>State-of-the-art computer laboratories with latest software and hardware for hands-on learning.</p>
                 </div>
                 <div class="feature-card">
-                    <span class="feature-icon">🎓</span>
+                    <div class="feature-icon">🎓</div>
                     <h3>Expert Faculty</h3>
-                    <p>Learn from experienced lecturers with industry backgrounds.</p>
+                    <p>Learn from experienced lecturers with industry backgrounds and research expertise.</p>
                 </div>
                 <div class="feature-card">
-                    <span class="feature-icon">🌍</span>
-                    <h3>Global Careers</h3>
-                    <p>Degrees recognized internationally across Africa and beyond.</p>
+                    <div class="feature-icon">🌍</div>
+                    <h3>Global Recognition</h3>
+                    <p>Degrees accredited by NCHE and recognized internationally across Africa and beyond.</p>
                 </div>
                 <div class="feature-card">
-                    <span class="feature-icon">🤝</span>
+                    <div class="feature-icon">🤝</div>
                     <h3>Industry Links</h3>
-                    <p>Internship opportunities with leading tech companies.</p>
+                    <p>Internship opportunities with leading tech companies for real-world experience.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <hr>
+    <section class="hod-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Message from Our Head</h2>
+            </div>
+            <div class="hod-card">
+                <div class="hod-image">👨‍🏫</div>
+                <div class="hod-content">
+                    <h3>Mr. Ssewankambo Erma</h3>
+                    <p class="hod-title">Head of Department</p>
+                    <p>Welcome to the Department of Computing & Informatics. I am proud to lead a department committed to providing high-quality education that prepares students for the fast-evolving world of computing and information technology.</p>
+                    <p>Our programs are designed to equip students with strong theoretical knowledge and practical skills in software development, data management, networking, cybersecurity, and information systems. We emphasize problem-solving, innovation, ethical practice, and teamwork.</p>
+                    <p>Join us to shape competent professionals who can drive technological innovation and contribute positively to society.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- Campus Gallery -->
-        <section class="campus-gallery">
-            <h2>Our Campus</h2>
+    <section class="programs-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Programs</h2>
+                <p>Comprehensive computing programs designed for the digital age</p>
+            </div>
             <div class="grid-3">
-                <div class="image-card">
-                    <img src="images/campus.svg" alt="Computing Building">
-                    <div class="image-card-content">
-                        <h3>Computing Building</h3>
-                        <p>Dedicated building for computing students with modern facilities.</p>
-                    </div>
-                </div>
-                <div class="image-card">
-                    <img src="images/lab.svg" alt="Computer Lab">
-                    <div class="image-card-content">
-                        <h3>Computer Laboratories</h3>
-                        <p>Fully equipped labs with high-speed internet and latest software.</p>
-                    </div>
-                </div>
-                <div class="image-card">
-                    <img src="images/students.svg" alt="Student Coding">
-                    <div class="image-card-content">
-                        <h3>Hands-on Learning</h3>
-                        <p>Practical coding sessions and project-based learning.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <hr>
-
-        <!-- Programs Section -->
-        <section class="programs-section">
-            <h2>Our Programs</h2>
-            <p class="lead">The Department of Computing & Informatics offers a wide range of programs under the School of Science & Technology.</p>
-            <div class="grid-2">
                 <div class="program-card">
                     <h3>Bachelor of Information Technology</h3>
-                    <p>Comprehensive program covering software engineering, cybersecurity, networking, and data analytics.</p>
-                    <span style="color: var(--primary-color); font-size: 14px; font-weight: 600;">4 Years</span>
+                    <p>Software engineering, cybersecurity, networking, and data analytics with ethical leadership.</p>
+                    <span class="program-duration">4 Years</span>
                 </div>
                 <div class="program-card">
                     <h3>Bachelor of Business Computing</h3>
                     <p>Blend of computing skills with business knowledge for the modern digital economy.</p>
-                    <span style="color: var(--primary-color); font-size: 14px; font-weight: 600;">4 Years</span>
+                    <span class="program-duration">4 Years</span>
                 </div>
                 <div class="program-card">
-                    <h3>Bachelor of Science in Network Systems Administration</h3>
-                    <p>Learn to design, implement, and manage enterprise network infrastructure.</p>
-                    <span style="color: var(--primary-color); font-size: 14px; font-weight: 600;">4 Years</span>
+                    <h3>BSc. Network Systems Administration</h3>
+                    <p>Design, implement, and manage enterprise network infrastructure.</p>
+                    <span class="program-duration">4 Years</span>
+                </div>
+                <div class="program-card">
+                    <h3>BSc. Applied Data Science & AI</h3>
+                    <p>Data science, machine learning, and artificial intelligence for future tech.</p>
+                    <span class="program-duration">4 Years</span>
                 </div>
                 <div class="program-card">
                     <h3>Diploma in Computer Engineering</h3>
                     <p>Practical skills in computer hardware, software, and system maintenance.</p>
-                    <span style="color: var(--primary-color); font-size: 14px; font-weight: 600;">2 Years</span>
+                    <span class="program-duration">2 Years</span>
+                </div>
+                <div class="program-card">
+                    <h3>Certificate in IT (UBTEB)</h3>
+                    <p>Entry-level certificate recognized by Uganda Business and Technical Examinations Board.</p>
+                    <span class="program-duration">1 Year</span>
                 </div>
             </div>
             <div class="text-center mt-20">
-                <a href="programs.html" class="btn btn-primary">View All Programs</a>
+                <a href="programs.html" class="btn btn-primary">View All Programs →</a>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <hr>
-
-        <!-- Timetable Section -->
-        <section class="timetable-section">
-            <h2>Weekly Class Timetable</h2>
+    <section class="timetable-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Weekly Class Timetable</h2>
+                <p>Regular class schedule for our computing students</p>
+            </div>
             <div class="table-container">
                 <table>
                     <thead>
@@ -248,138 +214,122 @@
                     </tbody>
                 </table>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <hr>
-
-        <!-- Resources Section -->
-        <section class="resources-section">
-            <h2>Student Resources</h2>
+    <section class="resources-section">
+        <div class="container">
             <div class="grid-2">
                 <div class="resource-card">
-                    <h3>Learning Resources</h3>
+                    <h3>Student Resources</h3>
                     <ul>
-                        <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a> - Web Development Tutorials</li>
-                        <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a> - Web Documentation</li>
-                        <li><a href="https://stackoverflow.com" target="_blank">Stack Overflow</a> - Developer Q&A</li>
-                        <li><a href="https://github.com" target="_blank">GitHub</a> - Code Collaboration</li>
+                        <li><a href="https://www.w3schools.com" target="_blank">W3Schools - Web Development Tutorials</a></li>
+                        <li><a href="https://developer.mozilla.org" target="_blank">MDN Web Docs - Web Documentation</a></li>
+                        <li><a href="https://stackoverflow.com" target="_blank">Stack Overflow - Developer Q&A</a></li>
+                        <li><a href="https://github.com" target="_blank">GitHub - Code Collaboration</a></li>
                     </ul>
                 </div>
                 <div class="resource-card">
                     <h3>University Links</h3>
                     <ul>
-                        <li><a href="https://bugemauniv.ac.ug" target="_blank">Bugema University Official</a></li>
+                        <li><a href="https://bugemauniv.ac.ug" target="_blank">Bugema University Official Website</a></li>
                         <li><a href="https://eportal.bugemauniv.ac.ug/" target="_blank">Student E-Portal</a></li>
                         <li><a href="https://lib.bugemauniv.ac.ug/" target="_blank">University Library</a></li>
-                        <li><a href="https://elearning.bugemauniv.ac.ug/" target="_blank">E-Learning</a></li>
+                        <li><a href="https://elearning.bugemauniv.ac.ug/" target="_blank">E-Learning Platform</a></li>
                     </ul>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <hr>
-
-        <!-- News & Events Section -->
-        <section class="news-events">
-            <h2>News & Events</h2>
+    <section class="news-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>News & Events</h2>
+                <p>Stay updated with the latest happenings in our department</p>
+            </div>
             <div class="grid-3">
                 <div class="news-card">
+                    <span class="news-date">March 2026</span>
                     <h3>Tech Innovation Week</h3>
-                    <p style="color: var(--primary-color); font-size: 12px; margin-bottom: 10px; font-weight: 600;">March 2026</p>
                     <p>Annual technology exhibition showcasing student projects in software development, AI, and mobile apps.</p>
                 </div>
                 <div class="news-card">
+                    <span class="news-date">April 2026</span>
                     <h3>Industry Partnership Forum</h3>
-                    <p style="color: var(--primary-color); font-size: 12px; margin-bottom: 10px; font-weight: 600;">April 2026</p>
-                    <p>Networking with leading tech companies and potential employers from across Uganda.</p>
+                    <p>Networking event with leading tech companies and potential employers from across Uganda.</p>
                 </div>
                 <div class="news-card">
+                    <span class="news-date">May 2026</span>
                     <h3>Hackathon 2026</h3>
-                    <p style="color: var(--primary-color); font-size: 12px; margin-bottom: 10px; font-weight: 600;">May 2026</p>
                     <p>48-hour coding competition with exciting prizes. Register your team now!</p>
                 </div>
             </div>
-        </section>
-    </div>
+        </div>
+    </section>
 
     <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h4>Bugema University</h4>
-                <p>Kalagala Sub-County, Luwero District</p>
-                <p>P.O. Box 6529, Kampala, Uganda</p>
-                <p>Phone: +256-312-351-400</p>
-                <p>Email: info@bugemauniv.ac.ug</p>
-            </div>
-            <div class="footer-section">
-                <h4>Quick Links</h4>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="programs.html">Programs</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Department</h4>
-                <ul>
-                    <li><a href="faculty.html">Faculty Members</a></li>
-                    <li><a href="https://eportal.bugemauniv.ac.ug/">Student Portal</a></li>
-                    <li><a href="https://lib.bugemauniv.ac.ug/">Online Library</a></li>
-                    <li><a href="#">Career Services</a></li>
-                </ul>
-            </div>
-            <div class="footer-section">
-                <h4>Follow Us</h4>
-                <div class="social-links">
-                    <a href="#">Facebook</a>
-                    <a href="#">Twitter</a>
-                    <a href="#">LinkedIn</a>
-                    <a href="#">YouTube</a>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3>Bugema University</h3>
+                    <p>Department of Computing & Informatics - part of the School of Science & Technology. Committed to academic excellence and transformative education.</p>
+                    <div class="footer-social">
+                        <a href="#">📘</a>
+                        <a href="#">🐦</a>
+                        <a href="#">📸</a>
+                        <a href="#">📺</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://eportal.bugemauniv.ac.ug/">Student Portal</a></li>
+                        <li><a href="https://lib.bugemauniv.ac.ug/">Library</a></li>
+                        <li><a href="https://elearning.bugemauniv.ac.ug/">E-Learning</a></li>
+                        <li><a href="#">Career Services</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>📍 Bugema, Luwero, Uganda</li>
+                        <li>📞 +256-312-351-400</li>
+                        <li>✉️ info@bugemauniv.ac.ug</li>
+                    </ul>
                 </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Bugema University - Department of Computing & Informatics. All Rights Reserved.</p>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Bugema University - Department of Computing & Informatics. All Rights Reserved.</p>
+            </div>
         </div>
     </footer>
 
     <script>
-        // Carousel functionality
-        let currentSlide = 0;
-        const slides = document.querySelectorAll('.carousel-slide');
-        const dots = document.querySelectorAll('.carousel-dot');
-        const totalSlides = slides.length;
-
-        function showSlide(n) {
-            currentSlide = (n + totalSlides) % totalSlides;
-            
-            slides.forEach(slide => slide.classList.remove('active'));
-            dots.forEach(dot => dot.classList.remove('active'));
-            
-            slides[currentSlide].classList.add('active');
-            dots[currentSlide].classList.add('active');
-        }
-
-        function changeSlide(n) {
-            showSlide(currentSlide + n);
-        }
-
-        function goToSlide(n) {
-            showSlide(n);
-        }
-
-        // Auto-advance carousel every 5 seconds
-        setInterval(() => {
-            changeSlide(1);
-        }, 5000);
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.querySelector('.navbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
 
         // Mobile menu toggle
         const menuToggle = document.querySelector('.menu-toggle');
         const navLinks = document.querySelector('.nav-links');
-
         menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('mobile-active');
+            navLinks.classList.toggle('active');
         });
     </script>
 </body>
