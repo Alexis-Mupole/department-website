@@ -2,85 +2,295 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Application Form | Bugema University</title>
     <meta name="description" content="Apply to Bugema University - Department of Computing & Informatics. Complete your application online.">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/Bugema_logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <!-- Loading Screen -->
-    <div id="loader">
-        <div class="loader-inner">
-            <img src="images/Bugema_logo.png" alt="Bugema University Logo" class="loader-logo">
-            <div class="loader-bar"><div class="loader-fill"></div></div>
-            <p class="loader-text">Loading...</p>
-        </div>
-    </div>
-
     <!-- Navigation -->
-    <nav id="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-brand">
-                <img src="images/Bugema_logo.png" alt="Bugema University">
-                <span>Computing & Informatics</span>
+    <nav class="navbar navbar-expand-lg fixed-top scrolled" id="navbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/Bugema_logo.png" alt="Logo" height="45" class="me-2 rounded-3">
+                <span class="brand-text">Computing & Informatics</span>
             </a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="programs.html">Programs</a></li>
-                <li><a href="faculty.html">Faculty</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="application.html" class="btn-apply">Apply Now</a></li>
-            </ul>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                <span></span><span></span><span></span>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faculty.html">Faculty</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-accent" href="application.html">Apply Now</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
-    
+
+    <!-- Page Hero -->
+    <section class="page-hero-section hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content text-center">
+            <span class="badge bg-accent-subtle text-accent mb-3 px-3 py-2">Admissions</span>
+            <h1 class="display-4 fw-bold text-white mb-4">Application Form</h1>
+            <p class="lead text-white-50 mx-auto" style="max-width: 600px;">
+                Begin your journey to becoming an IT professional. Complete the form below to apply.
+            </p>
         </div>
     </section>
 
-    <footer>
+    <!-- Application Form -->
+    <section class="py-5">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-about">
-                    <h3>Bugema University</h3>
-                    <p>Department of Computing & Informatics - School of Science & Technology.</p>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="card border-0 shadow-lg rounded-4 p-4 p-md-5">
+                        <div class="text-center mb-4">
+                            <img src="images/Bugema_logo.png" alt="Bugema University" height="80" class="mb-3 rounded-3">
+                            <h2 class="fw-bold text-navy">Bugema University</h2>
+                            <p class="text-muted">Department of Computing & Informatics - Application Form</p>
+                        </div>
+                        
+                        <form id="applicationForm">
+                            <!-- Personal Information -->
+                            <h4 class="fw-bold text-navy mb-4"><i class="bi bi-person me-2 text-accent"></i>Personal Information</h4>
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">First Name *</label>
+                                    <input type="text" class="form-control form-control-lg" placeholder="Enter first name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">Last Name *</label>
+                                    <input type="text" class="form-control form-control-lg" placeholder="Enter last name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">Date of Birth *</label>
+                                    <input type="date" class="form-control form-control-lg" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">Gender *</label>
+                                    <select class="form-select form-select-lg" required>
+                                        <option value="">Select Gender</option>
+                                        <option>Male</option>
+                                        <option>Female</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label fw-semibold">Nationality *</label>
+                                    <input type="text" class="form-control form-control-lg" placeholder="Enter nationality" required>
+                                </div>
+                            </div>
+
+                            <!-- Contact Information -->
+                            <h4 class="fw-bold text-navy mb-4"><i class="bi bi-telephone me-2 text-accent"></i>Contact Information</h4>
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">Email Address *</label>
+                                    <input type="email" class="form-control form-control-lg" placeholder="Enter email address" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">Phone Number *</label>
+                                    <input type="tel" class="form-control form-control-lg" placeholder="+256..." required>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label fw-semibold">Physical Address *</label>
+                                    <input type="text" class="form-control form-control-lg" placeholder="Enter your address" required>
+                                </div>
+                            </div>
+
+                            <!-- Academic Background -->
+                            <h4 class="fw-bold text-navy mb-4"><i class="bi bi-mortarboard me-2 text-accent"></i>Academic Background</h4>
+                            <div class="row g-3 mb-4">
+                                <div class="col-12">
+                                    <label class="form-label fw-semibold">Program Applying For *</label>
+                                    <select class="form-select form-select-lg" required>
+                                        <option value="">Select a Program</option>
+                                        <optgroup label="Bachelor's Degrees">
+                                            <option>Bachelor of Information Technology</option>
+                                            <option>Bachelor of Business Computing</option>
+                                            <option>BSc. Network Systems Administration</option>
+                                            <option>BSc. Applied Data Science & Artificial Intelligence</option>
+                                            <option>Bachelor of Library and Information Science</option>
+                                        </optgroup>
+                                        <optgroup label="Diploma & Certificate">
+                                            <option>Diploma in Computer Engineering</option>
+                                            <option>Certificate in Information Technology (UBTEB)</option>
+                                        </optgroup>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">Entry Category *</label>
+                                    <select class="form-select form-select-lg" required>
+                                        <option value="">Select Entry Category</option>
+                                        <option>Direct Entry (A-Level)</option>
+                                        <option>Diploma Holder</option>
+                                        <option>Mature Age Entry</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">Intake *</label>
+                                    <select class="form-select form-select-lg" required>
+                                        <option value="">Select Intake</option>
+                                        <option>January 2026</option>
+                                        <option>August 2026</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label fw-semibold">Previous Qualifications</label>
+                                    <textarea class="form-control" rows="3" placeholder="List your previous qualifications (O-Level, A-Level, etc.)"></textarea>
+                                </div>
+                            </div>
+
+                            <!-- Emergency Contact -->
+                            <h4 class="fw-bold text-navy mb-4"><i class="bi bi-person-plus me-2 text-accent"></i>Emergency Contact</h4>
+                            <div class="row g-3 mb-4">
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">Contact Name *</label>
+                                    <input type="text" class="form-control form-control-lg" placeholder="Emergency contact name" required>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label fw-semibold">Relationship *</label>
+                                    <select class="form-select form-select-lg" required>
+                                        <option value="">Select Relationship</option>
+                                        <option>Parent</option>
+                                        <option>Guardian</option>
+                                        <option>Spouse</option>
+                                        <option>Sibling</option>
+                                        <option>Other</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label class="form-label fw-semibold">Emergency Phone *</label>
+                                    <input type="tel" class="form-control form-control-lg" placeholder="Emergency contact phone" required>
+                                </div>
+                            </div>
+
+                            <!-- Declaration -->
+                            <div class="form-check mb-4">
+                                <input class="form-check-input" type="checkbox" id="declaration" required>
+                                <label class="form-check-label text-muted" for="declaration">
+                                    I declare that the information provided is accurate and I agree to the terms and conditions of Bugema University.
+                                </label>
+                            </div>
+
+                            <button type="submit" class="btn btn-accent btn-lg w-100">
+                                <i class="bi bi-send me-2"></i>Submit Application
+                            </button>
+                        </form>
+                    </div>
                 </div>
-                <div class="footer-column">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="programs.html">Programs</a></li>
-                        <li><a href="application.html">Apply Now</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+            </div>
+        </div>
+    </section>
+
+    <!-- Requirements -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-navy">Before You Apply</h2>
+                <p class="text-muted">Please ensure you have the following ready</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4 text-center">
+                        <div class="icon-box bg-accent-subtle text-accent rounded-3 mx-auto mb-3">
+                            <i class="bi bi-file-earmark-text fs-4"></i>
+                        </div>
+                        <h5 class="fw-bold text-navy mb-2">Academic Documents</h5>
+                        <p class="text-muted small mb-0">UCE and UACE result slips/certificates, or equivalent qualifications</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4 text-center">
+                        <div class="icon-box bg-navy-subtle text-navy rounded-3 mx-auto mb-3">
+                            <i class="bi bi-person-badge fs-4"></i>
+                        </div>
+                        <h5 class="fw-bold text-navy mb-2">Identification</h5>
+                        <p class="text-muted small mb-0">National ID, Passport, or Birth Certificate for identification purposes</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4 text-center">
+                        <div class="icon-box bg-accent-subtle text-accent rounded-3 mx-auto mb-3">
+                            <i class="bi bi-currency-dollar fs-4"></i>
+                        </div>
+                        <h5 class="fw-bold text-navy mb-2">Application Fee</h5>
+                        <p class="text-muted small mb-0">Application fee of UGX 50,000 (payable upon acceptance)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5 text-white">
+        <div class="container text-center py-5">
+            <h2 class="fw-bold mb-3">Need Help?</h2>
+            <p class="lead mb-4 opacity-75">Our admissions team is ready to assist you with your application.</p>
+            <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <a href="contact.html" class="btn btn-accent btn-lg"><i class="bi bi-chat-dots me-2"></i>Contact Us</a>
+                <a href="programs.html" class="btn btn-outline-light btn-lg"><i class="bi bi-journal-text me-2"></i>View Programs</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="images/Bugema_logo.png" alt="Logo" height="50" class="me-3 rounded-3">
+                        <div>
+                            <h5 class="text-white fw-bold mb-0">Computing & Informatics</h5>
+                            <small class="text-white-50">Bugema University</small>
+                        </div>
+                    </div>
+                    <p class="text-white-50">Shaping technology leaders for Africa and the world.</p>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h6 class="text-white fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none">About</a></li>
+                        <li class="mb-2"><a href="programs.html" class="text-white-50 text-decoration-none">Programs</a></li>
+                        <li class="mb-2"><a href="faculty.html" class="text-white-50 text-decoration-none">Faculty</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="https://eportal.bugemauniv.ac.ug/">Student Portal</a></li>
-                        <li><a href="https://lib.bugemauniv.ac.ug/">Library</a></li>
+                <div class="col-6 col-lg-2">
+                    <h6 class="text-white fw-bold mb-3">Programs</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="bachelor-it.html" class="text-white-50 text-decoration-none">BSc. IT</a></li>
+                        <li class="mb-2"><a href="business-computing.html" class="text-white-50 text-decoration-none">Business Computing</a></li>
+                        <li class="mb-2"><a href="network-systems.html" class="text-white-50 text-decoration-none">Network Systems</a></li>
+                        <li class="mb-2"><a href="data-science-ai.html" class="text-white-50 text-decoration-none">Data Science & AI</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li>📍 Bugema, Luwero</li>
-                        <li>📞 +256-312-351-400</li>
+                <div class="col-lg-4">
+                    <h6 class="text-white fw-bold mb-3">Contact</h6>
+                    <ul class="list-unstyled text-white-50 mb-0">
+                        <li class="mb-2"><i class="bi bi-envelope me-2"></i>computing@bugemauniv.ac.ug</li>
+                        <li class="mb-2"><i class="bi bi-telephone me-2"></i>+256-312-351-400</li>
+                        <li class="mb-2"><i class="bi bi-geo-alt me-2"></i>Bugema, Luwero, Uganda</li>
                     </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Bugema University - Department of Computing & Informatics. All Rights Reserved.</p>
-            </div>
+            <hr class="my-4 border-secondary">
+            <p class="text-center text-white-50 mb-0">&copy; 2026 Bugema University — Department of Computing and Informatics. All rights reserved.</p>
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

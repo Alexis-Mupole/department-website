@@ -2,189 +2,386 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-    <title>BSc Data Science & Artificial Intelligence | Bugema University</title>
-    <meta name="description" content="Learn about the BSc Applied Data Science & AI program at Bugema University. Master data science, machine learning, and AI technologies.">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BSc. Applied Data Science & Artificial Intelligence | Bugema University</title>
+    <meta name="description" content="Learn about the BSc. Applied Data Science & Artificial Intelligence program at Bugema University. Career opportunities, subjects, and admission requirements.">
     <link rel="icon" href="images/Bugema_logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <!-- Loading Screen -->
-    <div id="loader">
-        <div class="loader-inner">
-            <img src="images/Bugema_logo.png" alt="Bugema University Logo" class="loader-logo">
-            <div class="loader-bar"><div class="loader-fill"></div></div>
-            <p class="loader-text">Loading...</p>
-        </div>
-    </div>
-
     <!-- Navigation -->
-    <nav id="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-brand">
-                <img src="images/Bugema_logo.png" alt="Bugema University">
-                <span>Computing & Informatics</span>
+    <nav class="navbar navbar-expand-lg fixed-top scrolled" id="navbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/Bugema_logo.png" alt="Logo" height="45" class="me-2 rounded-3">
+                <span class="brand-text">Computing & Informatics</span>
             </a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="programs.html">Programs</a></li>
-                <li><a href="faculty.html">Faculty</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="application.html" class="btn-apply">Apply Now</a></li>
-            </ul>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                <span></span><span></span><span></span>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faculty.html">Faculty</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-accent" href="application.html">Apply Now</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
-    
 
-            <div class="program-section">
-                <h3>Career Opportunities</h3>
-                <div class="career-paths">
-                    <div class="career-path">
-                        <h4>Data Science</h4>
-                        <ul>
-                            <li>Data Scientist</li>
-                            <li>Data Analyst</li>
-                            <li>Research Scientist</li>
-                            <li>Quantitative Analyst</li>
-                        </ul>
-                    </div>
-                    <div class="career-path">
-                        <h4>Machine Learning</h4>
-                        <ul>
-                            <li>Machine Learning Engineer</li>
-                            <li>MLOps Engineer</li>
-                            <li>AI Researcher</li>
-                            <li>NLP Engineer</li>
-                        </ul>
-                    </div>
-                    <div class="career-path">
-                        <h4>AI Development</h4>
-                        <ul>
-                            <li>AI Engineer</li>
-                            <li>Computer Vision Engineer</li>
-                            <li>Robotics Engineer</li>
-                            <li>AI Product Manager</li>
-                        </ul>
-                    </div>
-                    <div class="career-path">
-                        <h4>Business Intelligence</h4>
-                        <ul>
-                            <li>BI Analyst</li>
-                            <li>Data Engineer</li>
-                            <li>Analytics Manager</li>
-                            <li>Chief Data Officer</li>
-                        </ul>
+    <!-- Page Hero -->
+    <section class="page-hero-section hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="row align-items-center">
+                <div class="col-lg-8 text-center text-lg-start">
+                    <span class="badge bg-accent text-white mb-3 px-3 py-2">Bachelor's Degree</span>
+                    <h1 class="display-4 fw-bold text-white mb-3">BSc. Applied Data Science & Artificial Intelligence</h1>
+                    <p class="lead text-white-50 mb-4">4-Year Degree Program | NCHE Accredited</p>
+                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start flex-wrap">
+                        <a href="application.html" class="btn btn-accent btn-lg"><i class="bi bi-send me-2"></i>Apply Now</a>
+                        <a href="programs.html" class="btn btn-outline-light btn-lg"><i class="bi bi-arrow-left me-2"></i>All Programs</a>
                     </div>
                 </div>
-            </div>
-
-            <div class="program-section">
-                <h3>Core Subjects</h3>
-                <div class="subjects-table">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Year</th>
-                                <th>Semester</th>
-                                <th>Subjects</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td rowspan="2">Year 1</td>
-                                <td>Semester 1</td>
-                                <td>Introduction to Programming (Python), Mathematics I, Statistics I, Communication Skills, Data Literacy</td>
-                            </tr>
-                            <tr>
-                                <td>Semester 2</td>
-                                <td>Data Structures, Mathematics II, Statistics II, Database Management, Electronics</td>
-                            </tr>
-                            <tr>
-                                <td rowspan="2">Year 2</td>
-                                <td>Semester 1</td>
-                                <td>Machine Learning Fundamentals, Data Visualization, Advanced Statistics, Linear Algebra</td>
-                            </tr>
-                            <tr>
-                                <td>Semester 2</td>
-                                <td>Deep Learning, Big Data Technologies, Data Engineering, Python for Data Science</td>
-                            </tr>
-                            <tr>
-                                <td rowspan="2">Year 3</td>
-                                <td>Semester 1</td>
-                                <td>Computer Vision, Natural Language Processing, Reinforcement Learning, Cloud AI Services</td>
-                            </tr>
-                            <tr>
-                                <td>Semester 2</td>
-                                <td>AI Ethics, MLOps, Research Methods, Time Series Analysis</td>
-                            </tr>
-                            <tr>
-                                <td rowspan="2">Year 4</td>
-                                <td>Semester 1</td>
-                                <td>Advanced AI, AI Product Development, Data Privacy, Elective I</td>
-                            </tr>
-                            <tr>
-                                <td>Semester 2</td>
-                                <td>Final Year Project, AI in Business, Professional Ethics, Elective II</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <div class="cta-section">
-                <h3>Become a Data-Driven Professional</h3>
-                <p>Join the most sought-after career in the technology industry.</p>
-                <div class="cta-buttons">
-                    <a href="application.html" class="btn btn-primary">Apply Now</a>
-                    <a href="programs.html" class="btn btn-secondary">View All Programs</a>
+                <div class="col-lg-4 d-none d-lg-block text-center">
+                    <div class="icon-box mx-auto" style="width: 120px; height: 120px; background: rgba(108,99,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="bi bi-robot text-white fs-1"></i>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
+    <!-- Overview -->
+    <section class="py-5">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-about">
-                    <h3>Bugema University</h3>
-                    <p>Department of Computing & Informatics - School of Science & Technology.</p>
+            <div class="row g-5">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold text-navy mb-4">Program Overview</h2>
+                    <p class="text-muted lead mb-4">The BSc. Applied Data Science & Artificial Intelligence program equips students with cutting-edge skills in data science, machine learning, and AI technologies. This program prepares graduates to extract insights from data and build intelligent systems that drive decision-making in modern organizations.</p>
+                    <p class="text-muted">Students learn to work with large datasets, build predictive models, and develop AI solutions using industry-standard tools and frameworks.</p>
+                    <h4 class="fw-bold text-navy mt-4 mb-3">Core Subjects</h4>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge bg-accent-subtle text-accent p-2 rounded-3">Data Science</span>
+                        <span class="badge bg-accent-subtle text-accent p-2 rounded-3">Machine Learning</span>
+                        <span class="badge bg-accent-subtle text-accent p-2 rounded-3">Artificial Intelligence</span>
+                        <span class="badge bg-accent-subtle text-accent p-2 rounded-3">Data Visualization</span>
+                        <span class="badge bg-accent-subtle text-accent p-2 rounded-3">Deep Learning</span>
+                        <span class="badge bg-accent-subtle text-accent p-2 rounded-3">Statistics</span>
+                    </div>
                 </div>
-                <div class="footer-column">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="programs.html">Programs</a></li>
-                        <li><a href="application.html">Apply Now</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm rounded-4 p-4 bg-navy text-white">
+                        <h4 class="fw-bold mb-4">Program Details</h4>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-clock fs-5 me-3 text-accent"></i>
+                            <div>
+                                <small class="text-white-50">Duration</small>
+                                <p class="mb-0 fw-semibold">4 Years</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-calendar fs-5 me-3 text-accent"></i>
+                            <div>
+                                <small class="text-white-50">Intake</small>
+                                <p class="mb-0 fw-semibold">January & August</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-award fs-5 me-3 text-accent"></i>
+                            <div>
+                                <small class="text-white-50">Accreditation</small>
+                                <p class="mb-0 fw-semibold">NCHE Uganda</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-currency-dollar fs-5 me-3 text-accent"></i>
+                            <div>
+                                <small class="text-white-50">Annual Tuition</small>
+                                <p class="mb-0 fw-semibold">UGX 3,500,000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Paths -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-navy">Career Opportunities</h2>
+                <p class="text-muted">Graduates can pursue rewarding careers in various sectors</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box bg-accent-subtle text-accent rounded-3 me-3">
+                                <i class="bi bi-graph-up fs-4"></i>
+                            </div>
+                            <h4 class="h5 fw-bold text-navy mb-0">Data Scientist</h4>
+                        </div>
+                        <ul class="list-unstyled text-muted">
+                            <li class="mb-2"><i class="bi bi-check-circle text-accent me-2"></i>Analyze complex data sets</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-accent me-2"></i>Build predictive models</li>
+                            <li><i class="bi bi-check-circle text-accent me-2"></i>Solve business problems</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box bg-navy-subtle text-navy rounded-3 me-3">
+                                <i class="bi bi-robot fs-4"></i>
+                            </div>
+                            <h4 class="h5 fw-bold text-navy mb-0">AI Engineer</h4>
+                        </div>
+                        <ul class="list-unstyled text-muted">
+                            <li class="mb-2"><i class="bi bi-check-circle text-navy me-2"></i>Design AI systems</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-navy me-2"></i>Develop intelligent applications</li>
+                            <li><i class="bi bi-check-circle text-navy me-2"></i>Implement ML solutions</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box bg-accent-subtle text-accent rounded-3 me-3">
+                                <i class="bi bi-cpu fs-4"></i>
+                            </div>
+                            <h4 class="h5 fw-bold text-navy mb-0">Machine Learning Engineer</h4>
+                        </div>
+                        <ul class="list-unstyled text-muted">
+                            <li class="mb-2"><i class="bi bi-check-circle text-accent me-2"></i>Build ML models</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-accent me-2"></i>Deploy algorithms</li>
+                            <li><i class="bi bi-check-circle text-accent me-2"></i>Model optimization</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box bg-navy-subtle text-navy rounded-3 me-3">
+                                <i class="bi bi-bar-chart fs-4"></i>
+                            </div>
+                            <h4 class="h5 fw-bold text-navy mb-0">Data Analyst</h4>
+                        </div>
+                        <ul class="list-unstyled text-muted">
+                            <li class="mb-2"><i class="bi bi-check-circle text-navy me-2"></i>Interpret data</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-navy me-2"></i>Statistical analysis</li>
+                            <li><i class="bi bi-check-circle text-navy me-2"></i>Generate insights</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box bg-accent-subtle text-accent rounded-3 me-3">
+                                <i class="bi bi-pie-chart fs-4"></i>
+                            </div>
+                            <h4 class="h5 fw-bold text-navy mb-0">Business Intelligence Analyst</h4>
+                        </div>
+                        <ul class="list-unstyled text-muted">
+                            <li class="mb-2"><i class="bi bi-check-circle text-accent me-2"></i>Transform data into insights</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-accent me-2"></i>Use BI tools</li>
+                            <li><i class="bi bi-check-circle text-accent me-2"></i>Dashboard creation</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box bg-navy-subtle text-navy rounded-3 me-3">
+                                <i class="bi bi-brain fs-4"></i>
+                            </div>
+                            <h4 class="h5 fw-bold text-navy mb-0">Deep Learning Specialist</h4>
+                        </div>
+                        <ul class="list-unstyled text-muted">
+                            <li class="mb-2"><i class="bi bi-check-circle text-navy me-2"></i>Neural networks</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-navy me-2"></i>Advanced AI architectures</li>
+                            <li><i class="bi bi-check-circle text-navy me-2"></i>Computer vision</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-navy">Curriculum Overview</h2>
+                <p class="text-muted">What you'll learn throughout the program</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <h4 class="fw-bold text-navy mb-4">Year 1</h4>
+                        <div class="mb-3">
+                            <h6 class="fw-bold text-accent">Semester 1</h6>
+                            <p class="text-muted small mb-0">Computer Fundamentals, Introduction to Programming, Mathematics I, Statistics, Communication Skills</p>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold text-accent">Semester 2</h6>
+                            <p class="text-muted small mb-0">Data Structures, Calculus, Linear Algebra, Python Programming, Office Applications</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <h4 class="fw-bold text-navy mb-4">Year 2</h4>
+                        <div class="mb-3">
+                            <h6 class="fw-bold text-accent">Semester 1</h6>
+                            <p class="text-muted small mb-0">Data Science Foundations, Database Management, Probability Theory, Machine Learning Basics</p>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold text-accent">Semester 2</h6>
+                            <p class="text-muted small mb-0">Data Analysis with Python, Statistics for Data Science, Data Visualization, Algorithms</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <h4 class="fw-bold text-navy mb-4">Year 3</h4>
+                        <div class="mb-3">
+                            <h6 class="fw-bold text-accent">Semester 1</h6>
+                            <p class="text-muted small mb-0">Machine Learning, Big Data Technologies, Neural Networks, Feature Engineering</p>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold text-accent">Semester 2</h6>
+                            <p class="text-muted small mb-0">Deep Learning, Natural Language Processing, Computer Vision, Research Methods</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <h4 class="fw-bold text-navy mb-4">Year 4</h4>
+                        <div class="mb-3">
+                            <h6 class="fw-bold text-accent">Semester 1</h6>
+                            <p class="text-muted small mb-0">AI Systems Design, Reinforcement Learning, Cloud AI Services, Elective I</p>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold text-accent">Semester 2</h6>
+                            <p class="text-muted small mb-0">Final Year Project, AI Ethics, MLOps, Industry Attachment</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Requirements -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-navy">Admission Requirements</h2>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box bg-accent-subtle text-accent rounded-3 me-3">
+                                <i class="bi bi-mortarboard fs-4"></i>
+                            </div>
+                            <h4 class="h5 fw-bold text-navy mb-0">Direct Entry (A-Level)</h4>
+                        </div>
+                        <ul class="list-unstyled text-muted">
+                            <li class="mb-2"><i class="bi bi-check-circle text-accent me-2"></i>UCE with at least 5 passes</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-accent me-2"></i>UACE with at least 2 principal passes</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-accent me-2"></i>Mathematics is essential</li>
+                            <li><i class="bi bi-check-circle text-accent me-2"></i>Physics or Economics recommended</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box bg-navy-subtle text-navy rounded-3 me-3">
+                                <i class="bi bi-person-badge fs-4"></i>
+                            </div>
+                            <h4 class="h5 fw-bold text-navy mb-0">Mature Age Entry</h4>
+                        </div>
+                        <ul class="list-unstyled text-muted">
+                            <li class="mb-2"><i class="bi bi-check-circle text-navy me-2"></i>At least 25 years of age</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-navy me-2"></i>Passed mature age entrance examination</li>
+                            <li><i class="bi bi-check-circle text-navy me-2"></i>Strong mathematical background</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5 text-white">
+        <div class="container text-center py-5">
+            <h2 class="fw-bold mb-3">Ready to Start Your IT Journey?</h2>
+            <p class="lead mb-4 opacity-75">Join Bugema University and become a skilled IT professional.</p>
+            <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <a href="application.html" class="btn btn-accent btn-lg"><i class="bi bi-send me-2"></i>Apply Now</a>
+                <a href="contact.html" class="btn btn-outline-light btn-lg"><i class="bi bi-chat-dots me-2"></i>Ask a Question</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="images/Bugema_logo.png" alt="Logo" height="50" class="me-3 rounded-3">
+                        <div>
+                            <h5 class="text-white fw-bold mb-0">Computing & Informatics</h5>
+                            <small class="text-white-50">Bugema University</small>
+                        </div>
+                    </div>
+                    <p class="text-white-50">Shaping technology leaders for Africa and the world.</p>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h6 class="text-white fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none">About</a></li>
+                        <li class="mb-2"><a href="programs.html" class="text-white-50 text-decoration-none">Programs</a></li>
+                        <li class="mb-2"><a href="faculty.html" class="text-white-50 text-decoration-none">Faculty</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="https://eportal.bugemauniv.ac.ug/">Student Portal</a></li>
-                        <li><a href="https://lib.bugemauniv.ac.ug/">Library</a></li>
+                <div class="col-6 col-lg-2">
+                    <h6 class="text-white fw-bold mb-3">Programs</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="bachelor-it.html" class="text-white-50 text-decoration-none">BSc. IT</a></li>
+                        <li class="mb-2"><a href="business-computing.html" class="text-white-50 text-decoration-none">Business Computing</a></li>
+                        <li class="mb-2"><a href="network-systems.html" class="text-white-50 text-decoration-none">Network Systems</a></li>
+                        <li class="mb-2"><a href="data-science-ai.html" class="text-white-50 text-decoration-none">Data Science & AI</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li>📍 Bugema, Luwero</li>
-                        <li>📞 +256-312-351-400</li>
+                <div class="col-lg-4">
+                    <h6 class="text-white fw-bold mb-3">Contact</h6>
+                    <ul class="list-unstyled text-white-50 mb-0">
+                        <li class="mb-2"><i class="bi bi-envelope me-2"></i>computing@bugemauniv.ac.ug</li>
+                        <li class="mb-2"><i class="bi bi-telephone me-2"></i>+256-312-351-400</li>
+                        <li class="mb-2"><i class="bi bi-geo-alt me-2"></i>Bugema, Luwero, Uganda</li>
                     </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Bugema University - Department of Computing & Informatics. All Rights Reserved.</p>
-            </div>
+            <hr class="my-4 border-secondary">
+            <p class="text-center text-white-50 mb-0">&copy; 2026 Bugema University — Department of Computing and Informatics. All rights reserved.</p>
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

@@ -2,376 +2,481 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Department of Computing & Informatics | Bugema University</title>
     <meta name="description" content="Discover the Department of Computing & Informatics at Bugema University. Explore our IT programs, expert faculty, and modern facilities.">
-    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="images/Bugema_logo.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <!-- Loading Screen -->
-    <div id="loader">
-        <div class="loader-inner">
-            <img src="images/Bugema_logo.png" alt="Bugema University Logo" class="loader-logo">
-            <div class="loader-bar"><div class="loader-fill"></div></div>
-            <p class="loader-text">Loading...</p>
-        </div>
-    </div>
-
     <!-- Navigation -->
-    <nav id="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-brand">
-                <img src="images/Bugema_logo.png" alt="Bugema University">
-                <span>Computing & Informatics</span>
+    <nav class="navbar navbar-expand-lg fixed-top" id="navbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/Bugema_logo.png" alt="Logo" height="45" class="me-2 rounded-3">
+                <span class="brand-text">Computing & Informatics</span>
             </a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="programs.html">Programs</a></li>
-                <li><a href="faculty.html">Faculty</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="application.html" class="btn-apply">Apply Now</a></li>
-            </ul>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                <span></span><span></span><span></span>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faculty.html">Faculty</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-accent" href="application.html">Apply Now</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
 
-    <!-- Hero -->
-    <section class="hero">
-        <div class="hero-bg"></div>
-        <div class="hero-content">
-            <div class="hero-badge">Bugema University — Est. 1993</div>
-            <h1 class="hero-title">
-                Department of<br>
-                <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
-            </h1>
-            <p class="hero-subtitle">
-                Shaping the next generation of technology leaders through innovation, research, and excellence in computing education.
-            </p>
-            <div class="hero-actions">
-                <a href="programs.html" class="btn btn-primary">
-                    <span class="btn-icon">🎓</span> Explore Programs
-                </a>
-                <a href="about.html" class="btn btn-ghost">
-                    <span class="btn-icon">ℹ️</span> Learn More
-                </a>
-            </div>
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <span class="stat-number" data-target="500">0</span><span class="stat-plus">+</span>
-                    <span class="stat-label">Students</span>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="text-center text-white">
+                <span class="badge bg-accent-subtle text-accent mb-3 px-3 py-2">Bugema University — Est. 1993</span>
+                <h1 class="display-3 fw-bold mb-4">
+                    Department of<br>
+                    <span class="typed-text text-accent" id="typedText"></span><span class="cursor text-accent">|</span>
+                </h1>
+                <p class="lead mb-5 mx-auto" style="max-width: 600px;">
+                    Shaping the next generation of technology leaders through innovation, research, and excellence in computing education.
+                </p>
+                <div class="d-flex gap-3 justify-content-center flex-wrap mb-5">
+                    <a href="programs.html" class="btn btn-accent btn-lg">
+                        <i class="bi bi-mortarboard me-2"></i>Explore Programs
+                    </a>
+                    <a href="about.html" class="btn btn-outline-light btn-lg">
+                        <i class="bi bi-info-circle me-2"></i>Learn More
+                    </a>
                 </div>
-                <div class="stat-divider"></div>
-                <div class="stat-item">
-                    <span class="stat-number" data-target="25">0</span><span class="stat-plus">+</span>
-                    <span class="stat-label">Faculty</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat-item">
-                    <span class="stat-number" data-target="30">0</span><span class="stat-plus">+</span>
-                    <span class="stat-label">Years</span>
-                </div>
-                <div class="stat-divider"></div>
-                <div class="stat-item">
-                    <span class="stat-number" data-target="98">0</span><span class="stat-plus">%</span>
-                    <span class="stat-label">Employment</span>
+                <div class="hero-stats-card mx-auto">
+                    <div class="row g-0">
+                        <div class="col-3">
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="500">0</span><span class="stat-plus">+</span>
+                                <span class="stat-label">Students</span>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="25">0</span><span class="stat-plus">+</span>
+                                <span class="stat-label">Faculty</span>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="30">0</span><span class="stat-plus">+</span>
+                                <span class="stat-label">Years</span>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="98">0</span><span class="stat-plus">%</span>
+                                <span class="stat-label">Employment</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="hero-scroll">
+        <div class="hero-scroll-indicator">
             <span>Scroll</span>
-            <span class="scroll-icon">↓</span>
+            <i class="bi bi-chevron-down"></i>
         </div>
     </section>
 
-    <!-- Image Carousel -->
-    <section class="section carousel-section">
+    <!-- Carousel Section -->
+    <section class="py-5 bg-light">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Gallery</span>
-                <h2 class="section-title">Explore Our Campus</h2>
-                <p class="section-desc">Take a glimpse into our modern facilities and vibrant campus life.</p>
+            <div class="text-center mb-4">
+                <span class="badge bg-accent-subtle text-accent px-3 py-2">Gallery</span>
+                <h2 class="fw-bold text-navy mt-2">Explore Our Campus</h2>
+                <p class="text-muted">Take a glimpse into our modern facilities and vibrant campus life.</p>
             </div>
-            <div class="carousel-container">
-                <div class="carousel-track">
-                    <div class="carousel-slide active">
-                        <img src="images/New complex.jpeg" alt="Bugema University New Complex">
-                        <div class="carousel-caption">
+            <div class="carousel slide" id="mainCarousel" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"></button>
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="3"></button>
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="4"></button>
+                </div>
+                <div class="carousel-inner rounded-4 overflow-hidden shadow-lg">
+                    <div class="carousel-item active" data-bs-interval="5000">
+                        <img src="images/New complex.jpeg" class="d-block w-100" style="height: 450px; object-fit: cover;" alt="Campus">
+                        <div class="carousel-caption-custom">
                             <h3>Modern Campus Facilities</h3>
-                            <p>State-of-the-art buildings designed for excellence in education</p>
+                            <p>State-of-the-art buildings designed for excellence</p>
                         </div>
                     </div>
-                    <div class="carousel-slide">
-                        <img src="images/lab.jpeg" alt="Computer Laboratory">
-                        <div class="carousel-caption">
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="images/lab.jpeg" class="d-block w-100" style="height: 450px; object-fit: cover;" alt="Computer Lab">
+                        <div class="carousel-caption-custom">
                             <h3>Advanced Computer Labs</h3>
-                            <p>Equipped with the latest technology for hands-on learning</p>
+                            <p>Equipped with the latest technology</p>
                         </div>
                     </div>
-                    <div class="carousel-slide">
-                        <img src="images/campus1.jpeg" alt="Bugema University Campus">
-                        <div class="carousel-caption">
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="images/campus1.jpeg" class="d-block w-100" style="height: 450px; object-fit: cover;" alt="Campus">
+                        <div class="carousel-caption-custom">
                             <h3>Beautiful Campus Environment</h3>
-                            <p>A serene learning environment in the heart of Uganda</p>
+                            <p>A serene learning environment</p>
                         </div>
                     </div>
-                    <div class="carousel-slide">
-                        <img src="images/Lecturers.jpeg" alt="Faculty Members">
-                        <div class="carousel-caption">
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="images/Lecturers.jpeg" class="d-block w-100" style="height: 450px; object-fit: cover;" alt="Faculty">
+                        <div class="carousel-caption-custom">
                             <h3>Expert Faculty</h3>
-                            <p>Learn from experienced professionals dedicated to your success</p>
+                            <p>Learn from experienced professionals</p>
                         </div>
                     </div>
-                    <div class="carousel-slide">
-                        <img src="images/Building it.jpeg" alt="IT Department Building">
-                        <div class="carousel-caption">
+                    <div class="carousel-item" data-bs-interval="5000">
+                        <img src="images/Building it.jpeg" class="d-block w-100" style="height: 450px; object-fit: cover;" alt="Building">
+                        <div class="carousel-caption-custom">
                             <h3>Computing & Informatics Block</h3>
-                            <p>Home to our innovative computing programs</p>
+                            <p>Home to our innovative programs</p>
                         </div>
                     </div>
                 </div>
-                <button class="carousel-btn carousel-btn-prev" aria-label="Previous slide">‹</button>
-                <button class="carousel-btn carousel-btn-next" aria-label="Next slide">›</button>
-                <div class="carousel-indicators"></div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon bg-dark rounded-circle p-3"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon bg-dark rounded-circle p-3"></span>
+                </button>
             </div>
         </div>
     </section>
 
-    <!-- Quick About -->
-    <section class="section">
+    <!-- About Section -->
+    <section class="py-5">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Who We Are</span>
-                <h2 class="section-title">About the Department</h2>
-                <p class="section-desc">A centre of excellence in computing education, research, and community service in East Africa.</p>
+            <div class="text-center mb-5">
+                <span class="badge bg-accent-subtle text-accent px-3 py-2">Who We Are</span>
+                <h2 class="fw-bold text-navy mt-2">About the Department</h2>
+                <p class="text-muted mx-auto" style="max-width: 600px;">A centre of excellence in computing education, research, and community service in East Africa.</p>
             </div>
-            <div class="bento-grid about-grid">
-                <div class="bento-card bento-large glass-card reveal">
-                    <div class="card-icon-wrap blue">🎯</div>
-                    <h3>Our Mission</h3>
-                    <p>To provide world-class computing education that equips students with technical excellence, critical thinking, and ethical values to drive technological innovation in Uganda and beyond.</p>
-                    <a href="about.html" class="card-link">Read more →</a>
+            <div class="row g-4">
+                <div class="col-lg-8">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-box bg-accent-subtle text-accent rounded-3 me-3">
+                                    <i class="bi bi-crosshair fs-4"></i>
+                                </div>
+                                <h3 class="h4 fw-bold text-navy mb-0">Our Mission</h3>
+                            </div>
+                            <p class="text-muted">To provide world-class computing education that equips students with technical excellence, critical thinking, and ethical values to drive technological innovation in Uganda and beyond.</p>
+                            <a href="about.html" class="text-accent text-decoration-none fw-semibold">Read more →</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="bento-card glass-card reveal">
-                    <div class="card-icon-wrap violet">👁️</div>
-                    <h3>Our Vision</h3>
-                    <p>To be a centre of excellence in computing education, producing graduates who are competitive in the global job market.</p>
+                <div class="col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-box bg-accent-subtle text-accent rounded-3 me-3">
+                                    <i class="bi bi-eye fs-4"></i>
+                                </div>
+                                <h3 class="h4 fw-bold text-navy mb-0">Our Vision</h3>
+                            </div>
+                            <p class="text-muted">To be a centre of excellence in computing education, producing graduates who are competitive in the global job market.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="bento-card glass-card reveal">
-                    <div class="card-icon-wrap blue">🛡️</div>
-                    <h3>Our Values</h3>
-                    <ul class="values-list">
-                        <li><span class="check">✓</span> Excellence in Education</li>
-                        <li><span class="check">✓</span> Innovation & Creativity</li>
-                        <li><span class="check">✓</span> Integrity & Ethics</li>
-                        <li><span class="check">✓</span> Collaboration</li>
-                        <li><span class="check">✓</span> Service to Community</li>
-                    </ul>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-box bg-accent-subtle text-accent rounded-3 me-3">
+                                    <i class="bi bi-shield-check fs-4"></i>
+                                </div>
+                                <h3 class="h4 fw-bold text-navy mb-0">Our Values</h3>
+                            </div>
+                            <ul class="list-unstyled">
+                                <li class="d-flex align-items-center mb-2"><i class="bi bi-check-circle-fill text-accent me-2"></i>Excellence in Education</li>
+                                <li class="d-flex align-items-center mb-2"><i class="bi bi-check-circle-fill text-accent me-2"></i>Innovation & Creativity</li>
+                                <li class="d-flex align-items-center mb-2"><i class="bi bi-check-circle-fill text-accent me-2"></i>Integrity & Ethics</li>
+                                <li class="d-flex align-items-center mb-2"><i class="bi bi-check-circle-fill text-accent me-2"></i>Collaboration</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="bento-card bento-wide neu-card reveal">
-                    <div class="card-icon-wrap violet">🏆</div>
-                    <h3>Accreditation & Recognition</h3>
-                    <p>Our programs are accredited by the National Council for Higher Education (NCHE) Uganda and aligned with international computing standards. We maintain strong industry partnerships with leading tech companies across East Africa.</p>
-                    <a href="about.html" class="card-link">Learn more →</a>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-box bg-accent-subtle text-accent rounded-3 me-3">
+                                    <i class="bi bi-trophy fs-4"></i>
+                                </div>
+                                <h3 class="h4 fw-bold text-navy mb-0">Accreditation</h3>
+                            </div>
+                            <p class="text-muted">Our programs are accredited by NCHE Uganda and aligned with international computing standards.</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="bento-card glass-card reveal">
-                    <div class="card-icon-wrap blue">🌍</div>
-                    <h3>Community Impact</h3>
-                    <p>We actively engage with local communities through outreach programs, digital literacy campaigns, and technology workshops.</p>
+                <div class="col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-box bg-accent-subtle text-accent rounded-3 me-3">
+                                    <i class="bi bi-globe-americas fs-4"></i>
+                                </div>
+                                <h3 class="h4 fw-bold text-navy mb-0">Community Impact</h3>
+                            </div>
+                            <p class="text-muted">We engage with local communities through outreach programs, digital literacy campaigns, and technology workshops.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Programs Preview -->
-    <section class="section section-alt">
+    <!-- Programs Section -->
+    <section class="py-5 bg-light">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Academics</span>
-                <h2 class="section-title">Our Programs</h2>
-                <p class="section-desc">Carefully designed programs built to meet industry demands.</p>
+            <div class="text-center mb-5">
+                <span class="badge bg-accent-subtle text-accent px-3 py-2">Academics</span>
+                <h2 class="fw-bold text-navy mt-2">Our Programs</h2>
+                <p class="text-muted mx-auto" style="max-width: 600px;">Carefully designed programs built to meet industry demands.</p>
             </div>
-            <div class="programs-preview-grid">
-                <div class="prog-preview-card with-image reveal">
-                    <img src="images/business computing.jpeg" alt="Business Computing" class="prog-image">
-                    <div class="prog-content">
-                        <div class="prog-icon-wrap">💼</div>
-                        <h3>Bachelor of Business Computing</h3>
-                        <p>Bridges business management and IT — covering e-commerce, business analytics, and systems design.</p>
-                        <div class="prog-meta">
-                            <span class="prog-meta-item">⏱️ 4 Years</span>
-                            <span class="prog-meta-item">📅 Jan & Aug</span>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden program-card">
+                        <img src="images/business computing.jpeg" class="card-img-top" style="height: 180px; object-fit: cover;" alt="Business Computing">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-box-sm bg-navy-subtle text-navy rounded-2 me-2">
+                                    <i class="bi bi-briefcase"></i>
+                                </div>
+                                <h4 class="h5 fw-bold text-navy mb-0">Business Computing</h4>
+                            </div>
+                            <p class="text-muted small">Bridges business management and IT — covering e-commerce, business analytics, and systems design.</p>
+                            <div class="d-flex gap-2 flex-wrap mb-3">
+                                <span class="badge bg-light text-muted"><i class="bi bi-clock me-1"></i>4 Years</span>
+                                <span class="badge bg-light text-muted"><i class="bi bi-calendar me-1"></i>Jan & Aug</span>
+                            </div>
+                            <a href="business-computing.html" class="btn btn-outline-navy btn-sm w-100">View Program</a>
                         </div>
-                        <a href="business-computing.html" class="btn btn-outline btn-sm">View Program</a>
                     </div>
                 </div>
-                <div class="prog-preview-card featured with-image reveal">
-                    <img src="images/lab.jpeg" alt="Information Technology" class="prog-image">
-                    <div class="prog-content">
-                        <div class="prog-icon-wrap">🌐</div>
-                        <h3>Bachelor of Information Technology</h3>
-                        <p>Networking, cybersecurity, database systems, and enterprise IT management.</p>
-                        <div class="prog-meta">
-                            <span class="prog-meta-item">⏱️ 4 Years</span>
-                            <span class="prog-meta-item">📅 Jan & Aug</span>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden program-card featured">
+                        <img src="images/lab.jpeg" class="card-img-top" style="height: 180px; object-fit: cover;" alt="Information Technology">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-box-sm bg-accent-subtle text-accent rounded-2 me-2">
+                                    <i class="bi bi-globe"></i>
+                                </div>
+                                <h4 class="h5 fw-bold text-navy mb-0">Information Technology</h4>
+                            </div>
+                            <p class="text-muted small">Networking, cybersecurity, database systems, and enterprise IT management.</p>
+                            <div class="d-flex gap-2 flex-wrap mb-3">
+                                <span class="badge bg-light text-muted"><i class="bi bi-clock me-1"></i>4 Years</span>
+                                <span class="badge bg-light text-muted"><i class="bi bi-calendar me-1"></i>Jan & Aug</span>
+                            </div>
+                            <a href="bachelor-it.html" class="btn btn-accent btn-sm w-100">View Program</a>
                         </div>
-                        <a href="bachelor-it.html" class="btn btn-primary btn-sm">View Program</a>
                     </div>
                 </div>
-                <div class="prog-preview-card with-image reveal">
-                    <img src="images/Building it.jpeg" alt="Software Engineering" class="prog-image">
-                    <div class="prog-content">
-                        <div class="prog-icon-wrap">💻</div>
-                        <h3>BSc Software Engineering</h3>
-                        <p>Algorithms, software architecture, AI/ML, and modern development practices.</p>
-                        <div class="prog-meta">
-                            <span class="prog-meta-item">⏱️ 4 Years</span>
-                            <span class="prog-meta-item">📅 Jan & Aug</span>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 overflow-hidden program-card">
+                        <img src="images/Building it.jpeg" class="card-img-top" style="height: 180px; object-fit: cover;" alt="Software Engineering">
+                        <div class="card-body p-4">
+                            <div class="d-flex align-items-center mb-3">
+                                <div class="icon-box-sm bg-navy-subtle text-navy rounded-2 me-2">
+                                    <i class="bi bi-laptop"></i>
+                                </div>
+                                <h4 class="h5 fw-bold text-navy mb-0">Software Engineering</h4>
+                            </div>
+                            <p class="text-muted small">Algorithms, software architecture, AI/ML, and modern development practices.</p>
+                            <div class="d-flex gap-2 flex-wrap mb-3">
+                                <span class="badge bg-light text-muted"><i class="bi bi-clock me-1"></i>4 Years</span>
+                                <span class="badge bg-light text-muted"><i class="bi bi-calendar me-1"></i>Jan & Aug</span>
+                            </div>
+                            <a href="programs.html" class="btn btn-outline-navy btn-sm w-100">View Program</a>
                         </div>
-                        <a href="programs.html" class="btn btn-outline btn-sm">View Program</a>
                     </div>
                 </div>
             </div>
-            <div class="prog-more-row">
-                <span class="prog-more-label">Also offered:</span>
-                <a href="library-science.html" class="prog-more-chip">📚 B. Library & Info Science</a>
-                <a href="network-systems.html" class="prog-more-chip">🖥️ BSc Network Systems</a>
-                <a href="data-science-ai.html" class="prog-more-chip">🤖 BSc Data Science & AI</a>
-                <a href="diploma-computer-engineering.html" class="prog-more-chip">⚡ Diploma of IT</a>
-                <a href="certificate-it.html" class="prog-more-chip">🎯 Certificate of IT</a>
+            <div class="text-center mt-4">
+                <p class="text-muted mb-3">Also offered:</p>
+                <div class="d-flex gap-2 justify-content-center flex-wrap">
+                    <a href="library-science.html" class="btn btn-light btn-sm"><i class="bi bi-book me-1"></i>Library & Info Science</a>
+                    <a href="network-systems.html" class="btn btn-light btn-sm"><i class="bi bi-diagram-3 me-1"></i>Network Systems</a>
+                    <a href="data-science-ai.html" class="btn btn-light btn-sm"><i class="bi bi-robot me-1"></i>Data Science & AI</a>
+                    <a href="diploma-computer-engineering.html" class="btn btn-light btn-sm"><i class="bi bi-lightning me-1"></i>Diploma of IT</a>
+                    <a href="certificate-it.html" class="btn btn-light btn-sm"><i class="bi bi-patch-check me-1"></i>Certificate of IT</a>
+                </div>
             </div>
-            <div class="section-cta">
-                <a href="programs.html" class="btn btn-primary">📖 View All Programs</a>
+            <div class="text-center mt-4">
+                <a href="programs.html" class="btn btn-accent btn-lg"><i class="bi bi-journal-text me-2"></i>View All Programs</a>
             </div>
         </div>
     </section>
 
     <!-- Why Choose Us -->
-    <section class="section">
+    <section class="py-5">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Why Choose Us</span>
-                <h2 class="section-title">What Sets Us Apart</h2>
+            <div class="text-center mb-5">
+                <span class="badge bg-accent-subtle text-accent px-3 py-2">Why Choose Us</span>
+                <h2 class="fw-bold text-navy mt-2">What Sets Us Apart</h2>
             </div>
-            <div class="why-grid">
-                <div class="why-card reveal">
-                    <div class="why-icon-wrap"><div class="why-icon">🏆</div></div>
-                    <h3>Quality Education</h3>
-                    <p>NCHE accredited programs with rigorous academic standards that prepare you for the real world.</p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4 text-center why-card">
+                        <div class="why-icon-wrap mx-auto mb-3">
+                            <i class="bi bi-trophy text-accent fs-2"></i>
+                        </div>
+                        <h4 class="fw-bold text-navy">Quality Education</h4>
+                        <p class="text-muted mb-0">NCHE accredited programs with rigorous academic standards.</p>
+                    </div>
                 </div>
-                <div class="why-card reveal">
-                    <div class="why-icon-wrap"><div class="why-icon">💻</div></div>
-                    <h3>Modern Facilities</h3>
-                    <p>State-of-the-art computer laboratories with the latest software and hardware.</p>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4 text-center why-card">
+                        <div class="why-icon-wrap mx-auto mb-3">
+                            <i class="bi bi-pc-display-horizontal text-accent fs-2"></i>
+                        </div>
+                        <h4 class="fw-bold text-navy">Modern Facilities</h4>
+                        <p class="text-muted mb-0">State-of-the-art computer laboratories with latest software.</p>
+                    </div>
                 </div>
-                <div class="why-card reveal">
-                    <div class="why-icon-wrap"><div class="why-icon">👨‍🏫</div></div>
-                    <h3>Expert Faculty</h3>
-                    <p>Learn from experienced lecturers with industry backgrounds and practical expertise.</p>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4 text-center why-card">
+                        <div class="why-icon-wrap mx-auto mb-3">
+                            <i class="bi bi-people text-accent fs-2"></i>
+                        </div>
+                        <h4 class="fw-bold text-navy">Expert Faculty</h4>
+                        <p class="text-muted mb-0">Experienced lecturers with industry backgrounds.</p>
+                    </div>
                 </div>
-                <div class="why-card reveal">
-                    <div class="why-icon-wrap"><div class="why-icon">🤝</div></div>
-                    <h3>Industry Connections</h3>
-                    <p>Internship opportunities with leading tech companies for real-world experience.</p>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4 text-center why-card">
+                        <div class="why-icon-wrap mx-auto mb-3">
+                            <i class="bi bi-handshake text-accent fs-2"></i>
+                        </div>
+                        <h4 class="fw-bold text-navy">Industry Connections</h4>
+                        <p class="text-muted mb-0">Internship opportunities with leading tech companies.</p>
+                    </div>
                 </div>
-                <div class="why-card reveal">
-                    <div class="why-icon-wrap"><div class="why-icon">🌍</div></div>
-                    <h3>Global Recognition</h3>
-                    <p>Degrees recognized internationally, opening doors to career opportunities worldwide.</p>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4 text-center why-card">
+                        <div class="why-icon-wrap mx-auto mb-3">
+                            <i class="bi bi-globe2 text-accent fs-2"></i>
+                        </div>
+                        <h4 class="fw-bold text-navy">Global Recognition</h4>
+                        <p class="text-muted mb-0">Degrees recognized internationally.</p>
+                    </div>
                 </div>
-                <div class="why-card reveal">
-                    <div class="why-icon-wrap"><div class="why-icon">✝️</div></div>
-                    <h3>Christian Values</h3>
-                    <p>Education rooted in ethical principles, producing responsible professionals.</p>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4 text-center why-card">
+                        <div class="why-icon-wrap mx-auto mb-3">
+                            <i class="bi bi-cross text-accent fs-2"></i>
+                        </div>
+                        <h4 class="fw-bold text-navy">Christian Values</h4>
+                        <p class="text-muted mb-0">Education rooted in ethical principles.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- HOD Message -->
-    <section class="section section-alt">
+    <section class="py-5 bg-light">
         <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Leadership</span>
-                <h2 class="section-title">Message from Our Head</h2>
+            <div class="text-center mb-5">
+                <span class="badge bg-accent-subtle text-accent px-3 py-2">Leadership</span>
+                <h2 class="fw-bold text-navy mt-2">Message from Our Head</h2>
             </div>
-            <div class="hod-message-card reveal">
-                <div class="hod-avatar-new">
-                    <span>👨‍🏫</span>
-                </div>
-                <div class="hod-message-content">
-                    <p>"Welcome to the Department of Computing & Informatics. I am proud to lead a department committed to providing high-quality education that prepares students for the fast-evolving world of computing and information technology."</p>
-                    <p>"Our programs are designed to equip students with strong theoretical knowledge and practical skills. We emphasize problem-solving, innovation, ethical practice, and teamwork."</p>
-                    <div class="hod-signature">
-                        <h4>Mr. Ssewankambo Erma</h4>
-                        <span>Head of Department</span>
+            <div class="card border-0 shadow-lg rounded-4 mx-auto" style="max-width: 800px;">
+                <div class="card-body p-5">
+                    <div class="text-center mb-4">
+                        <div class="avatar-circle mx-auto">
+                            <i class="bi bi-person-fill text-white fs-1"></i>
+                        </div>
                     </div>
-                    <a href="faculty.html" class="btn btn-outline btn-sm">Meet Our Team →</a>
+                    <blockquote class="blockquote text-center mb-4">
+                        <p class="fs-5 text-muted fst-italic">"Welcome to the Department of Computing & Informatics. I am proud to lead a department committed to providing high-quality education that prepares students for the fast-evolving world of computing and information technology."</p>
+                        <p class="fs-5 text-muted fst-italic">"Our programs are designed to equip students with strong theoretical knowledge and practical skills. We emphasize problem-solving, innovation, ethical practice, and teamwork."</p>
+                    </blockquote>
+                    <div class="text-center">
+                        <h5 class="fw-bold text-navy mb-1">Mr. Ssewankambo Erma</h5>
+                        <p class="text-accent fw-semibold mb-3">Head of Department</p>
+                        <a href="faculty.html" class="btn btn-outline-navy btn-sm">Meet Our Team →</a>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section-new">
-        <div class="container">
-            <div class="cta-content">
-                <h2>Ready to Start Your Journey?</h2>
-                <p>Join hundreds of students who have launched successful careers in technology through our programs.</p>
-                <div class="cta-buttons">
-                    <a href="application.html" class="btn btn-primary">Apply Now →</a>
-                    <a href="contact.html" class="btn btn-ghost-white">Contact Us</a>
-                </div>
+    <section class="cta-section py-5 text-white">
+        <div class="container text-center py-5">
+            <h2 class="fw-bold mb-3">Ready to Start Your Journey?</h2>
+            <p class="lead mb-4 opacity-75">Join hundreds of students who have launched successful careers in technology.</p>
+            <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <a href="application.html" class="btn btn-accent btn-lg"><i class="bi bi-send me-2"></i>Apply Now</a>
+                <a href="contact.html" class="btn btn-outline-light btn-lg"><i class="bi bi-chat-dots me-2"></i>Contact Us</a>
             </div>
         </div>
     </section>
 
-    <footer class="footer">
+    <!-- Footer -->
+    <footer class="footer py-5">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-brand">
-                    <img src="images/Bugema_logo.png" alt="Bugema University Logo">
-                    <h3>Computing & Informatics</h3>
-                    <p>Bugema University — Shaping technology leaders for Africa and the world.</p>
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="images/Bugema_logo.png" alt="Logo" height="50" class="me-3 rounded-3">
+                        <div>
+                            <h5 class="text-white fw-bold mb-0">Computing & Informatics</h5>
+                            <small class="text-white-50">Bugema University</small>
+                        </div>
+                    </div>
+                    <p class="text-white-50">Shaping technology leaders for Africa and the world.</p>
                 </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="about.html">→ About</a></li>
-                        <li><a href="programs.html">→ Programs</a></li>
-                        <li><a href="faculty.html">→ Faculty</a></li>
-                        <li><a href="contact.html">→ Contact</a></li>
+                <div class="col-6 col-lg-2">
+                    <h6 class="text-white fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none">About</a></li>
+                        <li class="mb-2"><a href="programs.html" class="text-white-50 text-decoration-none">Programs</a></li>
+                        <li class="mb-2"><a href="faculty.html" class="text-white-50 text-decoration-none">Faculty</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-links">
-                    <h4>Programs</h4>
-                    <ul>
-                        <li><a href="bachelor-it.html">→ BSc. Information Technology</a></li>
-                        <li><a href="business-computing.html">→ BSc. Business Computing</a></li>
-                        <li><a href="network-systems.html">→ BSc. Network Systems</a></li>
-                        <li><a href="data-science-ai.html">→ BSc. Data Science & AI</a></li>
+                <div class="col-6 col-lg-2">
+                    <h6 class="text-white fw-bold mb-3">Programs</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="bachelor-it.html" class="text-white-50 text-decoration-none">BSc. IT</a></li>
+                        <li class="mb-2"><a href="business-computing.html" class="text-white-50 text-decoration-none">Business Computing</a></li>
+                        <li class="mb-2"><a href="network-systems.html" class="text-white-50 text-decoration-none">Network Systems</a></li>
+                        <li class="mb-2"><a href="data-science-ai.html" class="text-white-50 text-decoration-none">Data Science & AI</a></li>
                     </ul>
                 </div>
-                <div class="footer-contact">
-                    <h4>Contact</h4>
-                    <p>📧 computing@bugemauniv.ac.ug</p>
-                    <p>📞 +256-312-351-400</p>
-                    <p>📍 Bugema, Luwero, Uganda</p>
+                <div class="col-lg-4">
+                    <h6 class="text-white fw-bold mb-3">Contact</h6>
+                    <ul class="list-unstyled text-white-50 mb-0">
+                        <li class="mb-2"><i class="bi bi-envelope me-2"></i>computing@bugemauniv.ac.ug</li>
+                        <li class="mb-2"><i class="bi bi-telephone me-2"></i>+256-312-351-400</li>
+                        <li class="mb-2"><i class="bi bi-geo-alt me-2"></i>Bugema, Luwero, Uganda</li>
+                    </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>© 2026 Bugema University — Department of Computing and Informatics. All rights reserved.</p>
-            </div>
+            <hr class="my-4 border-secondary">
+            <p class="text-center text-white-50 mb-0">&copy; 2026 Bugema University — Department of Computing and Informatics. All rights reserved.</p>
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

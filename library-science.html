@@ -2,147 +2,371 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bachelor of Library and Information Science | Bugema University</title>
-    <meta name="description" content="Learn about the Bachelor of Library and Information Science program at Bugema University. Manage information resources and digital libraries.">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="description" content="Learn about the Bachelor of Library and Information Science program at Bugema University. Career opportunities, subjects, and admission requirements.">
     <link rel="icon" href="images/Bugema_logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <!-- Loading Screen -->
-    <div id="loader">
-        <div class="loader-inner">
-            <img src="images/Bugema_logo.png" alt="Bugema University Logo" class="loader-logo">
-            <div class="loader-bar"><div class="loader-fill"></div></div>
-            <p class="loader-text">Loading...</p>
-        </div>
-    </div>
-
     <!-- Navigation -->
-    <nav id="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-brand">
-                <img src="images/Bugema_logo.png" alt="Bugema University">
-                <span>Computing & Informatics</span>
+    <nav class="navbar navbar-expand-lg fixed-top scrolled" id="navbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/Bugema_logo.png" alt="Logo" height="45" class="me-2 rounded-3">
+                <span class="brand-text">Computing & Informatics</span>
             </a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="programs.html">Programs</a></li>
-                <li><a href="faculty.html">Faculty</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="application.html" class="btn-apply">Apply Now</a></li>
-            </ul>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                <span></span><span></span><span></span>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faculty.html">Faculty</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-accent" href="application.html">Apply Now</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
-    
 
-            <div class="program-section">
-                <h3>Core Subjects</h3>
-                <div class="subjects-table">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Year</th>
-                                <th>Semester</th>
-                                <th>Subjects</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td rowspan="2">Year 1</td>
-                                <td>Semester 1</td>
-                                <td>Introduction to Library Science, Communication Skills, Information Literacy, Computer Fundamentals</td>
-                            </tr>
-                            <tr>
-                                <td>Semester 2</td>
-                                <td>Library Organization, Office Applications, Introduction to Information Science, Publishing</td>
-                            </tr>
-                            <tr>
-                                <td rowspan="2">Year 2</td>
-                                <td>Semester 1</td>
-                                <td>Cataloguing & Classification, Reference Services, Database Management, Research Methods</td>
-                            </tr>
-                            <tr>
-                                <td>Semester 2</td>
-                                <td>Digital Libraries, Information Retrieval, Library Automation, Archives Management</td>
-                            </tr>
-                            <tr>
-                                <td rowspan="2">Year 3</td>
-                                <td>Semester 1</td>
-                                <td>Knowledge Management, Information Marketing, Records Management, Web Development</td>
-                            </tr>
-                            <tr>
-                                <td>Semester 2</td>
-                                <td>Library Management, Information Ethics, Digital Preservation, Research Project</td>
-                            </tr>
-                            <tr>
-                                <td rowspan="2">Year 4</td>
-                                <td>Semester 1</td>
-                                <td>Special Libraries, Information Policy, Data Analytics, Elective</td>
-                            </tr>
-                            <tr>
-                                <td>Semester 2</td>
-                                <td>Final Year Project, Professional Practice, Entrepreneurship, Research Report</td>
-                            </tr>
-                        </tbody>
-                    </table>
+    <!-- Page Hero -->
+    <section class="page-hero-section hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="row align-items-center">
+                <div class="col-lg-8 text-center text-lg-start">
+                    <span class="badge bg-accent text-white mb-3 px-3 py-2">Bachelor's Degree</span>
+                    <h1 class="display-4 fw-bold text-white mb-3">Bachelor of Library and Information Science</h1>
+                    <p class="lead text-white-50 mb-4">4-Year Degree Program | NCHE Accredited</p>
+                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start flex-wrap">
+                        <a href="application.html" class="btn btn-accent btn-lg"><i class="bi bi-send me-2"></i>Apply Now</a>
+                        <a href="programs.html" class="btn btn-outline-light btn-lg"><i class="bi bi-arrow-left me-2"></i>All Programs</a>
+                    </div>
                 </div>
-            </div>
-
-            <div class="cta-section">
-                <h3>Become an Information Professional</h3>
-                <p>Manage knowledge and information in the digital age.</p>
-                <div class="cta-buttons">
-                    <a href="application.html" class="btn btn-primary">Apply Now</a>
-                    <a href="programs.html" class="btn btn-secondary">View All Programs</a>
+                <div class="col-lg-4 d-none d-lg-block text-center">
+                    <div class="icon-box mx-auto" style="width: 120px; height: 120px; background: rgba(108,99,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="bi bi-book text-white fs-1"></i>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
+    <!-- Overview -->
+    <section class="py-5">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-about">
-                    <h3>Bugema University</h3>
-                    <p>Department of Computing & Informatics - School of Science & Technology.</p>
+            <div class="row g-5">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold text-navy mb-4">Program Overview</h2>
+                    <p class="text-muted lead mb-4">The Bachelor of Library and Information Science program prepares students to manage information resources, libraries, and archives effectively. This program combines traditional library science with modern information technology to produce professionals who can organize, preserve, and disseminate information in the digital age.</p>
+                    <p class="text-muted">Students learn about information systems, digital curation, knowledge management, and user services, preparing them for diverse roles in information-intensive organizations.</p>
+                    <h4 class="fw-bold text-navy mt-4 mb-3">Core Subjects</h4>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge bg-accent-subtle text-accent p-2 rounded-3">Information Organization</span>
+                        <span class="badge bg-accent-subtle text-accent p-2 rounded-3">Digital Libraries</span>
+                        <span class="badge bg-accent-subtle text-accent p-2 rounded-3">Cataloging & Classification</span>
+                        <span class="badge bg-accent-subtle text-accent p-2 rounded-3">Records Management</span>
+                        <span class="badge bg-accent-subtle text-accent p-2 rounded-3">Knowledge Management</span>
+                        <span class="badge bg-accent-subtle text-accent p-2 rounded-3">Information Ethics</span>
+                    </div>
                 </div>
-                <div class="footer-column">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="programs.html">Programs</a></li>
-                        <li><a href="application.html">Apply Now</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm rounded-4 p-4 bg-navy text-white">
+                        <h4 class="fw-bold mb-4">Program Details</h4>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-clock fs-5 me-3 text-accent"></i>
+                            <div>
+                                <small class="text-white-50">Duration</small>
+                                <p class="mb-0 fw-semibold">4 Years</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-calendar fs-5 me-3 text-accent"></i>
+                            <div>
+                                <small class="text-white-50">Intake</small>
+                                <p class="mb-0 fw-semibold">January & August</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-award fs-5 me-3 text-accent"></i>
+                            <div>
+                                <small class="text-white-50">Accreditation</small>
+                                <p class="mb-0 fw-semibold">NCHE Uganda</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-currency-dollar fs-5 me-3 text-accent"></i>
+                            <div>
+                                <small class="text-white-50">Annual Tuition</small>
+                                <p class="mb-0 fw-semibold">UGX 3,200,000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Paths -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-navy">Career Opportunities</h2>
+                <p class="text-muted">Graduates can pursue rewarding careers in various sectors</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box bg-accent-subtle text-accent rounded-3 me-3">
+                                <i class="bi bi-book fs-4"></i>
+                            </div>
+                            <h4 class="h5 fw-bold text-navy mb-0">Librarian</h4>
+                        </div>
+                        <ul class="list-unstyled text-muted">
+                            <li class="mb-2"><i class="bi bi-check-circle text-accent me-2"></i>Manage library collections</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-accent me-2"></i>Provide patron services</li>
+                            <li><i class="bi bi-check-circle text-accent me-2"></i>Information resource management</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box bg-navy-subtle text-navy rounded-3 me-3">
+                                <i class="bi bi-folder fs-4"></i>
+                            </div>
+                            <h4 class="h5 fw-bold text-navy mb-0">Information Manager</h4>
+                        </div>
+                        <ul class="list-unstyled text-muted">
+                            <li class="mb-2"><i class="bi bi-check-circle text-navy me-2"></i>Oversee information systems</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-navy me-2"></i>Data management strategies</li>
+                            <li><i class="bi bi-check-circle text-navy me-2"></i>Knowledge organization</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box bg-accent-subtle text-accent rounded-3 me-3">
+                                <i class="bi bi-file-earmark-text fs-4"></i>
+                            </div>
+                            <h4 class="h5 fw-bold text-navy mb-0">Records Manager</h4>
+                        </div>
+                        <ul class="list-unstyled text-muted">
+                            <li class="mb-2"><i class="bi bi-check-circle text-accent me-2"></i>Organize records</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-accent me-2"></i>Documentation systems</li>
+                            <li><i class="bi bi-check-circle text-accent me-2"></i>Compliance management</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box bg-navy-subtle text-navy rounded-3 me-3">
+                                <i class="bi bi-building fs-4"></i>
+                            </div>
+                            <h4 class="h5 fw-bold text-navy mb-0">Archivist</h4>
+                        </div>
+                        <ul class="list-unstyled text-muted">
+                            <li class="mb-2"><i class="bi bi-check-circle text-navy me-2"></i>Preserve historical documents</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-navy me-2"></i>Manage archives</li>
+                            <li><i class="bi bi-check-circle text-navy me-2"></i>Heritage preservation</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 mx-auto">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box bg-accent-subtle text-accent rounded-3 me-3">
+                                <i class="bi bi-lightbulb fs-4"></i>
+                            </div>
+                            <h4 class="h5 fw-bold text-navy mb-0">Knowledge Manager</h4>
+                        </div>
+                        <ul class="list-unstyled text-muted">
+                            <li class="mb-2"><i class="bi bi-check-circle text-accent me-2"></i>Develop knowledge strategies</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-accent me-2"></i>Knowledge sharing</li>
+                            <li><i class="bi bi-check-circle text-accent me-2"></i>Organizational learning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-navy">Curriculum Overview</h2>
+                <p class="text-muted">What you'll learn throughout the program</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <h4 class="fw-bold text-navy mb-4">Year 1</h4>
+                        <div class="mb-3">
+                            <h6 class="fw-bold text-accent">Semester 1</h6>
+                            <p class="text-muted small mb-0">Introduction to Library Science, Computer Fundamentals, Communication Skills, Study Skills</p>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold text-accent">Semester 2</h6>
+                            <p class="text-muted small mb-0">Information Sources, Library Administration, Introduction to Databases, Office Applications</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <h4 class="fw-bold text-navy mb-4">Year 2</h4>
+                        <div class="mb-3">
+                            <h6 class="fw-bold text-accent">Semester 1</h6>
+                            <p class="text-muted small mb-0">Cataloging & Classification, Information Literacy, Reference Services, Statistics</p>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold text-accent">Semester 2</h6>
+                            <p class="text-muted small mb-0">Digital Libraries, Library Automation, Research Methods, Publishing</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <h4 class="fw-bold text-navy mb-4">Year 3</h4>
+                        <div class="mb-3">
+                            <h6 class="fw-bold text-accent">Semester 1</h6>
+                            <p class="text-muted small mb-0">Records Management, Knowledge Management, Information Systems, Archival Studies</p>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold text-accent">Semester 2</h6>
+                            <p class="text-muted small mb-0">Information Ethics, Digital Preservation, Web Content Management, Elective</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <h4 class="fw-bold text-navy mb-4">Year 4</h4>
+                        <div class="mb-3">
+                            <h6 class="fw-bold text-accent">Semester 1</h6>
+                            <p class="text-muted small mb-0">Information Policy, Library Management, Metadata Standards, Elective II</p>
+                        </div>
+                        <div>
+                            <h6 class="fw-bold text-accent">Semester 2</h6>
+                            <p class="text-muted small mb-0">Final Year Project, Practicum, Information Technology in Libraries</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Requirements -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-navy">Admission Requirements</h2>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box bg-accent-subtle text-accent rounded-3 me-3">
+                                <i class="bi bi-mortarboard fs-4"></i>
+                            </div>
+                            <h4 class="h5 fw-bold text-navy mb-0">Direct Entry (A-Level)</h4>
+                        </div>
+                        <ul class="list-unstyled text-muted">
+                            <li class="mb-2"><i class="bi bi-check-circle text-accent me-2"></i>UCE with at least 5 passes</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-accent me-2"></i>UACE with at least 2 principal passes</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-accent me-2"></i>English is essential</li>
+                            <li><i class="bi bi-check-circle text-accent me-2"></i>Any subject combination accepted</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box bg-navy-subtle text-navy rounded-3 me-3">
+                                <i class="bi bi-person-badge fs-4"></i>
+                            </div>
+                            <h4 class="h5 fw-bold text-navy mb-0">Mature Age Entry</h4>
+                        </div>
+                        <ul class="list-unstyled text-muted">
+                            <li class="mb-2"><i class="bi bi-check-circle text-navy me-2"></i>At least 25 years of age</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-navy me-2"></i>Passed mature age entrance examination</li>
+                            <li><i class="bi bi-check-circle text-navy me-2"></i>Relevant work experience in libraries</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5 text-white">
+        <div class="container text-center py-5">
+            <h2 class="fw-bold mb-3">Ready to Start Your IT Journey?</h2>
+            <p class="lead mb-4 opacity-75">Join Bugema University and become a skilled IT professional.</p>
+            <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <a href="application.html" class="btn btn-accent btn-lg"><i class="bi bi-send me-2"></i>Apply Now</a>
+                <a href="contact.html" class="btn btn-outline-light btn-lg"><i class="bi bi-chat-dots me-2"></i>Ask a Question</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="images/Bugema_logo.png" alt="Logo" height="50" class="me-3 rounded-3">
+                        <div>
+                            <h5 class="text-white fw-bold mb-0">Computing & Informatics</h5>
+                            <small class="text-white-50">Bugema University</small>
+                        </div>
+                    </div>
+                    <p class="text-white-50">Shaping technology leaders for Africa and the world.</p>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h6 class="text-white fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none">About</a></li>
+                        <li class="mb-2"><a href="programs.html" class="text-white-50 text-decoration-none">Programs</a></li>
+                        <li class="mb-2"><a href="faculty.html" class="text-white-50 text-decoration-none">Faculty</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="https://eportal.bugemauniv.ac.ug/">Student Portal</a></li>
-                        <li><a href="https://lib.bugemauniv.ac.ug/">Library</a></li>
+                <div class="col-6 col-lg-2">
+                    <h6 class="text-white fw-bold mb-3">Programs</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="bachelor-it.html" class="text-white-50 text-decoration-none">BSc. IT</a></li>
+                        <li class="mb-2"><a href="business-computing.html" class="text-white-50 text-decoration-none">Business Computing</a></li>
+                        <li class="mb-2"><a href="network-systems.html" class="text-white-50 text-decoration-none">Network Systems</a></li>
+                        <li class="mb-2"><a href="data-science-ai.html" class="text-white-50 text-decoration-none">Data Science & AI</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li>📍 Bugema, Luwero</li>
-                        <li>📞 +256-312-351-400</li>
+                <div class="col-lg-4">
+                    <h6 class="text-white fw-bold mb-3">Contact</h6>
+                    <ul class="list-unstyled text-white-50 mb-0">
+                        <li class="mb-2"><i class="bi bi-envelope me-2"></i>computing@bugemauniv.ac.ug</li>
+                        <li class="mb-2"><i class="bi bi-telephone me-2"></i>+256-312-351-400</li>
+                        <li class="mb-2"><i class="bi bi-geo-alt me-2"></i>Bugema, Luwero, Uganda</li>
                     </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Bugema University - Department of Computing & Informatics. All Rights Reserved.</p>
-            </div>
+            <hr class="my-4 border-secondary">
+            <p class="text-center text-white-50 mb-0">&copy; 2026 Bugema University — Department of Computing and Informatics. All rights reserved.</p>
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

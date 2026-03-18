@@ -2,157 +2,331 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
-<title>Certificate in Information Technology | Bugema University</title>
-    <meta name="description" content="Learn about the Certificate in IT program at Bugema University. UBTEB recognized entry-level IT certificate.">
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate in Information Technology (UBTEB) | Bugema University</title>
+    <meta name="description" content="Learn about the Certificate in Information Technology program at Bugema University. Career opportunities, subjects, and admission requirements.">
     <link rel="icon" href="images/Bugema_logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
-    <!-- Loading Screen -->
-    <div id="loader">
-        <div class="loader-inner">
-            <img src="images/Bugema_logo.png" alt="Bugema University Logo" class="loader-logo">
-            <div class="loader-bar"><div class="loader-fill"></div></div>
-            <p class="loader-text">Loading...</p>
-        </div>
-    </div>
-
     <!-- Navigation -->
-    <nav id="navbar">
-        <div class="nav-container">
-            <a href="index.html" class="nav-brand">
-                <img src="images/Bugema_logo.png" alt="Bugema University">
-                <span>Computing & Informatics</span>
+    <nav class="navbar navbar-expand-lg fixed-top scrolled" id="navbar">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="images/Bugema_logo.png" alt="Logo" height="45" class="me-2 rounded-3">
+                <span class="brand-text">Computing & Informatics</span>
             </a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="programs.html">Programs</a></li>
-                <li><a href="faculty.html">Faculty</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="application.html" class="btn-apply">Apply Now</a></li>
-            </ul>
-            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
-                <span></span><span></span><span></span>
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
             </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-lg-center">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="programs.html">Programs</a></li>
+                    <li class="nav-item"><a class="nav-link" href="faculty.html">Faculty</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-accent" href="application.html">Apply Now</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </nav>
-    
 
-            <div class="program-section">
-                <h3>Career Opportunities</h3>
-                <div class="career-paths">
-                    <div class="career-path">
-                        <h4>Entry-Level IT</h4>
-                        <ul>
-                            <li>IT Assistant</li>
-                            <li>Data Entry Clerk</li>
-                            <li>Office Assistant</li>
-                            <li>Receptionist</li>
-                        </ul>
-                    </div>
-                    <div class="career-path">
-                        <h4>Support Roles</h4>
-                        <ul>
-                            <li>Help Desk Support</li>
-                            <li>Computer Lab Assistant</li>
-                            <li>Technical Support</li>
-                            <li>Print Shop Assistant</li>
-                        </ul>
+    <!-- Page Hero -->
+    <section class="page-hero-section hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <div class="row align-items-center">
+                <div class="col-lg-8 text-center text-lg-start">
+                    <span class="badge bg-accent text-white mb-3 px-3 py-2">Certificate Program <span class="badge bg-info text-white ms-2">Short Course</span></span>
+                    <h1 class="display-4 fw-bold text-white mb-3">Certificate in Information Technology (UBTEB)</h1>
+                    <p class="lead text-white-50 mb-4">1-Year Certificate | UBTEB Accredited</p>
+                    <div class="d-flex gap-3 justify-content-center justify-content-lg-start flex-wrap">
+                        <a href="application.html" class="btn btn-accent btn-lg"><i class="bi bi-send me-2"></i>Apply Now</a>
+                        <a href="programs.html" class="btn btn-outline-light btn-lg"><i class="bi bi-arrow-left me-2"></i>All Programs</a>
                     </div>
                 </div>
-            </div>
-
-            <div class="program-section">
-                <h3>Core Subjects</h3>
-                <div class="subjects-table">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>Semester</th>
-                                <th>Subjects</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Semester 1</td>
-                                <td>Computer Fundamentals, Introduction to Windows, Word Processing, Internet Basics, Communication Skills</td>
-                            </tr>
-                            <tr>
-                                <td>Semester 2</td>
-                                <td>Spreadsheet Basics, Presentation Software, Introduction to Programming, Computer Maintenance, Project</td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <div class="program-section">
-                <h3>Admission Requirements</h3>
-                <div class="admission-requirements">
-                    <div class="req-card">
-                        <h4>Entry Requirements</h4>
-                        <ul>
-                            <li>Uganda Certificate of Education (UCE) certificate</li>
-                            <li>Basic computer knowledge (advantage)</li>
-                            <li>Interest in information technology</li>
-                            <li>Must be at least 16 years old</li>
-                        </ul>
+                <div class="col-lg-4 d-none d-lg-block text-center">
+                    <div class="icon-box mx-auto" style="width: 120px; height: 120px; background: rgba(108,99,255,0.2); border-radius: 50%; display: flex; align-items: center; justify-content: center;">
+                        <i class="bi bi-patch-check text-white fs-1"></i>
                     </div>
-                </div>
-            </div>
-
-            <div class="cta-section">
-                <h3>Start Learning IT Today</h3>
-                <p>The perfect first step into the world of technology.</p>
-                <div class="cta-buttons">
-                    <a href="application.html" class="btn btn-primary">Apply Now</a>
-                    <a href="programs.html" class="btn btn-secondary">View All Programs</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
+    <!-- Overview -->
+    <section class="py-5">
         <div class="container">
-            <div class="footer-grid">
-                <div class="footer-about">
-                    <h3>Bugema University</h3>
-                    <p>Department of Computing & Informatics - School of Science & Technology.</p>
+            <div class="row g-5">
+                <div class="col-lg-8">
+                    <h2 class="fw-bold text-navy mb-4">Program Overview</h2>
+                    <p class="text-muted lead mb-4">The Certificate in Information Technology is a comprehensive program recognized by the Uganda Business and Technical Examinations Board (UBTEB). This program provides foundational IT skills and knowledge that prepare students for entry-level positions in the technology sector or for further studies.</p>
+                    <p class="text-muted">The UBTEB certification is nationally recognized and valued by employers across Uganda, providing graduates with a competitive edge in the job market.</p>
+                    <h4 class="fw-bold text-navy mt-4 mb-3">Core Subjects</h4>
+                    <div class="d-flex flex-wrap gap-2">
+                        <span class="badge bg-accent-subtle text-accent p-2 rounded-3">Computer Fundamentals</span>
+                        <span class="badge bg-accent-subtle text-accent p-2 rounded-3">Office Applications</span>
+                        <span class="badge bg-accent-subtle text-accent p-2 rounded-3">Internet Basics</span>
+                        <span class="badge bg-accent-subtle text-accent p-2 rounded-3">Introduction to Programming</span>
+                        <span class="badge bg-accent-subtle text-accent p-2 rounded-3">Database Basics</span>
+                        <span class="badge bg-accent-subtle text-accent p-2 rounded-3">IT Support</span>
+                    </div>
                 </div>
-                <div class="footer-column">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="programs.html">Programs</a></li>
-                        <li><a href="application.html">Apply Now</a></li>
-                        <li><a href="contact.html">Contact</a></li>
+                <div class="col-lg-4">
+                    <div class="card border-0 shadow-sm rounded-4 p-4 bg-navy text-white">
+                        <h4 class="fw-bold mb-4">Program Details</h4>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-clock fs-5 me-3 text-accent"></i>
+                            <div>
+                                <small class="text-white-50">Duration</small>
+                                <p class="mb-0 fw-semibold">1 Year</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-calendar fs-5 me-3 text-accent"></i>
+                            <div>
+                                <small class="text-white-50">Intake</small>
+                                <p class="mb-0 fw-semibold">January, May & August</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center mb-3">
+                            <i class="bi bi-award fs-5 me-3 text-accent"></i>
+                            <div>
+                                <small class="text-white-50">Accreditation</small>
+                                <p class="mb-0 fw-semibold">UBTEB Uganda</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <i class="bi bi-currency-dollar fs-5 me-3 text-accent"></i>
+                            <div>
+                                <small class="text-white-50">Annual Tuition</small>
+                                <p class="mb-0 fw-semibold">UGX 1,800,000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Paths -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-navy">Career Opportunities</h2>
+                <p class="text-muted">Graduates can pursue rewarding careers in various sectors</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box bg-accent-subtle text-accent rounded-3 me-3">
+                                <i class="bi bi-keyboard fs-4"></i>
+                            </div>
+                            <h4 class="h5 fw-bold text-navy mb-0">Data Entry Operator</h4>
+                        </div>
+                        <ul class="list-unstyled text-muted">
+                            <li class="mb-2"><i class="bi bi-check-circle text-accent me-2"></i>Enter data accurately</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-accent me-2"></i>Manage records</li>
+                            <li><i class="bi bi-check-circle text-accent me-2"></i>Data validation</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box bg-navy-subtle text-navy rounded-3 me-3">
+                                <i class="bi bi-headset fs-4"></i>
+                            </div>
+                            <h4 class="h5 fw-bold text-navy mb-0">IT Support Assistant</h4>
+                        </div>
+                        <ul class="list-unstyled text-muted">
+                            <li class="mb-2"><i class="bi bi-check-circle text-navy me-2"></i>Basic technical support</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-navy me-2"></i>User assistance</li>
+                            <li><i class="bi bi-check-circle text-navy me-2"></i>Troubleshooting</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box bg-accent-subtle text-accent rounded-3 me-3">
+                                <i class="bi bi-printer fs-4"></i>
+                            </div>
+                            <h4 class="h5 fw-bold text-navy mb-0">Office Administrator</h4>
+                        </div>
+                        <ul class="list-unstyled text-muted">
+                            <li class="mb-2"><i class="bi bi-check-circle text-accent me-2"></i>Office technology</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-accent me-2"></i>Computer-based tasks</li>
+                            <li><i class="bi bi-check-circle text-accent me-2"></i>Document management</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box bg-navy-subtle text-navy rounded-3 me-3">
+                                <i class="bi bi-arrow-up-circle fs-4"></i>
+                            </div>
+                            <h4 class="h5 fw-bold text-navy mb-0">Further Studies</h4>
+                        </div>
+                        <ul class="list-unstyled text-muted">
+                            <li class="mb-2"><i class="bi bi-check-circle text-navy me-2"></i>Progress to diploma</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-navy me-2"></i>Degree programs</li>
+                            <li><i class="bi bi-check-circle text-navy me-2"></i>Specialized certifications</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum -->
+    <section class="py-5">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-navy">Curriculum Overview</h2>
+                <p class="text-muted">What you'll learn throughout the program</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <h4 class="fw-bold text-navy mb-4">Semester 1</h4>
+                        <div>
+                            <h6 class="fw-bold text-accent">Core Modules</h6>
+                            <p class="text-muted small mb-0">Computer Fundamentals, Word Processing, Spreadsheets, Communication Skills</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <h4 class="fw-bold text-navy mb-4">Semester 2</h4>
+                        <div>
+                            <h6 class="fw-bold text-accent">Core Modules</h6>
+                            <p class="text-muted small mb-0">Internet Basics, Database Applications, Introduction to Programming, Computer Maintenance</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="alert alert-info mt-4 border-0 shadow-sm rounded-4" role="alert">
+                <div class="d-flex align-items-center">
+                    <i class="bi bi-info-circle-fill fs-4 me-3"></i>
+                    <div>
+                        <h5 class="alert-heading mb-1">UBTEB Certification</h5>
+                        <p class="mb-0">Upon successful completion, you will receive a nationally recognized Certificate in Information Technology from the Uganda Business and Technical Examinations Board.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Requirements -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-navy">Admission Requirements</h2>
+            </div>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box bg-accent-subtle text-accent rounded-3 me-3">
+                                <i class="bi bi-mortarboard fs-4"></i>
+                            </div>
+                            <h4 class="h5 fw-bold text-navy mb-0">Entry Requirements</h4>
+                        </div>
+                        <ul class="list-unstyled text-muted">
+                            <li class="mb-2"><i class="bi bi-check-circle text-accent me-2"></i>UCE with at least 5 passes</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-accent me-2"></i>English language proficiency</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-accent me-2"></i>Basic computer awareness</li>
+                            <li><i class="bi bi-check-circle text-accent me-2"></i>Interest in technology</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4">
+                        <div class="d-flex align-items-center mb-3">
+                            <div class="icon-box bg-navy-subtle text-navy rounded-3 me-3">
+                                <i class="bi bi-person-badge fs-4"></i>
+                            </div>
+                            <h4 class="h5 fw-bold text-navy mb-0">Alternative Entry</h4>
+                        </div>
+                        <ul class="list-unstyled text-muted">
+                            <li class="mb-2"><i class="bi bi-check-circle text-navy me-2"></i>Relevant work experience</li>
+                            <li class="mb-2"><i class="bi bi-check-circle text-navy me-2"></i>Mature age entry (25+ years)</li>
+                            <li><i class="bi bi-check-circle text-navy me-2"></i>Equivalent qualifications</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section py-5 text-white">
+        <div class="container text-center py-5">
+            <h2 class="fw-bold mb-3">Ready to Start Your IT Journey?</h2>
+            <p class="lead mb-4 opacity-75">Join Bugema University and become a skilled IT professional.</p>
+            <div class="d-flex gap-3 justify-content-center flex-wrap">
+                <a href="application.html" class="btn btn-accent btn-lg"><i class="bi bi-send me-2"></i>Apply Now</a>
+                <a href="contact.html" class="btn btn-outline-light btn-lg"><i class="bi bi-chat-dots me-2"></i>Ask a Question</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="images/Bugema_logo.png" alt="Logo" height="50" class="me-3 rounded-3">
+                        <div>
+                            <h5 class="text-white fw-bold mb-0">Computing & Informatics</h5>
+                            <small class="text-white-50">Bugema University</small>
+                        </div>
+                    </div>
+                    <p class="text-white-50">Shaping technology leaders for Africa and the world.</p>
+                </div>
+                <div class="col-6 col-lg-2">
+                    <h6 class="text-white fw-bold mb-3">Quick Links</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="about.html" class="text-white-50 text-decoration-none">About</a></li>
+                        <li class="mb-2"><a href="programs.html" class="text-white-50 text-decoration-none">Programs</a></li>
+                        <li class="mb-2"><a href="faculty.html" class="text-white-50 text-decoration-none">Faculty</a></li>
+                        <li class="mb-2"><a href="contact.html" class="text-white-50 text-decoration-none">Contact</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="https://eportal.bugemauniv.ac.ug/">Student Portal</a></li>
-                        <li><a href="https://lib.bugemauniv.ac.ug/">Library</a></li>
+                <div class="col-6 col-lg-2">
+                    <h6 class="text-white fw-bold mb-3">Programs</h6>
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2"><a href="bachelor-it.html" class="text-white-50 text-decoration-none">BSc. IT</a></li>
+                        <li class="mb-2"><a href="business-computing.html" class="text-white-50 text-decoration-none">Business Computing</a></li>
+                        <li class="mb-2"><a href="network-systems.html" class="text-white-50 text-decoration-none">Network Systems</a></li>
+                        <li class="mb-2"><a href="data-science-ai.html" class="text-white-50 text-decoration-none">Data Science & AI</a></li>
                     </ul>
                 </div>
-                <div class="footer-column">
-                    <h4>Contact</h4>
-                    <ul>
-                        <li>📍 Bugema, Luwero</li>
-                        <li>📞 +256-312-351-400</li>
+                <div class="col-lg-4">
+                    <h6 class="text-white fw-bold mb-3">Contact</h6>
+                    <ul class="list-unstyled text-white-50 mb-0">
+                        <li class="mb-2"><i class="bi bi-envelope me-2"></i>computing@bugemauniv.ac.ug</li>
+                        <li class="mb-2"><i class="bi bi-telephone me-2"></i>+256-312-351-400</li>
+                        <li class="mb-2"><i class="bi bi-geo-alt me-2"></i>Bugema, Luwero, Uganda</li>
                     </ul>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Bugema University - Department of Computing & Informatics. All Rights Reserved.</p>
-            </div>
+            <hr class="my-4 border-secondary">
+            <p class="text-center text-white-50 mb-0">&copy; 2026 Bugema University — Department of Computing and Informatics. All rights reserved.</p>
         </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
