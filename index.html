@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- Navigation -->
@@ -36,126 +37,184 @@
         </div>
     </nav>
 
-    <!-- Hero Section with Full Image -->
-    <section class="hero-impressive">
+    <!-- Hero Section -->
+    <section class="hero-section-new">
         <div class="hero-bg-image" style="background-image: url('images/New complex.jpeg');"></div>
-        <div class="hero-overlay-gradient"></div>
-        <div class="hero-content-impressive">
+        <div class="hero-overlay-new"></div>
+        
+        <!-- Animated particles -->
+        <div class="hero-particles">
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+            <div class="particle"></div>
+        </div>
+        
+        <div class="hero-content-new">
             <div class="container">
-                <div class="row align-items-center min-vh-100">
-                    <div class="col-lg-7">
-                        <div class="hero-badge-animated">
-                            <span class="badge bg-white text-bugema px-4 py-2">
-                                <i class="bi bi-mortarboard-fill me-2"></i>Bugema University — Est. 1993
+                <div class="row align-items-center min-vh-100 py-5">
+                    <div class="col-lg-8">
+                        <!-- Badge -->
+                        <div class="hero-badge-new" data-aos="fade-down" data-aos-delay="200">
+                            <span class="badge bg-white text-bugema px-4 py-3 shadow-lg">
+                                <i class="bi bi-mortarboard-fill me-2"></i>
+                                <strong>Bugema University</strong> — Excellence Since 1993
                             </span>
                         </div>
-                        <h1 class="display-2 fw-bold text-white mb-4 mt-4">
-                            Department of<br>
-                            <span class="text-white">Computing &</span><br>
-                            <span class="typed-text" id="typedText"></span><span class="cursor">|</span>
+                        
+                        <!-- Main Heading -->
+                        <h1 class="display-2 fw-bold text-white mb-4 mt-4 hero-title-animated" data-aos="fade-up" data-aos-delay="400">
+                            Department of
                         </h1>
-                        <p class="lead text-white opacity-75 mb-5" style="max-width: 550px;">
-                            Empowering future tech leaders through innovative education, cutting-edge research, and industry partnerships in East Africa.
+                        <div class="hero-subtitle-animated" data-aos="fade-up" data-aos-delay="600">
+                            <span class="display-2 fw-bold text-gradient">Computing & Informatics</span>
+                        </div>
+                        
+                        <!-- Professional Tagline -->
+                        <p class="lead text-white opacity-80 mb-5 hero-desc-animated" data-aos="fade-up" data-aos-delay="800" style="max-width: 600px;">
+                            Pioneering Excellence in Technology Education Across East Africa. 
+                            Transform your passion for technology into a rewarding career with our industry-aligned programs.
                         </p>
-                        <div class="d-flex gap-3 flex-wrap mb-5">
-                            <a href="programs.html" class="btn btn-bugema btn-lg">
-                                <i class="bi bi-arrow-right-circle me-2"></i>Explore Programs
+                        
+                        <!-- CTA Buttons -->
+                        <div class="d-flex gap-3 flex-wrap mb-5 hero-cta-animated" data-aos="fade-up" data-aos-delay="1000">
+                            <a href="programs.html" class="btn btn-bugema btn-lg shadow-lg">
+                                <i class="bi bi-arrow-right-circle-fill me-2"></i>Explore Our Programs
                             </a>
                             <a href="about.html" class="btn btn-outline-light btn-lg">
-                                <i class="bi bi-info-circle me-2"></i>Learn More
+                                <i class="bi bi-info-circle me-2"></i>Discover More
                             </a>
                         </div>
-                        <div class="hero-stats-row">
-                            <div class="stat-box">
-                                <span class="stat-number" data-target="500">0</span><span class="stat-plus">+</span>
-                                <span class="stat-label">Students</span>
-                            </div>
-                            <div class="stat-divider"></div>
-                            <div class="stat-box">
-                                <span class="stat-number" data-target="25">0</span><span class="stat-plus">+</span>
-                                <span class="stat-label">Faculty</span>
-                            </div>
-                            <div class="stat-divider"></div>
-                            <div class="stat-box">
-                                <span class="stat-number" data-target="30">0</span><span class="stat-plus">+</span>
-                                <span class="stat-label">Years</span>
-                            </div>
-                            <div class="stat-divider"></div>
-                            <div class="stat-box">
-                                <span class="stat-number" data-target="98">0</span><span class="stat-plus">%</span>
-                                <span class="stat-label">Employment</span>
+                        
+                        <!-- Stats -->
+                        <div class="hero-stats-new" data-aos="fade-up" data-aos-delay="1200">
+                            <div class="row g-0">
+                                <div class="col-3">
+                                    <div class="stat-item-new">
+                                        <div class="stat-icon"><i class="bi bi-people-fill"></i></div>
+                                        <span class="stat-number" data-target="500">0</span><span class="stat-plus">+</span>
+                                        <span class="stat-label">Students</span>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="stat-item-new">
+                                        <div class="stat-icon"><i class="bi bi-mortarboard-fill"></i></div>
+                                        <span class="stat-number" data-target="25">0</span><span class="stat-plus">+</span>
+                                        <span class="stat-label">Faculty</span>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="stat-item-new">
+                                        <div class="stat-icon"><i class="bi bi-calendar3"></i></div>
+                                        <span class="stat-number" data-target="30">0</span><span class="stat-plus">+</span>
+                                        <span class="stat-label">Years</span>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="stat-item-new">
+                                        <div class="stat-icon"><i class="bi bi-briefcase-fill"></i></div>
+                                        <span class="stat-number" data-target="98">0</span><span class="stat-plus">%</span>
+                                        <span class="stat-label">Employed</span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-5 d-none d-lg-block">
-                        <div class="hero-feature-card">
-                            <div class="feature-header">
-                                <i class="bi bi-lightning-charge-fill"></i>
-                                <span>Why Choose Us?</span>
+                    
+                    <!-- Feature Card -->
+                    <div class="col-lg-4 d-none d-lg-block">
+                        <div class="hero-card-animated" data-aos="fade-left" data-aos-delay="1000">
+                            <div class="hero-feature-card-new">
+                                <div class="feature-card-header">
+                                    <div class="feature-icon"><i class="bi bi-lightning-charge-fill"></i></div>
+                                    <h4>Why Choose Us?</h4>
+                                </div>
+                                <ul class="feature-list-new">
+                                    <li data-aos="fade-left" data-aos-delay="1200">
+                                        <span class="feature-check"><i class="bi bi-check-lg"></i></span>
+                                        <div>
+                                            <strong>NCHE Accredited</strong>
+                                            <small>Quality Assured Programs</small>
+                                        </div>
+                                    </li>
+                                    <li data-aos="fade-left" data-aos-delay="1400">
+                                        <span class="feature-check"><i class="bi bi-check-lg"></i></span>
+                                        <div>
+                                            <strong>Expert Faculty</strong>
+                                            <small>Industry Professionals</small>
+                                        </div>
+                                    </li>
+                                    <li data-aos="fade-left" data-aos-delay="1600">
+                                        <span class="feature-check"><i class="bi bi-check-lg"></i></span>
+                                        <div>
+                                            <strong>Modern Labs</strong>
+                                            <small>Latest Technology</small>
+                                        </div>
+                                    </li>
+                                    <li data-aos="fade-left" data-aos-delay="1800">
+                                        <span class="feature-check"><i class="bi bi-check-lg"></i></span>
+                                        <div>
+                                            <strong>98% Employment</strong>
+                                            <small>Career Success</small>
+                                        </div>
+                                    </li>
+                                </ul>
+                                <a href="about.html" class="btn btn-bugema w-100 mt-3">
+                                    <i class="bi bi-arrow-right me-2"></i>Learn More
+                                </a>
                             </div>
-                            <ul class="feature-list">
-                                <li><i class="bi bi-check-circle-fill"></i> NCHE Accredited Programs</li>
-                                <li><i class="bi bi-check-circle-fill"></i> Expert Industry Faculty</li>
-                                <li><i class="bi bi-check-circle-fill"></i> Modern Computer Labs</li>
-                                <li><i class="bi bi-check-circle-fill"></i> 98% Graduate Employment</li>
-                                <li><i class="bi bi-check-circle-fill"></i> International Recognition</li>
-                            </ul>
-                            <a href="about.html" class="btn btn-bugema w-100 mt-3">
-                                <i class="bi bi-arrow-right me-2"></i>Learn More
-                            </a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="hero-scroll-hint">
-            <div class="scroll-inner">
-                <span>Scroll Down</span>
-                <i class="bi bi-chevron-down"></i>
+        
+        <!-- Scroll Indicator -->
+        <div class="hero-scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
             </div>
+            <span>Scroll to Explore</span>
         </div>
     </section>
 
     <!-- About Department Section -->
-    <section class="py-5 bg-light">
+    <section class="py-5 bg-light" data-aos="fade-up">
         <div class="container">
             <div class="row align-items-center g-5">
-                <div class="col-lg-6">
-                    <div class="section-label">
-                        <span class="badge bg-bugema-subtle text-bugema px-3 py-2">Who We Are</span>
-                    </div>
-                    <h2 class="display-6 fw-bold text-bugema mt-3 mb-4">About the Department</h2>
+                <div class="col-lg-6" data-aos="fade-right">
+                    <span class="badge bg-bugema-subtle text-bugema px-3 py-2 mb-3">Who We Are</span>
+                    <h2 class="display-6 fw-bold text-bugema mb-4">Excellence in Computing Education</h2>
                     <p class="lead text-muted mb-4">
-                        The Department of Computing & Informatics is a centre of excellence in computing education, research, and community service in East Africa.
+                        The Department of Computing & Informatics stands as a beacon of technological excellence in East Africa, nurturing the next generation of IT professionals since 1993.
                     </p>
                     <p class="text-muted mb-4">
-                        We are part of the School of Science & Technology at Bugema University, dedicated to producing graduates who are competitive in the global job market.
+                        As part of Bugema University's School of Science & Technology, we are committed to delivering industry-relevant education that transforms students into globally competitive computing professionals.
                     </p>
                     <div class="row g-3 mb-4">
                         <div class="col-6">
-                            <div class="d-flex align-items-center">
-                                <i class="bi bi-shield-check text-bugema fs-4 me-3"></i>
+                            <div class="d-flex align-items-center p-3 bg-white rounded-3 shadow-sm">
+                                <i class="bi bi-shield-check text-bugema fs-3 me-3"></i>
                                 <div>
                                     <strong>NCHE Accredited</strong>
-                                    <small class="d-block text-muted">Recognized Quality</small>
                                 </div>
                             </div>
                         </div>
                         <div class="col-6">
-                            <div class="d-flex align-items-center">
-                                <i class="bi bi-globe2 text-bugema fs-4 me-3"></i>
+                            <div class="d-flex align-items-center p-3 bg-white rounded-3 shadow-sm">
+                                <i class="bi bi-globe2 text-bugema fs-3 me-3"></i>
                                 <div>
                                     <strong>Global Standards</strong>
-                                    <small class="d-block text-muted">International Curriculum</small>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <a href="about.html" class="btn btn-bugema btn-lg">
-                        <i class="bi bi-arrow-right me-2"></i>Discover More
+                        <i class="bi bi-arrow-right me-2"></i>Discover Our Story
                     </a>
                 </div>
-                <div class="col-lg-6">
+                <div class="col-lg-6" data-aos="fade-left">
                     <div class="row g-3">
                         <div class="col-6">
                             <div class="card border-0 shadow-sm h-100 mission-card">
@@ -164,7 +223,7 @@
                                         <i class="bi bi-crosshair text-bugema fs-3"></i>
                                     </div>
                                     <h5 class="fw-bold text-bugema">Our Mission</h5>
-                                    <p class="text-muted small mb-0">Provide world-class computing education with technical excellence and ethical values.</p>
+                                    <p class="text-muted small">Deliver world-class computing education with technical excellence and ethical values.</p>
                                 </div>
                             </div>
                         </div>
@@ -175,31 +234,31 @@
                                         <i class="bi bi-eye text-bugema fs-3"></i>
                                     </div>
                                     <h5 class="fw-bold text-bugema">Our Vision</h5>
-                                    <p class="text-muted small mb-0">Be a centre of excellence producing globally competitive graduates.</p>
+                                    <p class="text-muted small">Be the leading department producing globally competitive IT graduates.</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12">
                             <div class="card border-0 shadow-lg h-100 values-card">
                                 <div class="card-body p-4">
-                                    <h5 class="fw-bold text-bugema mb-3"><i class="bi bi-stars me-2"></i>Our Core Values</h5>
+                                    <h5 class="fw-bold text-bugema mb-3"><i class="bi bi-stars me-2"></i>Core Values</h5>
                                     <div class="row g-2">
                                         <div class="col-6">
                                             <div class="d-flex align-items-center">
                                                 <i class="bi bi-check-circle-fill text-bugema me-2"></i>
-                                                <span class="small">Excellence in Education</span>
+                                                <span class="small">Excellence</span>
                                             </div>
                                         </div>
                                         <div class="col-6">
                                             <div class="d-flex align-items-center">
                                                 <i class="bi bi-check-circle-fill text-bugema me-2"></i>
-                                                <span class="small">Innovation & Creativity</span>
+                                                <span class="small">Innovation</span>
                                             </div>
                                         </div>
                                         <div class="col-6">
                                             <div class="d-flex align-items-center">
                                                 <i class="bi bi-check-circle-fill text-bugema me-2"></i>
-                                                <span class="small">Integrity & Ethics</span>
+                                                <span class="small">Integrity</span>
                                             </div>
                                         </div>
                                         <div class="col-6">
@@ -219,21 +278,21 @@
     </section>
 
     <!-- Programs Section -->
-    <section class="py-5">
+    <section class="py-5" data-aos="fade-up">
         <div class="container">
             <div class="text-center mb-5">
                 <span class="badge bg-bugema-subtle text-bugema px-3 py-2">Academics</span>
-                <h2 class="display-6 fw-bold text-bugema mt-3">Our Programs</h2>
-                <p class="text-muted mx-auto" style="max-width: 600px;">Carefully designed programs built to meet industry demands and prepare you for successful tech careers.</p>
+                <h2 class="display-6 fw-bold text-bugema mt-3">Our Academic Programs</h2>
+                <p class="text-muted mx-auto" style="max-width: 600px;">Industry-aligned programs designed to launch your career in technology. Choose from our diverse range of computing qualifications.</p>
             </div>
             <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
                     <div class="card h-100 border-0 shadow program-card">
                         <img src="images/lab.jpeg" class="card-img-top" style="height: 180px; object-fit: cover;" alt="IT Program">
                         <div class="card-body p-4">
-                            <span class="badge bg-bugema text-white mb-3">Featured</span>
+                            <span class="badge bg-bugema text-white mb-3">Featured Program</span>
                             <h4 class="fw-bold text-bugema">BSc. Information Technology</h4>
-                            <p class="text-muted">Networking, cybersecurity, database systems, and enterprise IT management.</p>
+                            <p class="text-muted">Master networking, cybersecurity, databases, and enterprise IT management in our flagship program.</p>
                             <div class="d-flex gap-2 flex-wrap mb-3">
                                 <span class="badge bg-light text-muted"><i class="bi bi-clock me-1"></i>4 Years</span>
                                 <span class="badge bg-light text-muted"><i class="bi bi-calendar me-1"></i>Jan & Aug</span>
@@ -244,12 +303,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
                     <div class="card h-100 border-0 shadow program-card">
                         <img src="images/business computing.jpeg" class="card-img-top" style="height: 180px; object-fit: cover;" alt="Business Computing">
                         <div class="card-body p-4">
                             <h4 class="fw-bold text-bugema">BSc. Business Computing</h4>
-                            <p class="text-muted">E-commerce, business analytics, and systems design bridging tech and business.</p>
+                            <p class="text-muted">Bridge technology and business with e-commerce, analytics, and systems design expertise.</p>
                             <div class="d-flex gap-2 flex-wrap mb-3">
                                 <span class="badge bg-light text-muted"><i class="bi bi-clock me-1"></i>4 Years</span>
                                 <span class="badge bg-light text-muted"><i class="bi bi-calendar me-1"></i>Jan & Aug</span>
@@ -260,12 +319,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
                     <div class="card h-100 border-0 shadow program-card">
                         <img src="images/campus1.jpeg" class="card-img-top" style="height: 180px; object-fit: cover;" alt="Network Systems">
                         <div class="card-body p-4">
                             <h4 class="fw-bold text-bugema">BSc. Network Systems</h4>
-                            <p class="text-muted">Design, implement, and manage enterprise network infrastructure.</p>
+                            <p class="text-muted">Learn to design, implement, and manage enterprise network infrastructure professionally.</p>
                             <div class="d-flex gap-2 flex-wrap mb-3">
                                 <span class="badge bg-light text-muted"><i class="bi bi-clock me-1"></i>4 Years</span>
                                 <span class="badge bg-light text-muted"><i class="bi bi-calendar me-1"></i>Jan & Aug</span>
@@ -293,33 +352,33 @@
     </section>
 
     <!-- Why Choose Us -->
-    <section class="py-5 bg-light">
+    <section class="py-5 bg-light" data-aos="fade-up">
         <div class="container">
             <div class="text-center mb-5">
                 <span class="badge bg-bugema-subtle text-bugema px-3 py-2">Why Choose Us</span>
                 <h2 class="display-6 fw-bold text-bugema mt-3">What Sets Us Apart</h2>
             </div>
             <div class="row g-4">
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm why-card-hover text-center p-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card h-100 border-0 shadow-sm text-center p-4 why-card-hover">
                         <div class="why-icon-circle mx-auto mb-3">
                             <i class="bi bi-shield-check text-bugema fs-2"></i>
                         </div>
                         <h4 class="fw-bold text-bugema">Quality Education</h4>
-                        <p class="text-muted mb-0">NCHE accredited programs with rigorous academic standards that prepare you for the real world.</p>
+                        <p class="text-muted mb-0">NCHE accredited programs with rigorous academic standards preparing you for real-world challenges.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm why-card-hover text-center p-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card h-100 border-0 shadow-sm text-center p-4 why-card-hover">
                         <div class="why-icon-circle mx-auto mb-3">
                             <i class="bi bi-pc-display-horizontal text-bugema fs-2"></i>
                         </div>
                         <h4 class="fw-bold text-bugema">Modern Facilities</h4>
-                        <p class="text-muted mb-0">State-of-the-art computer laboratories with the latest software and hardware.</p>
+                        <p class="text-muted mb-0">State-of-the-art computer laboratories equipped with the latest technology and software.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm why-card-hover text-center p-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card h-100 border-0 shadow-sm text-center p-4 why-card-hover">
                         <div class="why-icon-circle mx-auto mb-3">
                             <i class="bi bi-people text-bugema fs-2"></i>
                         </div>
@@ -327,17 +386,17 @@
                         <p class="text-muted mb-0">Learn from experienced lecturers with industry backgrounds and practical expertise.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm why-card-hover text-center p-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="card h-100 border-0 shadow-sm text-center p-4 why-card-hover">
                         <div class="why-icon-circle mx-auto mb-3">
                             <i class="bi bi-briefcase text-bugema fs-2"></i>
                         </div>
                         <h4 class="fw-bold text-bugema">Industry Connections</h4>
-                        <p class="text-muted mb-0">Internship opportunities with leading tech companies for real-world experience.</p>
+                        <p class="text-muted mb-0">Internship opportunities with leading tech companies for hands-on experience.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm why-card-hover text-center p-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card h-100 border-0 shadow-sm text-center p-4 why-card-hover">
                         <div class="why-icon-circle mx-auto mb-3">
                             <i class="bi bi-globe-americas text-bugema fs-2"></i>
                         </div>
@@ -345,8 +404,8 @@
                         <p class="text-muted mb-0">Degrees recognized internationally, opening doors to career opportunities worldwide.</p>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 shadow-sm why-card-hover text-center p-4">
+                <div class="col-md-6 col-lg-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="card h-100 border-0 shadow-sm text-center p-4 why-card-hover">
                         <div class="why-icon-circle mx-auto mb-3">
                             <i class="bi bi-cross text-bugema fs-2"></i>
                         </div>
@@ -359,10 +418,10 @@
     </section>
 
     <!-- HOD Message -->
-    <section class="py-5">
+    <section class="py-5" data-aos="fade-up">
         <div class="container">
             <div class="row align-items-center g-5">
-                <div class="col-lg-5">
+                <div class="col-lg-5" data-aos="fade-right">
                     <div class="hod-profile-card text-center">
                         <div class="hod-avatar-large mx-auto mb-4">
                             <i class="bi bi-person-fill text-white fs-1"></i>
@@ -379,13 +438,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-7">
-                    <span class="badge bg-bugema-subtle text-bugema px-3 py-2">Leadership Message</span>
-                    <h2 class="display-6 fw-bold text-bugema mt-3 mb-4">Welcome to Our Department</h2>
+                <div class="col-lg-7" data-aos="fade-left">
+                    <span class="badge bg-bugema-subtle text-bugema px-3 py-2 mb-3">Leadership Message</span>
+                    <h2 class="display-6 fw-bold text-bugema mb-4">Welcome to Our Department</h2>
                     <blockquote class="blockquote">
-                        <p class="fs-5 text-muted fst-italic mb-4">"I am proud to lead a department committed to providing high-quality education that prepares students for the fast-evolving world of computing and information technology."</p>
-                        <p class="fs-5 text-muted fst-italic mb-4">"Our programs are designed to equip students with strong theoretical knowledge and practical skills. We emphasize problem-solving, innovation, ethical practice, and teamwork."</p>
-                        <p class="fs-5 text-muted fst-italic">"Join us in shaping competent professionals who can drive technological innovation."</p>
+                        <p class="fs-5 text-muted fst-italic mb-4">"It is my distinct honor to welcome you to the Department of Computing & Informatics. We are dedicated to providing high-quality education that prepares students for the dynamic world of technology."</p>
+                        <p class="fs-5 text-muted fst-italic mb-4">"Our comprehensive programs combine theoretical knowledge with practical skills, emphasizing innovation, ethical practice, and collaborative learning."</p>
+                        <p class="fs-5 text-muted fst-italic">"Join us and become part of a legacy of technological excellence in East Africa."</p>
                     </blockquote>
                     <a href="faculty.html" class="btn btn-bugema btn-lg mt-3">
                         <i class="bi bi-people me-2"></i>Meet Our Team
@@ -396,10 +455,10 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section-impressive py-5">
+    <section class="cta-section-impressive py-5" data-aos="fade-up">
         <div class="container text-center py-5">
-            <h2 class="display-5 fw-bold text-white mb-3">Ready to Start Your Journey?</h2>
-            <p class="lead text-white opacity-75 mb-5">Join hundreds of students who have launched successful careers in technology through our programs.</p>
+            <h2 class="display-5 fw-bold text-white mb-3">Begin Your Journey Today</h2>
+            <p class="lead text-white opacity-75 mb-5">Take the first step towards a successful career in technology. Our admissions team is ready to guide you.</p>
             <div class="d-flex gap-3 justify-content-center flex-wrap">
                 <a href="application.html" class="btn btn-white btn-lg">
                     <i class="bi bi-send me-2"></i>Apply Now
@@ -471,6 +530,15 @@
     </a>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 50
+        });
+    </script>
 </body>
 </html>
