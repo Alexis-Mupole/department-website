@@ -468,6 +468,23 @@ body, h1, h2, h3, h4, h5, h6, p, span, div, li, label, a, button, input, select,
     transform: translateY(-8px);
     box-shadow: var(--shadow-lg) !important;
 }
+.program-card .card-title,
+.program-card h4,
+.program-card h5 {
+    color: #001a4d !important;
+}
+.program-card p {
+    color: #495057 !important;
+}
+
+/* ===== SECTION HEADINGS ===== */
+.section-title {
+    color: #001a4d !important;
+    font-weight: 700;
+}
+.section-subtitle {
+    color: #6c757d !important;
+}
 
 /* ===== WHY CARDS ===== */
 .why-card-hover {
@@ -613,8 +630,28 @@ body, h1, h2, h3, h4, h5, h6, p, span, div, li, label, a, button, input, select,
 
 /* ===== PAGE HERO (inner pages) ===== */
 .page-hero-section {
+    position: relative;
     min-height: 60vh;
     padding: 140px 0 80px;
+    background: linear-gradient(135deg, var(--bugema-blue-dark) 0%, var(--bugema-blue) 50%, var(--bugema-blue-light) 100%);
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+}
+.page-hero-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-image: radial-gradient(rgba(255,255,255,0.03) 1px, transparent 1px);
+    background-size: 30px 30px;
+}
+.page-hero-section .hero-overlay {
+    display: none;
+}
+.page-hero-section .hero-content {
+    position: relative;
+    z-index: 10;
+    width: 100%;
 }
 
 /* ===== ORGANIZATIONAL CHART ===== */
