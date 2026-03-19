@@ -83,13 +83,15 @@ body, h1, h2, h3, h4, h5, h6, p, span, div, li, label, a, button, input, select,
 .navbar {
     padding: 12px 0;
     transition: var(--transition);
-    background: transparent;
+    background: rgba(0, 48, 135, 0.95);
+    backdrop-filter: blur(20px);
     z-index: 1030;
+    box-shadow: 0 2px 20px rgba(0,0,0,0.1);
 }
 .navbar.scrolled {
-    background: rgba(255,255,255,0.95);
+    background: rgba(255,255,255,0.98) !important;
     backdrop-filter: blur(20px);
-    box-shadow: var(--shadow-sm);
+    box-shadow: 0 4px 30px rgba(0,0,0,0.1);
     padding: 8px 0;
 }
 .navbar-brand .brand-text {
@@ -100,11 +102,12 @@ body, h1, h2, h3, h4, h5, h6, p, span, div, li, label, a, button, input, select,
 }
 .navbar.scrolled .brand-text { color: var(--bugema-blue); }
 .navbar-nav .nav-link {
-    color: rgba(255,255,255,0.9);
+    color: rgba(255,255,255,0.85);
     font-weight: 500;
     padding: 8px 16px;
     border-radius: 50px;
     transition: var(--transition);
+    font-size: 0.95rem;
 }
 .navbar.scrolled .navbar-nav .nav-link { color: var(--gray-600); }
 .navbar-nav .nav-link:hover,
