@@ -74,8 +74,10 @@ body, h1, h2, h3, h4, h5, h6, p, span, div, li, label, a, button, input, select,
 
 /* ===== CUSTOM COLORS ===== */
 .bg-bugema { background-color: var(--bugema-blue) !important; }
-.bg-bugema-subtle { background-color: var(--bugema-blue-subtle) !important; }
-.text-bugema { color: var(--bugema-blue) !important; }
+.bg-bugema-subtle { background-color: rgba(0, 48, 135, 0.08) !important; }
+.text-bugema { color: #001a4d !important; }
+.text-bugema-dark { color: #001a4d !important; }
+.text-dark { color: #1a1f36 !important; }
 
 /* ===== NAVBAR ===== */
 .navbar {
