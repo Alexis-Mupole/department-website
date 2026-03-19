@@ -4,6 +4,7 @@
     --bugema-blue-dark: #001f5c;
     --bugema-blue-light: #1a4aad;
     --bugema-blue-subtle: rgba(0, 48, 135, 0.1);
+    --bugema-gold: #d4af37;
     --white: #ffffff;
     --light: #f8f9fa;
     --gray-100: #f0f2f8;
@@ -81,45 +82,66 @@ body, h1, h2, h3, h4, h5, h6, p, span, div, li, label, a, button, input, select,
 
 /* ===== TOP BAR WITH LOGO ===== */
 .top-bar {
-    background: var(--bugema-blue);
-    padding: 15px 0;
-    box-shadow: 0 2px 15px rgba(0,48,135,0.2);
+    background: linear-gradient(135deg, var(--bugema-blue-dark) 0%, var(--bugema-blue) 50%, var(--bugema-blue-light) 100%);
+    padding: 0;
+    box-shadow: 0 4px 20px rgba(0,48,135,0.3);
+    position: relative;
+    z-index: 1031;
+}
+.top-bar::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--bugema-gold) 0%, var(--bugema-blue-light) 100%);
 }
 .top-bar a {
     text-decoration: none;
+    display: block;
+    padding: 15px 0;
+    transition: var(--transition);
+}
+.top-bar a:hover {
+    background: rgba(255,255,255,0.05);
 }
 .top-bar-brand {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 18px;
 }
 .top-bar-brand img {
-    height: 50px;
-    border-radius: 8px;
+    height: 55px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 .top-bar-brand .brand-text {
     display: flex;
     flex-direction: column;
 }
 .top-bar-brand .brand-title {
-    font-size: 1.1rem;
+    font-size: 1.15rem;
     font-weight: 700;
     color: var(--white);
-    line-height: 1.2;
+    line-height: 1.3;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 .top-bar-brand .brand-subtitle {
-    font-size: 0.75rem;
-    color: rgba(255,255,255,0.7);
+    font-size: 0.7rem;
+    color: rgba(255,255,255,0.85);
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
+    font-weight: 500;
 }
 
-/* ===== NAVBAR ===== */
+/* ===== MAIN NAVBAR ===== */
 .main-navbar {
     background: var(--white);
-    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.08);
     position: relative;
     z-index: 1030;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 .main-navbar .navbar {
     padding: 0;
@@ -135,13 +157,25 @@ body, h1, h2, h3, h4, h5, h6, p, span, div, li, label, a, button, input, select,
     justify-content: flex-start;
 }
 .main-navbar .navbar-nav .nav-link {
-    color: var(--gray-700);
+    color: var(--gray-600);
     font-weight: 600;
-    padding: 18px 24px;
+    padding: 20px 28px;
     transition: var(--transition);
     font-size: 0.95rem;
     position: relative;
-    border-bottom: 3px solid transparent;
+    letter-spacing: 0.5px;
+}
+.main-navbar .navbar-nav .nav-link::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--bugema-blue), var(--bugema-gold));
+    border-radius: 3px 3px 0 0;
+    transition: var(--transition);
 }
 .main-navbar .navbar-nav .nav-link::after {
     display: none;
@@ -150,15 +184,39 @@ body, h1, h2, h3, h4, h5, h6, p, span, div, li, label, a, button, input, select,
 .main-navbar .navbar-nav .nav-link.active {
     color: var(--bugema-blue);
     background: transparent;
-    border-bottom-color: var(--bugema-blue);
+}
+.main-navbar .navbar-nav .nav-link:hover::before,
+.main-navbar .navbar-nav .nav-link.active::before {
+    width: 60%;
 }
 .main-navbar .navbar-toggler {
     border: none;
-    padding: 15px;
-    background: var(--bugema-blue);
+    padding: 18px;
+    background: linear-gradient(135deg, var(--bugema-blue) 0%, var(--bugema-blue-light) 100%);
+    border-radius: 8px;
+    margin: 8px 0;
+    transition: var(--transition);
+}
+.main-navbar .navbar-toggler:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 15px rgba(0,48,135,0.3);
 }
 .main-navbar .navbar-btn {
-    margin: 10px 0 10px 20px;
+    margin: 10px 0 10px 30px;
+}
+.main-navbar .navbar-btn .btn {
+    padding: 12px 28px;
+    font-weight: 600;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    box-shadow: 0 4px 15px rgba(0,48,135,0.3);
+    transition: var(--transition);
+}
+.main-navbar .navbar-btn .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0,48,135,0.4);
 }
 
 /* ===== HERO SECTION NEW ===== */
