@@ -9,6 +9,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <!-- Top Bar with Logo -->
@@ -49,211 +50,308 @@
     <section class="page-hero-section hero-section">
         <div class="hero-overlay"></div>
         <div class="container hero-content text-center">
-            <span class="badge bg-bugema-subtle text-bugema mb-3 px-3 py-2">Get In Touch</span>
-            <h1 class="display-4 fw-bold text-white mb-4">Contact Us</h1>
-            <p class="lead text-white-50 mx-auto" style="max-width: 600px;">
-                Have questions? We'd love to hear from you. Reach out to us for admissions, programs, or any inquiries.
+            <span class="badge bg-white bg-opacity-25 text-white mb-3 px-4 py-2" data-aos="fade-down">
+                <i class="bi bi-headset me-2"></i>Get In Touch
+            </span>
+            <h1 class="display-3 fw-bold text-white mb-4" data-aos="fade-up" data-aos-delay="200">Contact Us</h1>
+            <p class="lead text-white opacity-75 mx-auto" style="max-width: 650px;" data-aos="fade-up" data-aos-delay="400">
+                Have questions? We're here to help. Reach out to us for admissions, programs, or any inquiries.
             </p>
-            <div class="d-flex gap-3 justify-content-center flex-wrap mt-4">
-                <a href="mailto:computing@bugemauniv.ac.ug" class="btn btn-bugema"><i class="bi bi-envelope me-2"></i>Email Us</a>
-                <a href="https://wa.me/256779793746" target="_blank" class="btn btn-whatsapp"><i class="bi bi-whatsapp me-2"></i>WhatsApp</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Form & Info -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-7">
-                    <div class="card border-0 shadow-sm rounded-4 p-4 p-md-5">
-                        <h3 class="fw-bold text-bugema mb-4">Send Us a Message</h3>
-                        <form id="contactForm">
-                            <div class="row g-3">
-                                <div class="col-md-6">
-                                    <label class="form-label fw-semibold">First Name *</label>
-                                    <input type="text" class="form-control form-control-lg" placeholder="Enter your first name" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-label fw-semibold">Last Name *</label>
-                                    <input type="text" class="form-control form-control-lg" placeholder="Enter your last name" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-label fw-semibold">Email Address *</label>
-                                    <input type="email" class="form-control form-control-lg" placeholder="Enter your email" required>
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-label fw-semibold">Phone Number</label>
-                                    <input type="tel" class="form-control form-control-lg" placeholder="Enter your phone number">
-                                </div>
-                                <div class="col-12">
-                                    <label class="form-label fw-semibold">Program of Interest</label>
-                                    <select class="form-select form-select-lg">
-                                        <option selected>Select a program</option>
-                                        <option>Bachelor of Information Technology</option>
-                                        <option>Bachelor of Business Computing</option>
-                                        <option>BSc. Network Systems Administration</option>
-                                        <option>BSc. Data Science & AI</option>
-                                        <option>Diploma in Computer Engineering</option>
-                                        <option>Certificate in IT</option>
-                                    </select>
-                                </div>
-                                <div class="col-12">
-                                    <label class="form-label fw-semibold">Message *</label>
-                                    <textarea class="form-control form-control-lg" rows="5" placeholder="Enter your message" required></textarea>
-                                </div>
-                                <div class="col-12">
-                                    <button type="submit" class="btn btn-bugema btn-lg w-100">
-                                        <i class="bi bi-send me-2"></i>Send Message
-                                    </button>
-                                </div>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-lg-5">
-                    <div class="row g-4">
-                        <div class="col-12">
-                            <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
-                                <div class="d-flex align-items-start">
-                                    <div class="icon-box bg-bugema-subtle text-bugema rounded-3 me-3 flex-shrink-0">
-                                        <i class="bi bi-whatsapp fs-4"></i>
-                                    </div>
-                                    <div>
-                                        <h5 class="fw-bold text-bugema mb-2">WhatsApp</h5>
-                                        <p class="text-muted mb-2">Chat with us directly on WhatsApp</p>
-                                        <a href="https://wa.me/256779793746" target="_blank" class="btn btn-whatsapp btn-sm">
-                                            <i class="bi bi-whatsapp me-2"></i>Chat Now
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
-                                <div class="d-flex align-items-start">
-                                    <div class="icon-box bg-bugema-subtle text-bugema rounded-3 me-3 flex-shrink-0">
-                                        <i class="bi bi-geo-alt fs-4"></i>
-                                    </div>
-                                    <div>
-                                        <h5 class="fw-bold text-bugema mb-2">Our Location</h5>
-                                        <p class="text-muted mb-2">Bugema University</p>
-                                        <p class="text-muted mb-0">Kalagala Sub-County, Luwero District</p>
-                                        <p class="text-muted mb-0">Approximately 70km north of Kampala</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="card border-0 shadow-sm rounded-4 p-4">
-                                <div class="d-flex align-items-start">
-                                    <div class="icon-box bg-bugema-subtle text-bugema rounded-3 me-3 flex-shrink-0">
-                                        <i class="bi bi-telephone fs-4"></i>
-                                    </div>
-                                    <div>
-                                        <h5 class="fw-bold text-bugema mb-2">Phone Numbers</h5>
-                                        <p class="text-muted mb-1">
-                                            <strong>Main:</strong> 
-                                            <a href="tel:+256312351400" class="text-decoration-none">+256-312-351-400</a>
-                                        </p>
-                                        <p class="text-muted mb-0">
-                                            <strong>Admissions:</strong> 
-                                            <a href="tel:+256779793746" class="text-decoration-none">+256-779-793-746</a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="card border-0 shadow-sm rounded-4 p-4">
-                                <div class="d-flex align-items-start">
-                                    <div class="icon-box bg-bugema-subtle text-bugema rounded-3 me-3 flex-shrink-0">
-                                        <i class="bi bi-envelope fs-4"></i>
-                                    </div>
-                                    <div>
-                                        <h5 class="fw-bold text-bugema mb-2">Email Addresses</h5>
-                                        <p class="text-muted mb-1">
-                                            <strong>General:</strong> 
-                                            <a href="mailto:computing@bugemauniv.ac.ug" class="text-decoration-none text-bugema">computing@bugemauniv.ac.ug</a>
-                                        </p>
-                                        <p class="text-muted mb-0">
-                                            <strong>Admissions:</strong> 
-                                            <a href="mailto:admissions@bugemauniv.ac.ug" class="text-decoration-none text-bugema">admissions@bugemauniv.ac.ug</a>
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="card border-0 shadow-sm rounded-4 p-4 bg-bugema text-white">
-                                <div class="d-flex align-items-start">
-                                    <div class="icon-box bg-white-subtle text-white rounded-3 me-3 flex-shrink-0">
-                                        <i class="bi bi-clock fs-4"></i>
-                                    </div>
-                                    <div>
-                                        <h5 class="fw-bold mb-2">Office Hours</h5>
-                                        <p class="mb-1 opacity-75">Monday - Friday: 8:00 AM - 5:00 PM</p>
-                                        <p class="mb-0 opacity-75">Saturday: 9:00 AM - 1:00 PM</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Google Map -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <div class="text-center mb-4">
-                <h2 class="fw-bold text-bugema">Find Us on the Map</h2>
-                <p class="text-muted">Visit our campus in Luwero District</p>
-            </div>
-            <div class="card border-0 shadow-sm rounded-4 overflow-hidden">
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31909.58794483247!2d32.35!3d0.75!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbb1a2d9a1b1b%3A0x4c5c5c5c5c5c5c5c!2sBugema%20University!5e0!3m2!1sen!2sug!4v1234567890"
-                    width="100%" 
-                    height="400" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-            <div class="text-center mt-4">
-                <a href="https://www.google.com/maps/dir//Bugema+University" target="_blank" class="btn btn-navy btn-lg">
-                    <i class="bi bi-signpost-split me-2"></i>Get Directions
+            <div class="d-flex gap-3 justify-content-center flex-wrap mt-4" data-aos="fade-up" data-aos-delay="600">
+                <a href="mailto:computing@bugemauniv.ac.ug" class="btn btn-white btn-lg">
+                    <i class="bi bi-envelope me-2"></i>Email Us
+                </a>
+                <a href="https://wa.me/256779793746" target="_blank" class="btn btn-whatsapp btn-lg">
+                    <i class="bi bi-whatsapp me-2"></i>WhatsApp
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- Key Contacts -->
-    <section class="py-5">
+    <!-- Quick Contact Cards -->
+    <section class="py-5 bg-white">
         <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="fw-bold text-bugema">Key Contacts</h2>
-                <p class="text-muted">Reach out to the right department</p>
+            <div class="row g-4" data-aos="fade-up">
+                <!-- WhatsApp -->
+                <div class="col-md-6 col-lg-3">
+                    <a href="https://wa.me/256779793746" target="_blank" class="text-decoration-none">
+                        <div class="contact-quick-card text-center p-4 h-100">
+                            <div class="contact-icon-box mx-auto mb-3" style="background: #25D366;">
+                                <i class="bi bi-whatsapp"></i>
+                            </div>
+                            <h4 class="h5 fw-bold text-bugema mb-2">WhatsApp</h4>
+                            <p class="text-muted mb-3">Chat directly with us</p>
+                            <span class="btn btn-sm" style="background: #25D366; color: white;">
+                                <i class="bi bi-whatsapp me-1"></i>Start Chat
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <!-- Email -->
+                <div class="col-md-6 col-lg-3">
+                    <a href="mailto:computing@bugemauniv.ac.ug" class="text-decoration-none">
+                        <div class="contact-quick-card text-center p-4 h-100">
+                            <div class="contact-icon-box mx-auto mb-3" style="background: var(--bugema-blue);">
+                                <i class="bi bi-envelope"></i>
+                            </div>
+                            <h4 class="h5 fw-bold text-bugema mb-2">Email</h4>
+                            <p class="text-muted mb-3">computing@bugemauniv.ac.ug</p>
+                            <span class="btn btn-sm btn-bugema">
+                                <i class="bi bi-send me-1"></i>Send Email
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <!-- Phone -->
+                <div class="col-md-6 col-lg-3">
+                    <a href="tel:+256312351400" class="text-decoration-none">
+                        <div class="contact-quick-card text-center p-4 h-100">
+                            <div class="contact-icon-box mx-auto mb-3" style="background: #34b7f1;">
+                                <i class="bi bi-telephone"></i>
+                            </div>
+                            <h4 class="h5 fw-bold text-bugema mb-2">Phone</h4>
+                            <p class="text-muted mb-3">+256-312-351-400</p>
+                            <span class="btn btn-sm" style="background: #34b7f1; color: white;">
+                                <i class="bi bi-phone me-1"></i>Call Now
+                            </span>
+                        </div>
+                    </a>
+                </div>
+                <!-- Location -->
+                <div class="col-md-6 col-lg-3">
+                    <a href="https://www.google.com/maps/dir//Bugema+University" target="_blank" class="text-decoration-none">
+                        <div class="contact-quick-card text-center p-4 h-100">
+                            <div class="contact-icon-box mx-auto mb-3" style="background: #ea4335;">
+                                <i class="bi bi-geo-alt"></i>
+                            </div>
+                            <h4 class="h5 fw-bold text-bugema mb-2">Visit Us</h4>
+                            <p class="text-muted mb-3">Luwero, Uganda</p>
+                            <span class="btn btn-sm" style="background: #ea4335; color: white;">
+                                <i class="bi bi-cursor me-1"></i>Get Directions
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Contact Section -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="row g-5">
+                <!-- Contact Info Cards -->
+                <div class="col-lg-5" data-aos="fade-right">
+                    <h2 class="display-6 fw-bold text-bugema mb-4">Contact Information</h2>
+                    <p class="text-muted mb-5">Find all the ways to reach us below. Our team is ready to assist you.</p>
+                    
+                    <!-- Info Cards -->
+                    <div class="contact-info-card mb-4">
+                        <div class="d-flex align-items-start">
+                            <div class="contact-icon-sm me-3">
+                                <i class="bi bi-building"></i>
+                            </div>
+                            <div>
+                                <h4 class="h6 fw-bold text-bugema mb-2">Office Address</h4>
+                                <p class="text-muted mb-0">
+                                    Department of Computing & Informatics<br>
+                                    Bugema University<br>
+                                    Kalagala Sub-County, Luwero District<br>
+                                    Uganda, East Africa
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-card mb-4">
+                        <div class="d-flex align-items-start">
+                            <div class="contact-icon-sm me-3">
+                                <i class="bi bi-telephone"></i>
+                            </div>
+                            <div>
+                                <h4 class="h6 fw-bold text-bugema mb-2">Phone Numbers</h4>
+                                <p class="text-muted mb-1">
+                                    <strong>Main Office:</strong> 
+                                    <a href="tel:+256312351400" class="text-decoration-none">+256-312-351-400</a>
+                                </p>
+                                <p class="text-muted mb-1">
+                                    <strong>Admissions:</strong> 
+                                    <a href="tel:+256779793746" class="text-decoration-none">+256-779-793-746</a>
+                                </p>
+                                <p class="text-muted mb-0">
+                                    <strong>Extension:</strong> 201 (HOD), 205 (Student Affairs)
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-card mb-4">
+                        <div class="d-flex align-items-start">
+                            <div class="contact-icon-sm me-3">
+                                <i class="bi bi-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="h6 fw-bold text-bugema mb-2">Email Addresses</h4>
+                                <p class="text-muted mb-1">
+                                    <strong>General:</strong> 
+                                    <a href="mailto:computing@bugemauniv.ac.ug" class="text-decoration-none text-bugema">computing@bugemauniv.ac.ug</a>
+                                </p>
+                                <p class="text-muted mb-1">
+                                    <strong>Admissions:</strong> 
+                                    <a href="mailto:admissions@bugemauniv.ac.ug" class="text-decoration-none text-bugema">admissions@bugemauniv.ac.ug</a>
+                                </p>
+                                <p class="text-muted mb-0">
+                                    <strong>HOD:</strong> 
+                                    <a href="mailto:hod-computing@bugemauniv.ac.ug" class="text-decoration-none text-bugema">hod-computing@bugemauniv.ac.ug</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-info-card mb-4">
+                        <div class="d-flex align-items-start">
+                            <div class="contact-icon-sm me-3">
+                                <i class="bi bi-clock"></i>
+                            </div>
+                            <div>
+                                <h4 class="h6 fw-bold text-bugema mb-2">Office Hours</h4>
+                                <p class="text-muted mb-1">
+                                    <strong>Monday - Friday:</strong> 8:00 AM - 5:00 PM
+                                </p>
+                                <p class="text-muted mb-0">
+                                    <strong>Saturday:</strong> 9:00 AM - 1:00 PM
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Social Links -->
+                    <div class="mt-5">
+                        <h5 class="fw-bold text-bugema mb-3">Connect With Us</h5>
+                        <div class="d-flex gap-3">
+                            <a href="https://wa.me/256779793746" target="_blank" class="btn btn-lg btn-whatsapp">
+                                <i class="bi bi-whatsapp"></i>
+                            </a>
+                            <a href="mailto:computing@bugemauniv.ac.ug" class="btn btn-lg btn-outline-secondary">
+                                <i class="bi bi-envelope"></i>
+                            </a>
+                            <a href="tel:+256312351400" class="btn btn-lg btn-outline-secondary">
+                                <i class="bi bi-telephone"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Contact Form -->
+                <div class="col-lg-7" data-aos="fade-left">
+                    <div class="contact-form-card card border-0 shadow-lg rounded-4 p-4 p-md-5">
+                        <div class="card-body">
+                            <div class="d-flex align-items-center mb-4">
+                                <div class="contact-icon-box me-3" style="background: var(--bugema-blue-subtle);">
+                                    <i class="bi bi-send" style="color: var(--bugema-blue);"></i>
+                                </div>
+                                <div>
+                                    <h3 class="fw-bold text-bugema mb-0">Send Us a Message</h3>
+                                    <p class="text-muted mb-0">We'll get back to you within 24 hours</p>
+                                </div>
+                            </div>
+                            
+                            <form id="contactForm">
+                                <div class="row g-4">
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-semibold text-bugema">First Name *</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text bg-light border-0"><i class="bi bi-person text-muted"></i></span>
+                                            <input type="text" class="form-control form-control-lg border-0 bg-light" placeholder="Enter your first name" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-semibold text-bugema">Last Name *</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text bg-light border-0"><i class="bi bi-person text-muted"></i></span>
+                                            <input type="text" class="form-control form-control-lg border-0 bg-light" placeholder="Enter your last name" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-semibold text-bugema">Email Address *</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text bg-light border-0"><i class="bi bi-envelope text-muted"></i></span>
+                                            <input type="email" class="form-control form-control-lg border-0 bg-light" placeholder="Enter your email" required>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label class="form-label fw-semibold text-bugema">Phone Number</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text bg-light border-0"><i class="bi bi-telephone text-muted"></i></span>
+                                            <input type="tel" class="form-control form-control-lg border-0 bg-light" placeholder="Enter your phone number">
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label fw-semibold text-bugema">Program of Interest</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text bg-light border-0"><i class="bi bi-book text-muted"></i></span>
+                                            <select class="form-select form-select-lg border-0 bg-light">
+                                                <option selected>Select a program</option>
+                                                <option>Bachelor of Information Technology</option>
+                                                <option>Bachelor of Business Computing</option>
+                                                <option>BSc. Network Systems Administration</option>
+                                                <option>BSc. Data Science & AI</option>
+                                                <option>Bachelor of Library & Information Science</option>
+                                                <option>Diploma in Computer Engineering</option>
+                                                <option>Certificate in IT (UBTEB)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label fw-semibold text-bugema">Your Message *</label>
+                                        <div class="input-group">
+                                            <span class="input-group-text bg-light border-0 align-items-start pt-3"><i class="bi bi-chat-left-text text-muted"></i></span>
+                                            <textarea class="form-control border-0 bg-light" rows="5" placeholder="How can we help you?" required></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <button type="submit" class="btn btn-bugema btn-lg w-100">
+                                            <i class="bi bi-send me-2"></i>Send Message
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Key Contacts -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="badge bg-bugema-subtle text-bugema px-3 py-2 mb-3">Our Team</span>
+                <h2 class="display-6 fw-bold text-bugema">Key Contacts</h2>
+                <p class="text-muted mx-auto" style="max-width: 600px;">Reach out to the right person for your needs</p>
             </div>
             <div class="row g-4">
-                <div class="col-md-6 col-lg-3">
-                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4 text-center">
-                        <div class="avatar-circle mx-auto mb-3" style="width: 80px; height: 80px; background: var(--whatsapp);">
-                            <i class="bi bi-person-plus text-white fs-3"></i>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="100">
+                    <div class="key-contact-card text-center h-100">
+                        <div class="key-contact-avatar mx-auto mb-3">
+                            <i class="bi bi-person-plus-fill"></i>
                         </div>
-                        <h5 class="fw-bold text-bugema mb-1">Admissions Office</h5>
-                        <p class="text-bugema fw-semibold small mb-2">Mr. Peter Okello</p>
-                        <p class="text-muted small mb-1">
-                            <a href="mailto:admissions@bugemauniv.ac.ug" class="text-decoration-none"><i class="bi bi-envelope me-1"></i>admissions@bugemauniv.ac.ug</a>
-                        </p>
-                        <p class="text-muted small mb-2">
-                            <a href="tel:+256779793746" class="text-decoration-none"><i class="bi bi-telephone me-1"></i>+256-779-793-746</a>
-                        </p>
+                        <h4 class="h5 fw-bold text-bugema mb-1">Admissions Office</h4>
+                        <p class="text-bugema fw-semibold small mb-3">Mr. Peter Okello</p>
+                        <div class="contact-details mb-3">
+                            <p class="small mb-1">
+                                <i class="bi bi-envelope me-2 text-muted"></i>
+                                <a href="mailto:admissions@bugemauniv.ac.ug" class="text-decoration-none">admissions@bugemauniv.ac.ug</a>
+                            </p>
+                            <p class="small mb-0">
+                                <i class="bi bi-telephone me-2 text-muted"></i>
+                                <a href="tel:+256779793746" class="text-decoration-none">+256-779-793-746</a>
+                            </p>
+                        </div>
                         <div class="d-flex gap-2 justify-content-center">
                             <a href="https://wa.me/256779793746" target="_blank" class="btn btn-whatsapp btn-sm">
-                                <i class="bi bi-whatsapp"></i> Chat
+                                <i class="bi bi-whatsapp me-1"></i>Chat
                             </a>
                             <a href="mailto:admissions@bugemauniv.ac.ug" class="btn btn-outline-bugema btn-sm">
                                 <i class="bi bi-envelope"></i>
@@ -261,22 +359,26 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4 text-center">
-                        <div class="avatar-circle mx-auto mb-3" style="width: 80px; height: 80px; background: var(--bugema-blue);">
-                            <i class="bi bi-person text-white fs-3"></i>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="200">
+                    <div class="key-contact-card text-center h-100">
+                        <div class="key-contact-avatar mx-auto mb-3" style="background: var(--bugema-blue);">
+                            <i class="bi bi-person-fill"></i>
                         </div>
-                        <h5 class="fw-bold text-bugema mb-1">Head of Department</h5>
-                        <p class="text-bugema fw-semibold small mb-2">Mr. Ssewankambo Erma</p>
-                        <p class="text-muted small mb-1">
-                            <a href="mailto:hod-computing@bugemauniv.ac.ug" class="text-decoration-none"><i class="bi bi-envelope me-1"></i>hod-computing@bugemauniv.ac.ug</a>
-                        </p>
-                        <p class="text-muted small mb-2">
-                            <a href="tel:+256312351400" class="text-decoration-none"><i class="bi bi-telephone me-1"></i>+256-312-351-400 ext. 201</a>
-                        </p>
+                        <h4 class="h5 fw-bold text-bugema mb-1">Head of Department</h4>
+                        <p class="text-bugema fw-semibold small mb-3">Mr. Ssewankambo Erma</p>
+                        <div class="contact-details mb-3">
+                            <p class="small mb-1">
+                                <i class="bi bi-envelope me-2 text-muted"></i>
+                                <a href="mailto:hod-computing@bugemauniv.ac.ug" class="text-decoration-none">hod-computing@bugemauniv.ac.ug</a>
+                            </p>
+                            <p class="small mb-0">
+                                <i class="bi bi-telephone me-2 text-muted"></i>
+                                <a href="tel:+256312351400" class="text-decoration-none">+256-312-351-400 ext. 201</a>
+                            </p>
+                        </div>
                         <div class="d-flex gap-2 justify-content-center">
                             <a href="https://wa.me/256312351400" target="_blank" class="btn btn-whatsapp btn-sm">
-                                <i class="bi bi-whatsapp"></i> Chat
+                                <i class="bi bi-whatsapp me-1"></i>Chat
                             </a>
                             <a href="mailto:hod-computing@bugemauniv.ac.ug" class="btn btn-outline-bugema btn-sm">
                                 <i class="bi bi-envelope"></i>
@@ -284,22 +386,26 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4 text-center">
-                        <div class="avatar-circle mx-auto mb-3" style="width: 80px; height: 80px; background: var(--whatsapp);">
-                            <i class="bi bi-people text-white fs-3"></i>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="300">
+                    <div class="key-contact-card text-center h-100">
+                        <div class="key-contact-avatar mx-auto mb-3">
+                            <i class="bi bi-people-fill"></i>
                         </div>
-                        <h5 class="fw-bold text-bugema mb-1">Student Affairs</h5>
-                        <p class="text-bugema fw-semibold small mb-2">Ms. Sarah Nakato</p>
-                        <p class="text-muted small mb-1">
-                            <a href="mailto:student-affairs@bugemauniv.ac.ug" class="text-decoration-none"><i class="bi bi-envelope me-1"></i>student-affairs@bugemauniv.ac.ug</a>
-                        </p>
-                        <p class="text-muted small mb-2">
-                            <a href="tel:+256312351405" class="text-decoration-none"><i class="bi bi-telephone me-1"></i>+256-312-351-400 ext. 205</a>
-                        </p>
+                        <h4 class="h5 fw-bold text-bugema mb-1">Student Affairs</h4>
+                        <p class="text-bugema fw-semibold small mb-3">Ms. Sarah Nakato</p>
+                        <div class="contact-details mb-3">
+                            <p class="small mb-1">
+                                <i class="bi bi-envelope me-2 text-muted"></i>
+                                <a href="mailto:student-affairs@bugemauniv.ac.ug" class="text-decoration-none">student-affairs@bugemauniv.ac.ug</a>
+                            </p>
+                            <p class="small mb-0">
+                                <i class="bi bi-telephone me-2 text-muted"></i>
+                                <a href="tel:+256312351405" class="text-decoration-none">+256-312-351-405</a>
+                            </p>
+                        </div>
                         <div class="d-flex gap-2 justify-content-center">
                             <a href="https://wa.me/256312351405" target="_blank" class="btn btn-whatsapp btn-sm">
-                                <i class="bi bi-whatsapp"></i> Chat
+                                <i class="bi bi-whatsapp me-1"></i>Chat
                             </a>
                             <a href="mailto:student-affairs@bugemauniv.ac.ug" class="btn btn-outline-bugema btn-sm">
                                 <i class="bi bi-envelope"></i>
@@ -307,22 +413,26 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="card h-100 border-0 shadow-sm rounded-4 p-4 text-center">
-                        <div class="avatar-circle mx-auto mb-3" style="width: 80px; height: 80px; background: var(--bugema-blue);">
-                            <i class="bi bi-headset text-white fs-3"></i>
+                <div class="col-md-6 col-lg-3" data-aos="fade-up" data-aos-delay="400">
+                    <div class="key-contact-card text-center h-100">
+                        <div class="key-contact-avatar mx-auto mb-3" style="background: var(--bugema-blue);">
+                            <i class="bi bi-headset"></i>
                         </div>
-                        <h5 class="fw-bold text-bugema mb-1">IT Support</h5>
-                        <p class="text-bugema fw-semibold small mb-2">Mr. Ronald Nyeko</p>
-                        <p class="text-muted small mb-1">
-                            <a href="mailto:it-support@bugemauniv.ac.ug" class="text-decoration-none"><i class="bi bi-envelope me-1"></i>it-support@bugemauniv.ac.ug</a>
-                        </p>
-                        <p class="text-muted small mb-2">
-                            <a href="tel:+256312351410" class="text-decoration-none"><i class="bi bi-telephone me-1"></i>+256-312-351-400 ext. 210</a>
-                        </p>
+                        <h4 class="h5 fw-bold text-bugema mb-1">IT Support</h4>
+                        <p class="text-bugema fw-semibold small mb-3">Mr. Ronald Nyeko</p>
+                        <div class="contact-details mb-3">
+                            <p class="small mb-1">
+                                <i class="bi bi-envelope me-2 text-muted"></i>
+                                <a href="mailto:it-support@bugemauniv.ac.ug" class="text-decoration-none">it-support@bugemauniv.ac.ug</a>
+                            </p>
+                            <p class="small mb-0">
+                                <i class="bi bi-telephone me-2 text-muted"></i>
+                                <a href="tel:+256312351410" class="text-decoration-none">+256-312-351-410</a>
+                            </p>
+                        </div>
                         <div class="d-flex gap-2 justify-content-center">
                             <a href="https://wa.me/256312351410" target="_blank" class="btn btn-whatsapp btn-sm">
-                                <i class="bi bi-whatsapp"></i> Chat
+                                <i class="bi bi-whatsapp me-1"></i>Chat
                             </a>
                             <a href="mailto:it-support@bugemauniv.ac.ug" class="btn btn-outline-bugema btn-sm">
                                 <i class="bi bi-envelope"></i>
@@ -334,67 +444,80 @@
         </div>
     </section>
 
-    <!-- FAQ -->
+    <!-- Map Section -->
     <section class="py-5 bg-light">
         <div class="container">
-            <div class="text-center mb-5">
-                <span class="badge bg-bugema-subtle text-bugema px-3 py-2">FAQ</span>
-                <h2 class="fw-bold text-bugema mt-2">Frequently Asked Questions</h2>
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="badge bg-bugema-subtle text-bugema px-3 py-2 mb-3">Location</span>
+                <h2 class="display-6 fw-bold text-bugema">Find Us on the Map</h2>
+                <p class="text-muted mx-auto" style="max-width: 600px;">Visit our beautiful campus located in Luwero District</p>
             </div>
-            <div class="row g-4">
-                <div class="col-lg-6">
-                    <div class="accordion" id="faqLeft">
-                        <div class="accordion-item border-0 mb-3 rounded-4 overflow-hidden">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button fw-bold text-bugema" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
-                                    What are the admission requirements?
-                                </button>
-                            </h2>
-                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqLeft">
-                                <div class="accordion-body text-muted">
-                                    For bachelor's programs, you need UCE with at least 5 passes and UACE with 2 principal passes. Mathematics at O-Level is recommended.
-                                </div>
-                            </div>
+            <div class="map-card rounded-4 overflow-hidden shadow-lg" data-aos="fade-up" data-aos-delay="200">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31909.58794483247!2d32.35!3d0.75!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbb1a2d9a1b1b%3A0x4c5c5c5c5c5c5c5c!2sBugema%20University!5e0!3m2!1sen!2sug!4v1234567890"
+                    width="100%" 
+                    height="450" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+            <div class="text-center mt-4" data-aos="fade-up" data-aos-delay="300">
+                <a href="https://www.google.com/maps/dir//Bugema+University" target="_blank" class="btn btn-bugema btn-lg">
+                    <i class="bi bi-signpost-split me-2"></i>Get Directions
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <span class="badge bg-bugema-subtle text-bugema px-3 py-2 mb-3">FAQ</span>
+                <h2 class="display-6 fw-bold text-bugema">Frequently Asked Questions</h2>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <div class="faq-card mb-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="faq-question">
+                            <i class="bi bi-question-circle-fill me-3" style="color: var(--bugema-blue);"></i>
+                            <span>What are the admission requirements?</span>
+                            <i class="bi bi-chevron-down faq-icon"></i>
                         </div>
-                        <div class="accordion-item border-0 mb-3 rounded-4 overflow-hidden">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed fw-bold text-bugema" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
-                                    How do I apply?
-                                </button>
-                            </h2>
-                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqLeft">
-                                <div class="accordion-body text-muted">
-                                    You can apply online through our Application Form, visit the admissions office in person, or download the application form and submit via email.
-                                </div>
-                            </div>
+                        <div class="faq-answer">
+                            <p>For bachelor's programs, you need UCE with at least 5 passes and UACE with 2 principal passes. Mathematics at O-Level is recommended. Diploma holders may also apply for credit transfer.</p>
                         </div>
                     </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="accordion" id="faqRight">
-                        <div class="accordion-item border-0 mb-3 rounded-4 overflow-hidden">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button fw-bold text-bugema" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
-                                    What is the tuition fee?
-                                </button>
-                            </h2>
-                            <div id="faq3" class="accordion-collapse collapse show" data-bs-parent="#faqRight">
-                                <div class="accordion-body text-muted">
-                                    Tuition varies by program. Contact the admissions office for the latest fee structure. We offer flexible payment plans.
-                                </div>
-                            </div>
+                    <div class="faq-card mb-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="faq-question">
+                            <i class="bi bi-question-circle-fill me-3" style="color: var(--bugema-blue);"></i>
+                            <span>How do I apply?</span>
+                            <i class="bi bi-chevron-down faq-icon"></i>
                         </div>
-                        <div class="accordion-item border-0 mb-3 rounded-4 overflow-hidden">
-                            <h2 class="accordion-header">
-                                <button class="accordion-button collapsed fw-bold text-bugema" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
-                                    Do you offer scholarships?
-                                </button>
-                            </h2>
-                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqRight">
-                                <div class="accordion-body text-muted">
-                                    Yes, we offer merit-based scholarships and financial aid to qualifying students. Contact the admissions office for more information.
-                                </div>
-                            </div>
+                        <div class="faq-answer">
+                            <p>You can apply online through our Application Form, visit the admissions office in person, or email us for the application form. The process is simple and we guide you through every step.</p>
+                        </div>
+                    </div>
+                    <div class="faq-card mb-4" data-aos="fade-up" data-aos-delay="300">
+                        <div class="faq-question">
+                            <i class="bi bi-question-circle-fill me-3" style="color: var(--bugema-blue);"></i>
+                            <span>What is the tuition fee?</span>
+                            <i class="bi bi-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Tuition varies by program. Contact the admissions office for the latest fee structure. We offer flexible payment plans to help you manage your education expenses.</p>
+                        </div>
+                    </div>
+                    <div class="faq-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="faq-question">
+                            <i class="bi bi-question-circle-fill me-3" style="color: var(--bugema-blue);"></i>
+                            <span>Do you offer scholarships?</span>
+                            <i class="bi bi-chevron-down faq-icon"></i>
+                        </div>
+                        <div class="faq-answer">
+                            <p>Yes, we offer merit-based scholarships and financial aid to qualifying students. Contact the admissions office for more information about available scholarships.</p>
                         </div>
                     </div>
                 </div>
@@ -403,13 +526,17 @@
     </section>
 
     <!-- CTA Section -->
-    <section class="cta-section py-5 text-white">
+    <section class="cta-section-impressive py-5" data-aos="fade-up">
         <div class="container text-center py-5">
-            <h2 class="fw-bold mb-3">Ready to Apply?</h2>
-            <p class="lead mb-4 opacity-75">Start your journey to becoming an IT professional today.</p>
+            <h2 class="display-5 fw-bold text-white mb-3">Ready to Start Your Journey?</h2>
+            <p class="lead text-white opacity-75 mb-5">Apply now and become part of Uganda's leading computing department.</p>
             <div class="d-flex gap-3 justify-content-center flex-wrap">
-                <a href="application.html" class="btn btn-bugema btn-lg"><i class="bi bi-send me-2"></i>Apply Now</a>
-                <a href="https://wa.me/256779793746" target="_blank" class="btn btn-whatsapp btn-lg"><i class="bi bi-whatsapp me-2"></i>Chat on WhatsApp</a>
+                <a href="application.html" class="btn btn-white btn-lg">
+                    <i class="bi bi-send me-2"></i>Apply Now
+                </a>
+                <a href="https://wa.me/256779793746" target="_blank" class="btn btn-whatsapp btn-lg">
+                    <i class="bi bi-whatsapp me-2"></i>Chat on WhatsApp
+                </a>
             </div>
         </div>
     </section>
@@ -474,6 +601,22 @@
     </a>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-out-cubic',
+            once: true,
+            offset: 50
+        });
+        
+        // FAQ Accordion
+        document.querySelectorAll('.faq-card').forEach(card => {
+            card.querySelector('.faq-question').addEventListener('click', () => {
+                card.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>
