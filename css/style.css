@@ -168,7 +168,6 @@ body, h1, h2, h3, h4, h5, h6, p, span, div, li, label, a, button, input, select,
     align-items: center;
     margin: 0;
     padding: 0;
-    gap: 0;
 }
 .main-navbar .nav-item {
     list-style: none;
@@ -182,7 +181,6 @@ body, h1, h2, h3, h4, h5, h6, p, span, div, li, label, a, button, input, select,
     align-items: center;
     gap: 6px;
     transition: all 0.25s ease;
-    position: relative;
 }
 .main-navbar .nav-link i {
     font-size: 1rem;
@@ -193,11 +191,8 @@ body, h1, h2, h3, h4, h5, h6, p, span, div, li, label, a, button, input, select,
     color: var(--white);
     background: rgba(220,53,69,0.95);
 }
-.main-navbar .nav-link:hover i,
-.main-navbar .nav-link.active i {
-    opacity: 1;
-}
 .main-navbar .navbar-toggler {
+    display: none;
     border: none;
     padding: 10px 14px;
     background: var(--bugema-red);
@@ -206,7 +201,6 @@ body, h1, h2, h3, h4, h5, h6, p, span, div, li, label, a, button, input, select,
 }
 .main-navbar .navbar-toggler:hover {
     background: #c82333;
-    transform: scale(1.05);
 }
 .main-navbar .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
@@ -227,16 +221,15 @@ body, h1, h2, h3, h4, h5, h6, p, span, div, li, label, a, button, input, select,
     background: var(--white);
     color: var(--bugema-red);
     transform: translateY(-2px);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
 
 /* Mobile */
 @media (max-width: 991px) {
-    .main-navbar {
-        position: sticky;
-        top: 0;
+    .main-navbar .navbar-toggler {
+        display: block;
     }
     .main-navbar .navbar-collapse {
+        display: none;
         position: absolute;
         top: 100%;
         left: 0;
@@ -244,6 +237,10 @@ body, h1, h2, h3, h4, h5, h6, p, span, div, li, label, a, button, input, select,
         background: var(--bugema-blue-dark);
         padding: 10px 0;
         box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+    .main-navbar .navbar-collapse.show,
+    .main-navbar .navbar-collapse.collapsing {
+        display: block;
     }
     .main-navbar .navbar-nav {
         flex-direction: column;
