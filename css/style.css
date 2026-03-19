@@ -157,16 +157,12 @@ body, h1, h2, h3, h4, h5, h6, p, span, div, li, label, a, button, input, select,
 .main-navbar .container {
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-.main-navbar .navbar-collapse {
-    flex-grow: 0;
+    justify-content: space-between;
 }
 .main-navbar .navbar-nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
     margin: 0;
     padding: 0;
 }
@@ -185,7 +181,6 @@ body, h1, h2, h3, h4, h5, h6, p, span, div, li, label, a, button, input, select,
 }
 .main-navbar .nav-link i {
     font-size: 1rem;
-    opacity: 0.9;
 }
 .main-navbar .nav-link:hover,
 .main-navbar .nav-link.active {
@@ -201,10 +196,6 @@ body, h1, h2, h3, h4, h5, h6, p, span, div, li, label, a, button, input, select,
 }
 .main-navbar .navbar-toggler-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
-}
-.main-navbar .navbar-btn {
-    position: absolute;
-    right: 15px;
 }
 .main-navbar .navbar-btn .btn {
     background: var(--bugema-red);
@@ -224,17 +215,13 @@ body, h1, h2, h3, h4, h5, h6, p, span, div, li, label, a, button, input, select,
     transform: translateY(-2px);
 }
 
-/* Mobile */
+/* Mobile - Hide navbar and show hamburger */
 @media (max-width: 991px) {
-    .main-navbar .container {
-        justify-content: space-between;
+    .main-navbar .navbar-nav {
+        display: none;
     }
     .main-navbar .navbar-toggler {
         display: block;
-    }
-    .main-navbar .navbar-btn {
-        position: static;
-        margin-left: 10px;
     }
     .main-navbar .navbar-collapse {
         display: none;
